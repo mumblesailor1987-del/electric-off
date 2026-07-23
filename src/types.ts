@@ -14,6 +14,23 @@ export interface Region {
   famma_slug?: string;
 }
 
+export interface UserRegion {
+  id: string;
+  slug: string;
+  name_ar: string;
+  name_fr: string;
+  name_en: string;
+  governorate?: string;
+  lat: number;
+  lng: number;
+  radius_m: number;
+  verified: boolean;
+  created_at: string;
+  state: State;
+  on_count: number;
+  off_count: number;
+}
+
 export interface LiveZoneState {
   slug: string;
   governorate: string;
@@ -31,6 +48,9 @@ export interface LiveZoneState {
   scraped_off: number;
   local_on: number;
   local_off: number;
+  geometry_type?: 'polygon' | 'circle';
+  radius_m?: number;
+  verified?: boolean;
 }
 
 export interface Claim {

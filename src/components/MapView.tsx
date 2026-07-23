@@ -4,6 +4,7 @@ import type { LiveZoneState, Lang } from '../types';
 import { RegionPopup } from './RegionPopup';
 import { createRoot } from 'react-dom/client';
 import { t } from '../i18n';
+import { TUNISIA_GEOJSON } from '../data/tunisia_geojson';
 
 // State → color
 function stateColor(state: LiveZoneState['state']): string {
@@ -14,8 +15,8 @@ function stateColor(state: LiveZoneState['state']): string {
 }
 
 function stateOpacity(state: LiveZoneState['state']): number {
-  if (state === 'no_data') return 0.3;
-  return 0.75;
+  if (state === 'no_data') return 0.25;
+  return 0.55;
 }
 
 interface MapViewProps {
@@ -23,6 +24,9 @@ interface MapViewProps {
   lang: Lang;
   isReplay: boolean;
   estimateMode: boolean;
+  isScraped: boolean;
+  sourceUrl: string;
+  lastScrapedTime: string | null;
   onToast: (msg: string, isError?: boolean) => void;
 }
 
@@ -50,19 +54,29 @@ const TILES: Record<string, TileOption> = {
   },
 };
 
-export function MapView({ zones, lang, isReplay, estimateMode, onToast }: MapViewProps) {
+export function MapView({
+  zones,
+  lang,
+  isReplay,
+  estimateMode,
+  isScraped,
+  sourceUrl,
+  lastScrapedTime,
+  onToast,
+}: MapViewProps) {
   const mapRef = useRef<L.Map | null>(null);
   const geojsonLayerRef = useRef<L.GeoJSON | null>(null);
   const tileLayerRef = useRef<L.TileLayer | null>(null);
   const popupRootRef = useRef<ReturnType<typeof createRoot> | null>(null);
   const [selectedZone, setSelectedZone] = useState<LiveZoneState | null>(null);
   const [tileKey, setTileKey] = useState<keyof typeof TILES>('osm');
+  const [showSourceInfo, setShowSourceInfo] = useState(false);
 
   // Initialize map
   useEffect(() => {
     if (mapRef.current) return;
     const map = L.map('leaflet-map', {
-      center: [33.8869, 9.5375], // Tunisia center
+      center: [34.0, 9.5], // Center of Tunisia
       zoom: 6,
       minZoom: 5,
       maxZoom: 14,
@@ -93,7 +107,7 @@ export function MapView({ zones, lang, isReplay, estimateMode, onToast }: MapVie
     tileLayerRef.current.addTo(map);
   }, [tileKey]);
 
-  // Build a simple circle-marker layer since we don't have GeoJSON polygons yet
+  // Build GeoJSON Area Delimitations (Polygons for Tunisia regions)
   useEffect(() => {
     if (!mapRef.current) return;
     const map = mapRef.current;
@@ -104,93 +118,131 @@ export function MapView({ zones, lang, isReplay, estimateMode, onToast }: MapVie
       geojsonLayerRef.current = null;
     }
 
-    if (zones.length === 0) return;
-
-    // Filter zones that have lat/lng (from famma-dhaw data they may not)
-    // We'll use Tunisia governorate approximate centroids for display
-    const govCentroids: Record<string, [number, number]> = {
-      'Tunis': [36.8065, 10.1815],
-      'Ariana': [36.8625, 10.1956],
-      'Ben Arous': [36.7533, 10.2282],
-      'Manouba': [36.8100, 10.0975],
-      'Nabeul': [36.4513, 10.7357],
-      'Zaghouan': [36.4020, 10.1423],
-      'Bizerte': [37.2744, 9.8739],
-      'Béja': [36.7256, 9.1817],
-      'Jendouba': [36.5011, 8.7803],
-      'Le Kef': [36.1826, 8.7149],
-      'Siliana': [36.0849, 9.3708],
-      'Sousse': [35.8288, 10.6405],
-      'Monastir': [35.7643, 10.8113],
-      'Mahdia': [35.5047, 11.0622],
-      'Sfax': [34.7406, 10.7603],
-      'Kairouan': [35.6712, 10.1005],
-      'Kasserine': [35.1675, 8.8366],
-      'Sidi Bouzid': [35.0382, 9.4840],
-      'Gabès': [33.8814, 10.0982],
-      'Médenine': [33.3549, 10.5055],
-      'Tataouine': [32.9211, 10.4507],
-      'Gafsa': [34.4250, 8.7842],
-      'Tozeur': [33.9197, 8.1335],
-      'Kébili': [33.7049, 8.9689],
-    };
-
-    const markers: L.CircleMarker[] = [];
-
-    zones.forEach((zone) => {
-      // Try to find centroid for this zone's governorate
-      let lat = zone.lat;
-      let lng = zone.lng;
-
-      if (!lat || !lng) {
-        // Match governorate name
-        const govKey = Object.keys(govCentroids).find(
-          (k) =>
-            zone.governorate?.toLowerCase().includes(k.toLowerCase()) ||
-            k.toLowerCase().includes(zone.governorate?.toLowerCase())
-        );
-        if (govKey) {
-          const [gLat, gLng] = govCentroids[govKey];
-          // Add small jitter per delegation to avoid perfect overlap
-          const seed = zone.slug.split('').reduce((a, c) => a + c.charCodeAt(0), 0);
-          lat = gLat + ((seed % 17) - 8) * 0.015;
-          lng = gLng + ((seed % 13) - 6) * 0.015;
-        } else {
-          // Place in Tunisia center with jitter
-          const seed = zone.slug.split('').reduce((a, c) => a + c.charCodeAt(0), 0);
-          lat = 33.8869 + ((seed % 20) - 10) * 0.15;
-          lng = 9.5375 + ((seed % 20) - 10) * 0.15;
-        }
-      }
-
-      const col = stateColor(zone.state);
-      const opa = stateOpacity(zone.state);
-
-      const marker = L.circleMarker([lat, lng], {
-        radius: zone.off_count + zone.on_count > 10 ? 14 : 10,
-        color: col,
-        fillColor: col,
-        fillOpacity: opa,
-        weight: 2,
-        opacity: 0.9,
-      });
-
-      const tooltip = lang === 'ar' ? zone.name_ar : lang === 'fr' ? zone.name_fr : zone.name_en;
-      marker.bindTooltip(`<b>${tooltip}</b> — ${zone.state === 'on' ? '💡' : zone.state === 'off' ? '🔌' : '—'}`, {
-        permanent: false,
-        className: 'leaflet-tooltip-dark',
-      });
-
-      marker.on('click', () => {
-        setSelectedZone(zone);
-      });
-
-      marker.addTo(map);
-      markers.push(marker);
+    // Map zone states by slug or name
+    const zoneMap = new Map<string, LiveZoneState>();
+    zones.forEach((z) => {
+      zoneMap.set(z.slug.toLowerCase(), z);
+      zoneMap.set(z.governorate.toLowerCase(), z);
+      zoneMap.set(z.delegation.toLowerCase(), z);
     });
 
+    // Create GeoJSON layer with area polygon delimitations
+    const geoLayer = L.geoJSON(TUNISIA_GEOJSON, {
+      style: (feature) => {
+        const govName = feature?.properties?.gov?.toLowerCase() || '';
+        const matchedZone = zoneMap.get(govName);
+        const state = matchedZone ? matchedZone.state : 'no_data';
+        const col = stateColor(state);
+        const opa = stateOpacity(state);
+
+        return {
+          color: col,
+          weight: 2,
+          opacity: 0.9,
+          fillColor: col,
+          fillOpacity: opa,
+        };
+      },
+      onEachFeature: (feature, layer) => {
+        const govName = feature.properties.gov;
+        const matchedZone = zoneMap.get(govName.toLowerCase()) || {
+          slug: govName.toLowerCase(),
+          governorate: govName,
+          delegation: govName,
+          name_ar: feature.properties.name_ar || govName,
+          name_fr: feature.properties.name_fr || govName,
+          name_en: govName,
+          lat: 0,
+          lng: 0,
+          on_count: 0,
+          off_count: 0,
+          state: 'no_data' as const,
+          last_update_ts: null,
+          scraped_on: 0,
+          scraped_off: 0,
+          local_on: 0,
+          local_off: 0,
+        };
+
+        const titleName =
+          lang === 'ar'
+            ? matchedZone.name_ar
+            : lang === 'fr'
+            ? matchedZone.name_fr
+            : matchedZone.name_en;
+
+        const stateIcon = matchedZone.state === 'on' ? '💡' : matchedZone.state === 'off' ? '🔌' : '—';
+        layer.bindTooltip(
+          `<b>${titleName}</b> (${govName})<br/>State: ${stateIcon} ${matchedZone.state.toUpperCase()}<br/><small>Click to view details & report</small>`,
+          { permanent: false, className: 'leaflet-tooltip-dark' }
+        );
+
+        // Hover & Click events
+        layer.on({
+          mouseover: (e) => {
+            const l = e.target;
+            l.setStyle({
+              weight: 4,
+              color: '#ffffff',
+              fillOpacity: 0.8,
+            });
+            l.bringToFront();
+          },
+          mouseout: (e) => {
+            geoLayer.resetStyle(e.target);
+          },
+          click: (e) => {
+            const bounds = (layer as L.Polygon).getBounds();
+            const center = bounds.getCenter();
+            const z: LiveZoneState = {
+              ...matchedZone,
+              lat: center.lat,
+              lng: center.lng,
+            };
+            setSelectedZone(z);
+          },
+        });
+      },
+    });
+
+    // Render user-defined regions as Leaflet Circles
+    const userCircles: L.Circle[] = [];
+    zones
+      .filter((z) => z.slug.startsWith('u-') || z.geometry_type === 'circle')
+      .forEach((z) => {
+        const col = stateColor(z.state);
+        const opa = stateOpacity(z.state);
+        const circle = L.circle([z.lat || 36.8065, z.lng || 10.1815], {
+          radius: z.radius_m || 1000,
+          color: col,
+          weight: 2,
+          fillColor: col,
+          fillOpacity: opa,
+          dashArray: z.verified ? undefined : '4, 4', // Dashed border if pending verification
+        });
+
+        const nameStr = lang === 'ar' ? z.name_ar : lang === 'fr' ? z.name_fr : z.name_en;
+        circle.bindTooltip(
+          `<b>📍 ${nameStr}</b> (User Region ${z.verified ? '' : '⌛ Pending'})<br/>State: ${z.state.toUpperCase()}`,
+          { permanent: false, className: 'leaflet-tooltip-dark' }
+        );
+
+        circle.on('click', () => {
+          setSelectedZone(z);
+        });
+
+        circle.addTo(map);
+        userCircles.push(circle);
+      });
+
+    geoLayer.addTo(map);
+    geojsonLayerRef.current = geoLayer;
+
     return () => {
-      markers.forEach((m) => map.removeLayer(m));
+      if (geojsonLayerRef.current) {
+        map.removeLayer(geojsonLayerRef.current);
+      }
+      userCircles.forEach((c) => map.removeLayer(c));
     };
   }, [zones, lang, estimateMode]);
 
@@ -204,16 +256,12 @@ export function MapView({ zones, lang, isReplay, estimateMode, onToast }: MapVie
     if (!mapRef.current || !selectedZone) return;
     const map = mapRef.current;
 
-    let lat = selectedZone.lat;
-    let lng = selectedZone.lng;
-    if (!lat || !lng) {
-      lat = 33.8869;
-      lng = 9.5375;
-    }
+    let lat = selectedZone.lat || 34.0;
+    let lng = selectedZone.lng || 9.5;
 
     const container = document.createElement('div');
     const popup = L.popup({
-      maxWidth: 320,
+      maxWidth: 340,
       className: 'tunisianh-popup',
       closeButton: true,
     })
@@ -240,7 +288,7 @@ export function MapView({ zones, lang, isReplay, estimateMode, onToast }: MapVie
   // Locate me
   const handleLocate = () => {
     if (!mapRef.current) return;
-    mapRef.current.locate({ setView: true, maxZoom: 10 });
+    mapRef.current.locate({ setView: true, maxZoom: 8 });
   };
 
   const dir = lang === 'ar' ? 'rtl' : 'ltr';
@@ -250,6 +298,50 @@ export function MapView({ zones, lang, isReplay, estimateMode, onToast }: MapVie
       <div id="leaflet-map" />
 
       <div className="map-hud">
+        {/* Scraping Status Badge Indicator */}
+        <div
+          className={`scraping-status-indicator ${isScraped ? 'scraped-live' : 'scraped-mock'}`}
+          dir={dir}
+          onClick={() => setShowSourceInfo((prev) => !prev)}
+          title="Click to view scraping details"
+        >
+          <span className={`status-pulse-dot ${isScraped ? 'green' : 'amber'}`} />
+          <span className="status-label">
+            {isScraped ? '📡 SCRAPED LIVE DATA' : '⚠️ DEMO / FALLBACK DATA'}
+          </span>
+          <span className="status-sub">({isScraped ? 'famma-dhaw.com API' : 'Simulated'})</span>
+        </div>
+
+        {/* Detailed Source Modal Dropdown */}
+        {showSourceInfo && (
+          <div className="scraping-info-card anim-fade-up" dir={dir}>
+            <div className="scraping-info-header">
+              <strong>Data Fetching Status</strong>
+              <button onClick={() => setShowSourceInfo(false)}>✕</button>
+            </div>
+            <div className="scraping-info-body">
+              <div className="info-row">
+                <span>Method:</span>
+                <strong>{isScraped ? 'REST API Scraping' : 'Local Fallback'}</strong>
+              </div>
+              <div className="info-row">
+                <span>Target:</span>
+                <code>famma-dhaw.com / zone_board</code>
+              </div>
+              <div className="info-row">
+                <span>Status:</span>
+                <span style={{ color: isScraped ? '#22c55e' : '#f59e0b', fontWeight: 700 }}>
+                  {isScraped ? '🟢 Active & Polling (5s)' : '🟡 Fallback Mode Active'}
+                </span>
+              </div>
+              <div className="info-row">
+                <span>Regions Mapped:</span>
+                <strong>24 Governorates (Area Delimitations)</strong>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Tile switcher */}
         <div className="tile-switcher" dir={dir}>
           {(Object.keys(TILES) as Array<keyof typeof TILES>).map((k) => (
@@ -270,6 +362,9 @@ export function MapView({ zones, lang, isReplay, estimateMode, onToast }: MapVie
 
         {/* Legend */}
         <div className="map-legend" dir={dir}>
+          <div style={{ fontWeight: 700, fontSize: 11, marginBottom: 4, color: 'var(--text-primary)' }}>
+            Region State
+          </div>
           <div className="legend-item">
             <span className="legend-dot" style={{ background: '#22c55e' }} />
             <span>{t(lang, 'on')}</span>

@@ -1,9 +1,6 @@
 import type { LiveZoneState, HistorySnapshot, Claim } from './types';
 
-// ─── Famma-dhaw.com Supabase config ──────────────────────────────────────────
-const FAMMA_URL = 'https://njfulpklvqezflxiozhn.supabase.co';
-const FAMMA_ANON_KEY =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5qZnVscGtsdnFlemZseGlvemhuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTIwNjg4MDMsImV4cCI6MjAyNzY0NDgwM30.uBHX4D_sYhBSTqHAHiOxrYNBSEfylB0xQ_0dCOPgQVs';
+
 
 // ─── Device ID ────────────────────────────────────────────────────────────────
 function getDeviceId(): string {
@@ -23,55 +20,94 @@ async function hashString(s: string): Promise<string> {
     .slice(0, 16);
 }
 
-// ─── Fetch live zone data from Famma-dhaw ────────────────────────────────────
-export async function fetchLiveZones(): Promise<LiveZoneState[]> {
-  const res = await fetch(
-    `${FAMMA_URL}/rest/v1/zone_board?select=slug,name,gov,off_count,on_count,last_report&order=gov`,
-    {
-      headers: {
-        apikey: FAMMA_ANON_KEY,
-        Authorization: `Bearer ${FAMMA_ANON_KEY}`,
-      },
-    }
-  );
-  if (!res.ok) throw new Error('Failed to fetch zone data');
-  const raw: Array<{
-    slug: string;
-    name: string;
-    gov: string;
-    off_count: number;
-    on_count: number;
-    last_report: string | null;
-  }> = await res.json();
+export interface FetchLiveResult {
+  zones: LiveZoneState[];
+  isScraped: boolean;
+  sourceUrl: string;
+  fetchedAt: string;
+  error?: string;
+}
 
-  return raw.map((z) => {
-    const on = z.on_count ?? 0;
-    const off = z.off_count ?? 0;
-    const total = on + off;
-    let state: LiveZoneState['state'] = 'no_data';
-    if (total > 0) {
-      if (Math.abs(on - off) <= 1) state = 'contested';
-      else state = off > on ? 'off' : 'on';
-    }
+import scrapedLiveJson from './data/scraped_live.json';
+
+// ─── Fetch live zone data from local scraped dataset ─────────────────────────
+export async function fetchLiveZones(): Promise<FetchLiveResult> {
+  const nowIso = new Date().toISOString();
+  try {
+    const rawZones: any[] = Array.isArray(scrapedLiveJson.zones) ? scrapedLiveJson.zones : [];
+    if (rawZones.length === 0) throw new Error('Empty local scraped dataset');
+
+    const zones: LiveZoneState[] = rawZones.map((z: any) => {
+      const on = z.on_count ?? 0;
+      const off = z.off_count ?? 0;
+      const total = on + off;
+      let state: LiveZoneState['state'] = 'no_data';
+      if (total > 0) {
+        state = Math.abs(on - off) <= 1 ? 'contested' : off > on ? 'off' : 'on';
+      }
+      const name = z.name || z.slug || 'Unknown';
+      return {
+        slug: z.slug,
+        governorate: z.gov || name,
+        delegation: name,
+        name_ar: name,
+        name_fr: name,
+        name_en: name,
+        lat: 0,
+        lng: 0,
+        on_count: on,
+        off_count: off,
+        state,
+        last_update_ts: z.last_report || nowIso,
+        scraped_on: on,
+        scraped_off: off,
+        local_on: 0,
+        local_off: 0,
+      };
+    });
+
     return {
-      slug: z.slug,
-      governorate: z.gov,
-      delegation: z.name,
-      name_ar: z.name,
-      name_fr: z.name,
-      name_en: z.name,
-      lat: 0,
-      lng: 0,
-      on_count: on,
-      off_count: off,
-      state,
-      last_update_ts: z.last_report,
-      scraped_on: on,
-      scraped_off: off,
-      local_on: 0,
-      local_off: 0,
+      zones,
+      isScraped: true,
+      sourceUrl: 'scraped_live.json',
+      fetchedAt: scrapedLiveJson.scraped_at || nowIso,
     };
-  });
+  } catch (err: any) {
+    console.error('Failed to load local scraped JSON:', err);
+    return {
+      zones: [],
+      isScraped: false,
+      sourceUrl: 'Demo / Fallback',
+      fetchedAt: nowIso,
+      error: err?.message,
+    };
+  }
+}
+
+
+// ─── User-Defined Regions ─────────────────────────────────────────────────────
+export function getUserRegions(): UserRegion[] {
+  try {
+    return JSON.parse(localStorage.getItem('tunisianh_user_regions') ?? '[]');
+  } catch {
+    return [];
+  }
+}
+
+export function addUserRegion(r: Omit<UserRegion, 'id' | 'created_at' | 'verified' | 'state' | 'on_count' | 'off_count'>): UserRegion {
+  const userRegions = getUserRegions();
+  const newRegion: UserRegion = {
+    ...r,
+    id: 'u-' + Date.now(),
+    created_at: new Date().toISOString(),
+    verified: false, // pending maintainer verification
+    state: 'no_data',
+    on_count: 0,
+    off_count: 0,
+  };
+  userRegions.unshift(newRegion);
+  localStorage.setItem('tunisianh_user_regions', JSON.stringify(userRegions));
+  return newRegion;
 }
 
 // ─── Submit a user claim ──────────────────────────────────────────────────────

@@ -1,0 +1,4384 @@
+<!DOCTYPE html><html lang="fr"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Famma Dhaw ? ⚡ Coupures en direct — Tunisie</title>
+<meta name="description" content="Qui a la lumière, qui ne l'a pas. Signale ta zone en 5 secondes.">
+<meta name="theme-color" content="#0b0e11">
+<meta property="og:title" content="Famma Dhaw ? ⚡ Coupures en direct — Tunisie">
+<meta property="og:description" content="Qui a la lumière, qui ne l'a pas. Signale ta zone en 5 secondes.">
+<meta property="og:type" content="website">
+<style>
+:root{--bg:#0b0e11;--card:#161b22;--card2:#1d242e;--line:#2a323d;--txt:#e8eaed;--mut:#9aa0a6;--amber:#fbbf24;--red:#f87171;--green:#34d399}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--txt);font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding-bottom:70px}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+header{padding:14px 16px 10px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+h1{font-size:1.35rem;color:var(--amber)}
+header p{color:var(--mut);font-size:.8rem;margin-top:2px}
+#share{min-width:48px;min-height:48px;border-radius:12px;background:var(--card);border:1px solid var(--line);font-size:.85rem;padding:0 12px;flex-shrink:0}
+#offline{display:none;background:#7f1d1d;color:#fecaca;text-align:center;padding:8px 12px;font-size:.85rem}
+#offline.on{display:block}
+#summary{display:flex;align-items:center;gap:8px;background:var(--card);border-block:1px solid var(--line);padding:8px 16px;font-size:.85rem;color:var(--mut);position:sticky;top:0;z-index:5}
+#summary b{color:var(--txt)}
+#stats{flex:1;min-width:0}
+#refresh{min-width:48px;min-height:48px;border-radius:12px;font-size:1.3rem;color:var(--amber)}
+#refresh:disabled{opacity:.4}
+.wrap{padding:12px 16px;max-width:640px;margin:0 auto}
+#search{width:100%;min-height:48px;background:var(--card);border:1px solid var(--line);border-radius:12px;color:var(--txt);font:inherit;padding:0 14px;outline:none}
+#search:focus{border-color:var(--amber)}
+h2{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin:18px 0 8px}
+h2.mine{color:var(--amber)}
+.zone{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:8px;overflow:hidden}
+.zrow{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-height:56px;padding:8px 14px;text-align:left}
+.zname{font-weight:600}
+.zsub{display:block;color:var(--mut);font-size:.78rem;font-weight:400;margin-top:1px}
+.badge{flex-shrink:0;font-size:.78rem;font-weight:700;padding:5px 10px;border-radius:99px;white-space:nowrap}
+.b-off{background:#3b1418;color:var(--red)}
+.b-on{background:#0f2b22;color:var(--green)}
+.b-na{background:var(--card2);color:var(--mut)}
+.s-off{border-left:3px solid var(--red)}
+.s-on{border-left:3px solid var(--green)}
+.panel{display:none;padding:6px 14px 14px;border-top:1px solid var(--line)}
+.zone.open .panel{display:block}
+.panel .btns{display:flex;gap:10px;margin-top:8px}
+.vote{flex:1;min-height:60px;border-radius:12px;font-size:.95rem;font-weight:700;border:1px solid var(--line)}
+.v-off{background:#2c1215;color:var(--red)}
+.v-on{background:#0f241d;color:var(--green)}
+.vote:active{transform:scale(.97)}
+.vote:disabled{opacity:.45;transform:none}
+.cd{color:var(--mut);font-size:.8rem;text-align:center;margin-top:8px}
+.empty{color:var(--mut);text-align:center;padding:40px 20px}
+.sugg{display:block;width:100%;min-height:56px;background:var(--card);border:1px dashed var(--amber);border-radius:12px;color:var(--amber);font-weight:700;padding:12px 16px;margin-top:16px;text-align:center}
+.sugg:disabled{opacity:.5}
+.pulse{animation:p 1.2s infinite}
+@keyframes p{50%{opacity:.4}}
+footer{color:var(--mut);font-size:.75rem;padding:24px 16px 16px;max-width:640px;margin:0 auto}
+footer details{margin-top:8px}
+footer summary{cursor:pointer;color:var(--amber);min-height:48px;display:flex;align-items:center}
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#262d38;border:1px solid var(--line);color:var(--txt);padding:12px 18px;border-radius:12px;font-size:.9rem;max-width:90vw;text-align:center;opacity:0;pointer-events:none;transition:opacity .25s;z-index:10}
+#toast.on{opacity:1}
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>⚡ Famma Dhaw ?</h1>
+    <p>Coupures d'électricité en direct — Tunisie, par les habitants<span id="grand-total"> · 271 862 signalements depuis le lancement</span></p>
+  </div>
+  <button id="share">📤 Partager</button>
+</header>
+<div id="offline">⚠️ Hors ligne — données non actualisées</div>
+<div id="summary">
+  <div id="stats" class=""><b>117</b> zones coupées sur 367 · <b>13243</b> signalements (45 min) · MAJ il y a 3s</div>
+  <button id="refresh" aria-label="Rafraîchir">⟳</button>
+</div>
+<div class="wrap">
+  <input id="search" type="search" maxlength="60" placeholder="🔍 Cherche ta zone…" autocomplete="off">
+  <div id="list"><h2>Tunis</h2><div class="zone s-off" data-slug="ain-zaghouan">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Aïn Zaghouan<span class="zsub">🔌 111 · 💡 107 · il y a 22s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="ain-zaghouan-nord">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Aïn Zaghouan Nord<span class="zsub">🔌 72 · 💡 72 · il y a 10s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="alain-savary">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Alain Savary<span class="zsub">🔌 34 · 💡 36 · il y a 3s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="bab-el-khadhra">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bab El Khadhra<span class="zsub">🔌 32 · 💡 28 · il y a 10s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="bab-jdid">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bab Jdid<span class="zsub">🔌 16 · 💡 15 · il y a 38s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="beb-saadoun">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bab Saadoun<span class="zsub">🔌 16 · 💡 16 · il y a 36s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="beb-souika">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bab Souika<span class="zsub">🔌 16 · 💡 12 · il y a 17s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="bellevue">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bellevue<span class="zsub">🔌 10 · 💡 20 · il y a 1s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="lac-1">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Berges du Lac 1<span class="zsub">🔌 18 · 💡 64 · il y a 28s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="lac-2">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Berges du Lac 2<span class="zsub">🔌 18 · 💡 101 · il y a 1s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="lac-3">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Berges du Lac 3 (Kheireddine)<span class="zsub">🔌 11 · 💡 20 · il y a 44s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="bhar-lazreg">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bhar Lazreg<span class="zsub">🔌 33 · 💡 38 · il y a 16s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="borj-chakir">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Borj Chakir<span class="zsub">🔌 11 · 💡 8 · il y a 1 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="bouchoucha">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bouchoucha<span class="zsub">🔌 18 · 💡 17 · il y a 15s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="carthage">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Carthage / Sidi Bou Saïd (autre)<span class="zsub">🔌 9 · 💡 21 · il y a 40s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="carthage-amilcar">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Carthage Amilcar<span class="zsub">🔌 7 · 💡 9 · il y a 6 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="carthage-byrsa">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Carthage Byrsa<span class="zsub">🔌 4 · 💡 8 · il y a 6 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="carthage-dermech">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Carthage Dermech<span class="zsub">🔌 10 · 💡 10 · il y a 4 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="carthage-hannibal">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Carthage Hannibal<span class="zsub">🔌 1 · 💡 4 · il y a 58s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="carthage-mohamed-ali">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Carthage Mohamed Ali<span class="zsub">🔌 3 · 💡 4 · il y a 4 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="carthage-presidence">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Carthage Présidence<span class="zsub">🔌 10 · 💡 11 · il y a 19s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="carthage-salammbo">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Carthage Salammbô<span class="zsub">🔌 3 · 💡 8 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="carthage-yasmina">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Carthage Yasmina<span class="zsub">🔌 7 · 💡 19 · il y a 50s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="centre-urbain-nord">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Centre Urbain Nord<span class="zsub">🔌 55 · 💡 73 · il y a 34s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="centre-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Centre-ville / Lafayette<span class="zsub">🔌 6 · 💡 16 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="charguia-1">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Charguia 1<span class="zsub">🔌 5 · 💡 29 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="charguia-2">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Charguia 2<span class="zsub">🔌 23 · 💡 24 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="cite-el-khadra">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité El Khadra / Olympique<span class="zsub">🔌 11 · 💡 34 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-wahat">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité El Wahat (El Agba)<span class="zsub">🔌 22 · 💡 23 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="wahat-aouina">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité El Wahat (L'Aouina)<span class="zsub">🔌 141 · 💡 61 · il y a 7s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="cite-ettahrir">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité Ettahrir<span class="zsub">🔌 17 · 💡 21 · il y a 1s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="ezzouhour">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité Ezzouhour<span class="zsub">🔌 9 · 💡 17 · il y a 21s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="ibn-khaldoun">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité Ibn Khaldoun<span class="zsub">🔌 8 · 💡 19 · il y a 33s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="ibn-sina">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité Ibn Sina<span class="zsub">🔌 41 · 💡 76 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-hraieria">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Hraïria<span class="zsub">🔌 16 · 💡 19 · il y a 5 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="el-menzah-1-4">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Menzah 1<span class="zsub">🔌 75 · 💡 16 · il y a 26s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="el-menzah-4">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Menzah 4<span class="zsub">🔌 28 · 💡 12 · il y a 2 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-omrane">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Omrane<span class="zsub">🔌 5 · 💡 8 · il y a 34s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="el-omrane-superieur">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Omrane Supérieur<span class="zsub">🔌 33 · 💡 29 · il y a 5s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-ouardia">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Ouardia / Kabaria<span class="zsub">🔌 6 · 💡 29 · il y a 12s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="essaidia">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Essaidia<span class="zsub">🔌 2 · 💡 7 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="zahrouni">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ezzahrouni<span class="zsub">🔌 19 · 💡 33 · il y a 41s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="gammarth">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Gammarth<span class="zsub">🔌 8 · 💡 9 · il y a 6 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="gammarth-superieur">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Gammarth Supérieur<span class="zsub">🔌 2 · 💡 6 · il y a 38s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="gammarth-village">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Gammarth Village<span class="zsub">🔌 3 · 💡 8 · il y a 23s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="ghedir-el-golla">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ghedir El Golla<span class="zsub">🔌 2 · 💡 5 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="hafsia">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Hafsia<span class="zsub">🔌 2 · 💡 7 · il y a 20s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="halfaouine">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Halfaouine<span class="zsub">🔌 5 · 💡 3 · il y a 1 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="jardins-carthage">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Jardins de Carthage (côté ISC / villas)<span class="zsub">🔌 99 · 💡 17 · il y a 37s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="jardins-carthage-parc">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Jardins de Carthage (côté parc / forêt)<span class="zsub">🔌 76 · 💡 14 · il y a 17s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="jebel-jelloud">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Jbal Jloud<span class="zsub">🔌 10 · 💡 11 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="jbel-lahmar">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Jbel Lahmar<span class="zsub">🔌 0 · 💡 14 · il y a 5 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="khaznadar">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Khaznadar<span class="zsub">🔌 4 · 💡 16 · il y a 51s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="aouina">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">L'Aouina<span class="zsub">🔌 69 · 💡 63 · il y a 2s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="goulette">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">La Goulette<span class="zsub">🔌 6 · 💡 31 · il y a 41s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="la-marsa">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">La Marsa<span class="zsub">🔌 8 · 💡 33 · il y a 30s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="marsa-plage">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">La Marsa Plage<span class="zsub">🔌 2 · 💡 6 · il y a 11 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="marsa-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">La Marsa Ville<span class="zsub">🔌 5 · 💡 8 · il y a 4 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="bardo">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Le Bardo<span class="zsub">🔌 57 · 💡 44 · il y a 1s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="kram">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Le Kram<span class="zsub">🔌 5 · 💡 30 · il y a 23s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="kram-est">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Le Kram Est<span class="zsub">🔌 5 · 💡 17 · il y a 56s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="kram-ouest">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Le Kram Ouest<span class="zsub">🔌 6 · 💡 13 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="medina">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Médina<span class="zsub">🔌 5 · 💡 3 · il y a 3 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="mellassine">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Mellassine<span class="zsub">🔌 1 · 💡 5 · il y a 9s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="montfleury">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Montfleury<span class="zsub">🔌 1 · 💡 2 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="montplaisir">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Montplaisir<span class="zsub">🔌 3 · 💡 17 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="mutuelleville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Mutuelleville / Belvédère<span class="zsub">🔌 17 · 💡 21 · il y a 16s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="ras-tabia">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ras Tabia<span class="zsub">🔌 10 · 💡 4 · il y a 5s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sidi-daoud-marsa">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sidi Daoud (La Marsa)<span class="zsub">🔌 6 · 💡 14 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sidi-hassine">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sidi Hassine / Séjoumi<span class="zsub">🔌 72 · 💡 62 · il y a 6s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Ariana</h2><div class="zone s-off" data-slug="ariana-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ariana Ville<span class="zsub">🔌 112 · 💡 38 · il y a 8s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="borj-baccouche">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Borj Baccouche<span class="zsub">🔌 25 · 💡 18 · il y a 2 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="borj-louzir">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Borj Louzir<span class="zsub">🔌 162 · 💡 22 · il y a 13s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="borj-touil">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Borj Touil<span class="zsub">🔌 9 · 💡 17 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="chotrana-1">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Chotrana 1<span class="zsub">🔌 62 · 💡 9 · il y a 4s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="chotrana-2">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Chotrana 2<span class="zsub">🔌 20 · 💡 4 · il y a 2 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="chotrana-3">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Chotrana 3<span class="zsub">🔌 24 · 💡 1 · il y a 2 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="borj-turki">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité Borj Turki<span class="zsub">🔌 3 · 💡 1 · il y a 21 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="el-faouz">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité El Faouz<span class="zsub">🔌 28 · 💡 2 · il y a 56s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="ghazela">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité El Ghazela<span class="zsub">🔌 53 · 💡 56 · il y a 3s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="ennahli">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité Ennahli<span class="zsub">🔌 9 · 💡 4 · il y a 1s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="nour-jaafar">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité Ennour Jaâfar<span class="zsub">🔌 22 · 💡 10 · il y a 2 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="ennozha">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité Ennozha<span class="zsub">🔌 41 · 💡 4 · il y a 49s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="essahafa">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité Essahafa<span class="zsub">🔌 5 · 💡 12 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="cite-ettadhamen">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité Ettadhamen<span class="zsub">🔌 16 · 💡 40 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="cite-hedi-nouira">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité Hédi Nouira<span class="zsub">🔌 10 · 💡 14 · il y a 33s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="intilaka">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité Intilaka<span class="zsub">🔌 2 · 💡 9 · il y a 20s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="jaafar">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité Jaafar<span class="zsub">🔌 11 · 💡 14 · il y a 3 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="dar-fadhal">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Dar Fadhal<span class="zsub">🔌 79 · 💡 9 · il y a 51s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="el-manar">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Manar 1-2<span class="zsub">🔌 67 · 💡 33 · il y a 41s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="manar-3">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Manar 3<span class="zsub">🔌 6 · 💡 5 · il y a 41s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="el-menzah-5-9">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Menzah 5<span class="zsub">🔌 81 · 💡 33 · il y a 6s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="el-menzah-6">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Menzah 6<span class="zsub">🔌 53 · 💡 21 · il y a 3s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="el-menzah-7">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Menzah 7<span class="zsub">🔌 92 · 💡 39 · il y a 3s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-menzah-8">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Menzah 8<span class="zsub">🔌 23 · 💡 23 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-menzah-9">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Menzah 9<span class="zsub">🔌 7 · 💡 27 · il y a 9s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="ennasr">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ennasr 1<span class="zsub">🔌 20 · 💡 27 · il y a 38s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="ennasr-2">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ennasr 2<span class="zsub">🔌 137 · 💡 39 · il y a 36s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="ennkhilette">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ennkhilette<span class="zsub">🔌 40 · 💡 36 · il y a 7s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="jardins-menzah">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Jardins d'El Menzah 1<span class="zsub">🔌 68 · 💡 14 · il y a 33s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="jardins-menzah-2">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Jardins d'El Menzah 2<span class="zsub">🔌 124 · 💡 10 · il y a 5s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="kalaat-andalous">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Kalâat el-Andalous<span class="zsub">🔌 9 · 💡 12 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="soukra">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">La Soukra<span class="zsub">🔌 119 · 💡 17 · il y a 8s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="mnihla">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Mnihla<span class="zsub">🔌 9 · 💡 43 · il y a 42s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="nouvelle-ariana">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Nouvelle Ariana<span class="zsub">🔌 74 · 💡 27 · il y a 11s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="nouvelle-soukra">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Nouvelle Soukra<span class="zsub">🔌 10 · 💡 9 · il y a 15s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="petite-ariana">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Petite Ariana<span class="zsub">🔌 32 · 💡 37 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="raoued">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Raoued<span class="zsub">🔌 5 · 💡 17 · il y a 21s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="riadh-andalous">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Riadh El Andalous<span class="zsub">🔌 146 · 💡 6 · il y a 13s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sidi-fraj">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sidi Fraj<span class="zsub">🔌 18 · 💡 2 · il y a 7s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sidi-thabet">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sidi Thabet<span class="zsub">🔌 3 · 💡 6 · il y a 52s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="soukra-park">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Soukra Park<span class="zsub">🔌 44 · 💡 10 · il y a 2 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Ben Arous</h2><div class="zone s-off" data-slug="ben-arous">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ben Arous Ville<span class="zsub">🔌 72 · 💡 47 · il y a 1s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="bennane">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bennane<span class="zsub">🔌 4 · 💡 6 · il y a 4s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="bir-el-bey">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bir El Bey<span class="zsub">🔌 15 · 💡 3 · il y a 50s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="bir-kassaa">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bir Kassâa<span class="zsub">🔌 18 · 💡 5 · il y a 5s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="borj-cedria">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Borj Cédria<span class="zsub">🔌 4 · 💡 15 · il y a 45s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="bougarnine">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bougarnine<span class="zsub">🔌 5 · 💡 12 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="boumhel">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Boumhel<span class="zsub">🔌 124 · 💡 33 · il y a 26s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="chebedda">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Chebedda<span class="zsub">🔌 9 · 💡 3 · il y a 2 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="mhamdia">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Mhamdia / Fouchana<span class="zsub">🔌 144 · 💡 85 · il y a 2s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-mourouj">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Mourouj<span class="zsub">🔌 11 · 💡 11 · il y a 9s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="el-mourouj-1">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Mourouj 1<span class="zsub">🔌 30 · 💡 17 · il y a 14s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-mourouj-2">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Mourouj 2<span class="zsub">🔌 15 · 💡 22 · il y a 4s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-mourouj-3">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Mourouj 3<span class="zsub">🔌 12 · 💡 29 · il y a 21s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-mourouj-4">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Mourouj 4<span class="zsub">🔌 25 · 💡 59 · il y a 14s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-mourouj-5">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Mourouj 5<span class="zsub">🔌 22 · 💡 62 · il y a 3 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-mourouj-6">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Mourouj 6<span class="zsub">🔌 9 · 💡 29 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="ezzahra">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ezzahra<span class="zsub">🔌 15 · 💡 56 · il y a 47s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="hammam-lif">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Hammam Lif / Hammam Chott<span class="zsub">🔌 96 · 💡 62 · il y a 49s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="khelidia">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Khelidia<span class="zsub">🔌 5 · 💡 4 · il y a 3 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="megrine">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Mégrine<span class="zsub">🔌 97 · 💡 64 · il y a 14s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="megrine-riadh">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Mégrine Riadh<span class="zsub">🔌 43 · 💡 5 · il y a 1 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sidi-rezig">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Mégrine Sidi Rezig<span class="zsub">🔌 26 · 💡 27 · il y a 3 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="mghira">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Mghira<span class="zsub">🔌 15 · 💡 13 · il y a 3 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="mornag">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Mornag<span class="zsub">🔌 44 · 💡 42 · il y a 51s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="naassen">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Naassen<span class="zsub">🔌 22 · 💡 9 · il y a 39s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="nouvelle-medina">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Nouvelle Médina<span class="zsub">🔌 43 · 💡 57 · il y a 12s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="rades">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Radès<span class="zsub">🔌 11 · 💡 41 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Manouba</h2><div class="zone s-on" data-slug="chaouat">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Chaouat<span class="zsub">🔌 8 · 💡 10 · il y a 36s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="douar-hicher">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Douar Hicher<span class="zsub">🔌 40 · 💡 21 · il y a 28s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="jedaida">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Jedaïda<span class="zsub">🔌 33 · 💡 9 · il y a 13s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="ksar-said">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ksar Saïd<span class="zsub">🔌 19 · 💡 28 · il y a 8s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="manouba">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Manouba Ville / Denden<span class="zsub">🔌 24 · 💡 63 · il y a 12s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="mornaguia">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Mornaguia / Borj El Amri<span class="zsub">🔌 18 · 💡 24 · il y a 18s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="oued-ellil">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Oued Ellil<span class="zsub">🔌 12 · 💡 38 · il y a 31s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="oued-gueriana">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Oued Gueriana / Denden<span class="zsub">🔌 7 · 💡 9 · il y a 23s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sanhaja">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sanhaja<span class="zsub">🔌 21 · 💡 6 · il y a 3 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sidi-amor">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sidi Amor<span class="zsub">🔌 6 · 💡 2 · il y a 4 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="tebourba">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Tebourba<span class="zsub">🔌 42 · 💡 5 · il y a 1 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Béja</h2><div class="zone s-on" data-slug="beja-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Béja Ville<span class="zsub">🔌 2 · 💡 20 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="medjez-el-bab">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Medjez el-Bab<span class="zsub">🔌 3 · 💡 15 · il y a 9 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="nefza">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Nefza / Amdoun<span class="zsub">🔌 3 · 💡 2 · il y a 5 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="teboursouk">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Téboursouk<span class="zsub">🔌 1 · 💡 6 · il y a 5 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="testour">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Testour<span class="zsub">🔌 0 · 💡 4 · il y a 6 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="thibar">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Thibar<span class="zsub">🔌 3 · 💡 4 · il y a 4 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Bizerte</h2><div class="zone s-on" data-slug="ain-mariem">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Aïn Mariem<span class="zsub">🔌 4 · 💡 6 · il y a 3 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="bizerte-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bizerte Ville<span class="zsub">🔌 6 · 💡 33 · il y a 22s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="cap-zbib">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cap Zbib<span class="zsub">🔌 1 · 💡 3 · il y a 11 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="bizerte-corniche">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Corniche Bizerte<span class="zsub">🔌 6 · 💡 26 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="el-alia">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Alia<span class="zsub">🔌 18 · 💡 17 · il y a 46s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="bhira">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Bhira<span class="zsub">🔌 5 · 💡 17 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="rimel">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Errimel<span class="zsub">🔌 2 · 💡 2 · il y a 20 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="ghar-el-melh">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ghar El Melh / Utique<span class="zsub">🔌 6 · 💡 10 · il y a 3 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="jarzouna">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Jarzouna<span class="zsub">🔌 8 · 💡 13 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="mateur">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Mateur<span class="zsub">🔌 6 · 💡 15 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="menzel-abderrahmen">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Menzel Abderrahmen<span class="zsub">🔌 8 · 💡 32 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="menzel-bourguiba">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Menzel Bourguiba<span class="zsub">🔌 13 · 💡 28 · il y a 43s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="metline">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Metline<span class="zsub">🔌 6 · 💡 9 · il y a 34s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="rafraf">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Raf Raf<span class="zsub">🔌 3 · 💡 5 · il y a 6 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="ras-jebel">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ras Jebel<span class="zsub">🔌 13 · 💡 39 · il y a 2s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sejnane">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sejnane<span class="zsub">🔌 3 · 💡 1 · il y a 1 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="bizerte-sidi-salem">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sidi Salem<span class="zsub">🔌 4 · 💡 5 · il y a 10 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sounine">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sounine<span class="zsub">🔌 3 · 💡 8 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="tinja">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Tinja / Menzel Jemil<span class="zsub">🔌 11 · 💡 25 · il y a 41s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="touibia">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Touibia<span class="zsub">🔌 4 · 💡 3 · il y a 3 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Gabès</h2><div class="zone s-on" data-slug="el-hamma">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Hamma<span class="zsub">🔌 13 · 💡 26 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="gabes-sud">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Gabès Sud<span class="zsub">🔌 25 · 💡 24 · il y a 22s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="gabes-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Gabès Ville<span class="zsub">🔌 10 · 💡 19 · il y a 7s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="mareth">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Mareth<span class="zsub">🔌 8 · 💡 6 · il y a 3 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="matmata">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Matmata<span class="zsub">🔌 2 · 💡 8 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="metouia">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Métouia / Ghannouch<span class="zsub">🔌 13 · 💡 16 · il y a 17s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="oudhref">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Oudhref<span class="zsub">🔌 0 · 💡 10 · il y a 5 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="tbelbou">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Tbelbou<span class="zsub">🔌 7 · 💡 9 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="zrig">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Zrig<span class="zsub">🔌 7 · 💡 2 · il y a 50s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Gafsa</h2><div class="zone s-on" data-slug="el-guettar">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Guettar<span class="zsub">🔌 0 · 💡 3 · il y a 21 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="gafsa-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Gafsa Ville<span class="zsub">🔌 7 · 💡 9 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="mdhilla">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Mdhilla<span class="zsub">🔌 0 · 💡 2 · il y a 34 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="metlaoui">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Métlaoui<span class="zsub">🔌 1 · 💡 5 · il y a 3 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="redeyef">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Redeyef / Moularès<span class="zsub">🔌 2 · 💡 2 · il y a 9 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Jendouba</h2><div class="zone s-on" data-slug="ain-draham">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Aïn Draham<span class="zsub">🔌 1 · 💡 4 · il y a 4 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="bou-salem">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bou Salem<span class="zsub">🔌 3 · 💡 7 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="ghardimaou">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ghardimaou<span class="zsub">🔌 5 · 💡 5 · il y a 4 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="jendouba-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Jendouba Ville<span class="zsub">🔌 5 · 💡 9 · il y a 14s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="tabarka">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Tabarka<span class="zsub">🔌 3 · 💡 8 · il y a 50s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Kairouan</h2><div class="zone s-off" data-slug="bou-hajla">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bou Hajla / Nasrallah<span class="zsub">🔌 10 · 💡 8 · il y a 2 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="hajeb-el-ayoun">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Hajeb El Ayoun<span class="zsub">🔌 3 · 💡 5 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="kairouan-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Kairouan Ville<span class="zsub">🔌 27 · 💡 21 · il y a 3s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="oueslatia">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Oueslatia / Haffouz<span class="zsub">🔌 3 · 💡 3 · il y a 6s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sbikha">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sbikha<span class="zsub">🔌 1 · 💡 4 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Kasserine</h2><div class="zone s-off" data-slug="feriana">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Fériana<span class="zsub">🔌 7 · 💡 3 · il y a 8s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="kasserine-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Kasserine Ville<span class="zsub">🔌 3 · 💡 5 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sbeitla">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sbeïtla<span class="zsub">🔌 0 · 💡 4 · il y a 20 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sbiba">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sbiba / Foussana<span class="zsub">🔌 8 · 💡 3 · il y a 1 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="thala">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Thala<span class="zsub">🔌 1 · 💡 2 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Kébili</h2><div class="zone s-off" data-slug="douz">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Douz<span class="zsub">🔌 32 · 💡 19 · il y a 1 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="jemna">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Jemna<span class="zsub">🔌 4 · 💡 1 · il y a 9 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="kebili-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Kébili Ville<span class="zsub">🔌 34 · 💡 16 · il y a 55s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="souk-lahad">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Souk Lahad<span class="zsub">🔌 19 · 💡 1 · il y a 2 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Le Kef</h2><div class="zone s-on" data-slug="dahmani">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Dahmani<span class="zsub">🔌 0 · 💡 6 · il y a 3 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="jerissa">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Jerissa<span class="zsub">🔌 2 · 💡 1 · il y a 36s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="kef-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Le Kef Ville<span class="zsub">🔌 3 · 💡 18 · il y a 6 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="le-sers">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Le Sers<span class="zsub">🔌 2 · 💡 6 · il y a 4 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="tajerouine">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Tajerouine<span class="zsub">🔌 12 · 💡 2 · il y a 3 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Mahdia</h2><div class="zone s-on" data-slug="chebba">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Chebba<span class="zsub">🔌 17 · 💡 20 · il y a 12s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-jem">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Jem<span class="zsub">🔌 5 · 💡 13 · il y a 57s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="ksour-essef">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ksour Essef<span class="zsub">🔌 3 · 💡 6 · il y a 9 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="mahdia-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Mahdia Ville<span class="zsub">🔌 8 · 💡 15 · il y a 2s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="melloulech">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Melloulèche<span class="zsub">🔌 5 · 💡 3 · il y a 10 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="rejiche">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Rejiche<span class="zsub">🔌 2 · 💡 12 · il y a 3 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="salakta">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Salakta<span class="zsub">🔌 2 · 💡 9 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sidi-alouane">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sidi Alouane<span class="zsub">🔌 3 · 💡 4 · il y a 13s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="souassi">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Souassi / Bou Merdes<span class="zsub">🔌 8 · 💡 7 · il y a 7 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Médenine</h2><div class="zone s-off" data-slug="ben-guerdane">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ben Guerdane<span class="zsub">🔌 18 · 💡 16 · il y a 20s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="beni-khedache">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Béni Khedache<span class="zsub">🔌 1 · 💡 4 · il y a 3 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="boughrara">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Boughrara<span class="zsub">🔌 4 · 💡 6 · il y a 5 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="djerba-aghir">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Djerba Aghir<span class="zsub">🔌 6 · 💡 8 · il y a 31s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="djerba-ajim">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Djerba Ajim<span class="zsub">🔌 2 · 💡 9 · il y a 3 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-may">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Djerba El May<span class="zsub">🔌 8 · 💡 13 · il y a 3 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="djerba-erriadh">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Djerba Erriadh<span class="zsub">🔌 16 · 💡 5 · il y a 11s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="djerba-guellala">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Djerba Guellala<span class="zsub">🔌 2 · 💡 3 · il y a 6 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="djerba-houmt-souk">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Djerba Houmt Souk<span class="zsub">🔌 43 · 💡 50 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="djerba-mezraya">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Djerba Mezraya<span class="zsub">🔌 3 · 💡 11 · il y a 4 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="djerba-midoun">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Djerba Midoun<span class="zsub">🔌 26 · 💡 26 · il y a 16s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="djerba-robbana">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Djerba Robbana<span class="zsub">🔌 2 · 💡 2 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="djerba-sedouikech">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Djerba Sedouikech<span class="zsub">🔌 9 · 💡 4 · il y a 1 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="medenine-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Médenine Ville<span class="zsub">🔌 22 · 💡 31 · il y a 41s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="zarzis">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Zarzis<span class="zsub">🔌 43 · 💡 36 · il y a 30s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Monastir</h2><div class="zone s-on" data-slug="bembla">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bembla<span class="zsub">🔌 1 · 💡 9 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="beni-hassen">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Béni Hassen<span class="zsub">🔌 11 · 💡 4 · il y a 1 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="bouhjar">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bouhjar<span class="zsub">🔌 3 · 💡 3 · il y a 48s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="jemmal">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Jemmal / Sahline<span class="zsub">🔌 10 · 💡 29 · il y a 35s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="khniss">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Khniss<span class="zsub">🔌 0 · 💡 7 · il y a 7 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="ksar-hellal">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ksar Hellal<span class="zsub">🔌 9 · 💡 20 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="ksibet-mediouni">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ksibet El Mediouni<span class="zsub">🔌 2 · 💡 5 · il y a 16 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="lamta">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Lamta<span class="zsub">🔌 3 · 💡 7 · il y a 38s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="menzel-kamel">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Menzel Kamel<span class="zsub">🔌 0 · 💡 2 · il y a 12 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="moknine">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Moknine<span class="zsub">🔌 4 · 💡 6 · il y a 3 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="monastir-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Monastir Ville / Skanes<span class="zsub">🔌 10 · 💡 28 · il y a 3 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="ouardanine">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ouardanine<span class="zsub">🔌 4 · 💡 6 · il y a 11 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sayada">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sayada<span class="zsub">🔌 2 · 💡 7 · il y a 6 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="teboulba">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Téboulba / Bekalta<span class="zsub">🔌 2 · 💡 10 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="touza">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Touza<span class="zsub">🔌 1 · 💡 2 · il y a 16 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="zeramdine">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Zeramdine / Ouerdanine<span class="zsub">🔌 13 · 💡 17 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Nabeul</h2><div class="zone s-on" data-slug="azmour">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Azmour<span class="zsub">🔌 1 · 💡 2 · il y a 33s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="beni-khalled">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Béni Khalled<span class="zsub">🔌 6 · 💡 21 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="bir-bouregba">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bir Bouregba<span class="zsub">🔌 2 · 💡 5 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="bir-challouf">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bir Challouf<span class="zsub">🔌 2 · 💡 2 · il y a 8 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="bouargoub">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bou Argoub<span class="zsub">🔌 14 · 💡 14 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="nabeul-afh">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité AFH Nabeul<span class="zsub">🔌 9 · 💡 33 · il y a 17s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="dar-allouch">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Dar Allouch<span class="zsub">🔌 2 · 💡 3 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="dar-chaabane">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Dar Chaâbane / Béni Khiar<span class="zsub">🔌 44 · 💡 28 · il y a 7s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="dar-chaabane-fehri">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Dar Chaâbane El Fehri<span class="zsub">🔌 24 · 💡 23 · il y a 18s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="haouaria">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Haouaria<span class="zsub">🔌 5 · 💡 14 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-mida">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Mida / El Somâa<span class="zsub">🔌 1 · 💡 8 · il y a 4 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="grombalia">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Grombalia / Bou Argoub<span class="zsub">🔌 15 · 💡 22 · il y a 44s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="hammam-ghezaz">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Hammam Ghezaz<span class="zsub">🔌 16 · 💡 12 · il y a 1 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="hammamet">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Hammamet / Yasmine<span class="zsub">🔌 16 · 💡 16 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="hammamet-nord">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Hammamet Nord<span class="zsub">🔌 15 · 💡 29 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="kelibia">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Kélibia<span class="zsub">🔌 47 · 💡 47 · il y a 27s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="kerker">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Kerker<span class="zsub">🔌 2 · 💡 2 · il y a 3 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="kerkouane">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Kerkouane<span class="zsub">🔌 1 · 💡 0 · il y a 41 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="korba">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Korba<span class="zsub">🔌 36 · 💡 49 · il y a 55s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="maamoura">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Maâmoura<span class="zsub">🔌 1 · 💡 10 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="menzel-horr">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Menzel Horr<span class="zsub">🔌 0 · 💡 3 · il y a 16 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="menzel-temime">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Menzel Temime / Tazarka<span class="zsub">🔌 6 · 💡 18 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="mrezga">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Mrezga<span class="zsub">🔌 17 · 💡 19 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="nabeul-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Nabeul Ville<span class="zsub">🔌 7 · 💡 38 · il y a 47s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="oued-souhil">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Oued Souhil<span class="zsub">🔌 2 · 💡 4 · il y a 35s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sidi-daoud">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sidi Daoud<span class="zsub">🔌 1 · 💡 2 · il y a 10 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="soliman">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Soliman / Menzel Bouzelfa<span class="zsub">🔌 5 · 💡 30 · il y a 44s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="soliman-erriadh">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Soliman Erriadh<span class="zsub">🔌 1 · 💡 10 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="takelsa">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Takelsa<span class="zsub">🔌 2 · 💡 8 · il y a 12s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="zaouiet-djedidi">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Zaouiet Djedidi<span class="zsub">🔌 1 · 💡 3 · il y a 8 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Sfax</h2><div class="zone s-off" data-slug="agareb">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Agareb<span class="zsub">🔌 11 · 💡 9 · il y a 2 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="bir-ali">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bir Ali Ben Khalifa<span class="zsub">🔌 7 · 💡 7 · il y a 6 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sfax-bouzayen">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bouzayène<span class="zsub">🔌 17 · 💡 48 · il y a 44s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="chaffar">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Chaffar<span class="zsub">🔌 3 · 💡 11 · il y a 45s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sfax-chihia">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Chihia<span class="zsub">🔌 44 · 💡 5 · il y a 30s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sfax-hay-chaker">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité Chaker<span class="zsub">🔌 8 · 💡 7 · il y a 41s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sfax-el-bahri">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité El Bahri<span class="zsub">🔌 2 · 💡 11 · il y a 56s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sfax-el-habib">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité El Habib<span class="zsub">🔌 6 · 💡 18 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sfax-el-ons">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité El Ons<span class="zsub">🔌 34 · 💡 8 · il y a 1 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sfax-cite-jardin">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité Jardin (Sfax)<span class="zsub">🔌 35 · 💡 15 · il y a 31s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-amra">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Amra<span class="zsub">🔌 3 · 💡 5 · il y a 11 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="ghraiba">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Ghraiba<span class="zsub">🔌 3 · 💡 0 · il y a 5 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="jebeniana">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Jebeniana / El Hencha<span class="zsub">🔌 12 · 💡 7 · il y a 2 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="kerkennah">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Kerkennah<span class="zsub">🔌 4 · 💡 11 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="mahres">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Mahres<span class="zsub">🔌 13 · 💡 26 · il y a 50s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="gremda">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Route de Gremda<span class="zsub">🔌 34 · 💡 58 · il y a 22s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sfax-aeroport">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Route de l'Aéroport<span class="zsub">🔌 35 · 💡 28 · il y a 22s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sfax-mahdia">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Route de Mahdia<span class="zsub">🔌 60 · 💡 25 · il y a 28s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sfax-saltnia">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Route de Saltnia<span class="zsub">🔌 30 · 💡 43 · il y a 31s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sfax-sidi-mansour">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Route de Sidi Mansour<span class="zsub">🔌 32 · 💡 34 · il y a 19s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sfax-sokra">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Route de Sokra<span class="zsub">🔌 33 · 💡 38 · il y a 8s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sfax-teniour">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Route de Teniour<span class="zsub">🔌 56 · 💡 22 · il y a 29s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sfax-tunis">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Route de Tunis<span class="zsub">🔌 33 · 💡 45 · il y a 37s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sfax-el-ain">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Route El Aïn<span class="zsub">🔌 24 · 💡 42 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sfax-kaid-mohamed">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Route Kaïd Mohamed<span class="zsub">🔌 15 · 💡 11 · il y a 36s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sfax-lafrane">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Route Lafrane<span class="zsub">🔌 27 · 💡 41 · il y a 13s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sfax-menzel-chaker">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Route Menzel Chaker<span class="zsub">🔌 57 · 💡 35 · il y a 25s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sfax-mharza">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Route Mharza<span class="zsub">🔌 23 · 💡 38 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sfax-tbolbi">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Route Tbolbi<span class="zsub">🔌 23 · 💡 9 · il y a 12s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sakiet-eddaier">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sakiet Eddaïer<span class="zsub">🔌 42 · 💡 15 · il y a 25s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sakiet-ezzit">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sakiet Ezzit<span class="zsub">🔌 30 · 💡 63 · il y a 56s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sfax-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sfax Ville<span class="zsub">🔌 60 · 💡 63 · il y a 36s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sidi-salah">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sidi Salah<span class="zsub">🔌 6 · 💡 10 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="skhira">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Skhira<span class="zsub">🔌 5 · 💡 8 · il y a 5 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="sfax-sud">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Thyna / Route Gabès<span class="zsub">🔌 34 · 💡 29 · il y a 2 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Sidi Bouzid</h2><div class="zone s-on" data-slug="jilma">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Jilma<span class="zsub">🔌 1 · 💡 3 · il y a 8 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="meknassy">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Meknassy / Mezzouna<span class="zsub">🔌 4 · 💡 4 · il y a 7 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="ouled-haffouz">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ouled Haffouz<span class="zsub">🔌 5 · 💡 4 · il y a 6 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="regueb">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Regueb<span class="zsub">🔌 3 · 💡 5 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sidi-ali-ben-aoun">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sidi Ali Ben Aoun<span class="zsub">🔌 1 · 💡 3 · il y a 15 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sidi-bouzid-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sidi Bouzid Ville<span class="zsub">🔌 9 · 💡 9 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="souk-jedid">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Souk Jedid<span class="zsub">🔌 5 · 💡 2 · il y a 3 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Siliana</h2><div class="zone s-on" data-slug="bou-arada">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bou Arada / Gaâfour<span class="zsub">🔌 7 · 💡 7 · il y a 7 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-krib">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Krib<span class="zsub">🔌 0 · 💡 2 · il y a 19 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="gaafour">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Gaâfour<span class="zsub">🔌 8 · 💡 5 · il y a 44s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="makthar">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Makthar<span class="zsub">🔌 1 · 💡 2 · il y a 23 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="rouhia">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Rouhia<span class="zsub">🔌 2 · 💡 1 · il y a 20 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="siliana-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Siliana Ville<span class="zsub">🔌 3 · 💡 8 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Sousse</h2><div class="zone s-on" data-slug="akouda">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Akouda<span class="zsub">🔌 25 · 💡 25 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="bouficha">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bouficha<span class="zsub">🔌 11 · 💡 9 · il y a 49s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sousse-bouhsina">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bouhsina<span class="zsub">🔌 2 · 💡 10 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="chott-meriem">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Chott Meriem<span class="zsub">🔌 3 · 💡 20 · il y a 19s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sousse-hay-riadh">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Cité Erriadh<span class="zsub">🔌 1 · 💡 21 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="enfidha">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Enfidha / Hergla<span class="zsub">🔌 1 · 💡 12 · il y a 37s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="hammam-sousse">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Hammam Sousse<span class="zsub">🔌 23 · 💡 33 · il y a 17s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sousse-jawhara">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Jawhara<span class="zsub">🔌 4 · 💡 6 · il y a 11 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="kalaa">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Kalâa Kebira<span class="zsub">🔌 39 · 💡 11 · il y a 26s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="kalaa-sghira">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Kalâa Seghira<span class="zsub">🔌 2 · 💡 20 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="khzema">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Khézama<span class="zsub">🔌 4 · 💡 9 · il y a 3 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="khzema-ouest">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Khézama Ouest<span class="zsub">🔌 3 · 💡 8 · il y a 5 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="ksibet-thrayet">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ksibet Thrayet<span class="zsub">🔌 9 · 💡 1 · il y a 4 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="messadine">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Messadine<span class="zsub">🔌 4 · 💡 5 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="msaken">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Msaken<span class="zsub">🔌 39 · 💡 38 · il y a 6s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="kantaoui">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Port El Kantaoui<span class="zsub">🔌 5 · 💡 7 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sahloul">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sahloul<span class="zsub">🔌 4 · 💡 6 · il y a 4 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sahloul-3">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sahloul 3<span class="zsub">🔌 2 · 💡 4 · il y a 46s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sahloul-4">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sahloul 4<span class="zsub">🔌 1 · 💡 12 · il y a 6 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sidi-abdelhamid">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sidi Abdelhamid<span class="zsub">🔌 2 · 💡 2 · il y a 2 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sidi-bou-ali">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sidi Bou Ali / Kondar<span class="zsub">🔌 0 · 💡 2 · il y a 14 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="sousse-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Sousse Ville<span class="zsub">🔌 22 · 💡 26 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="zaouiet-sousse">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Zaouiet Sousse<span class="zsub">🔌 5 · 💡 12 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Tataouine</h2><div class="zone s-on" data-slug="bir-lahmar">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bir Lahmar<span class="zsub">🔌 1 · 💡 1 · il y a 22 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="ghomrassen">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Ghomrassen<span class="zsub">🔌 5 · 💡 21 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="remada">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Remada<span class="zsub">🔌 0 · 💡 2 · il y a 27 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="tataouine-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Tataouine Ville<span class="zsub">🔌 14 · 💡 22 · il y a 3 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Tozeur</h2><div class="zone s-off" data-slug="degache">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Degache<span class="zsub">🔌 11 · 💡 8 · il y a 28s</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-off" data-slug="nefta">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Nefta<span class="zsub">🔌 12 · 💡 9 · il y a 2 min</span></span><span class="badge b-off">⛔ Coupé</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="tozeur-ville">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Tozeur Ville<span class="zsub">🔌 10 · 💡 10 · il y a 47s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><h2>Zaghouan</h2><div class="zone s-on" data-slug="bir-mchergua">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Bir Mchergua<span class="zsub">🔌 8 · 💡 10 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="el-fahs">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">El Fahs<span class="zsub">🔌 16 · 💡 22 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="nadhour">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Nadhour / Saouaf<span class="zsub">🔌 2 · 💡 7 · il y a 1 min</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="zaghouan">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Zaghouan Ville<span class="zsub">🔌 5 · 💡 15 · il y a 23s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div><div class="zone s-on" data-slug="zriba">
+    <button class="zrow" aria-expanded="false">
+      <span class="zname">Zriba / Hammam Zriba<span class="zsub">🔌 16 · 💡 23 · il y a 22s</span></span><span class="badge b-on">✅ Ça marche</span>
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0">🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1">💡 J'ai la lumière</button>
+      </div>
+      
+    </div>
+  </div></div>
+</div>
+<footer>
+  Données communautaires non officielles · Croisez avec les communiqués STEG
+  <details>
+    <summary>C'est quoi ?</summary>
+    <p>Un tableau de bord fait par les habitants, partout en Tunisie, pendant la canicule.
+    Chacun signale en un tap s'il a la lumière ou pas dans sa zone.
+    Les compteurs reflètent les signalements des 45 dernières minutes.</p>
+  </details>
+  <details>
+    <summary>Comment ça marche ?</summary>
+    <p><b>Voter :</b> cherche ta zone ou trouve-la dans la liste, tape dessus pour
+    la déplier, puis choisis « 🔌 Pas de lumière » ou « 💡 J'ai la lumière ».
+    Après ton vote, la zone se verrouille 10 minutes — le temps que la situation évolue.</p>
+    <p><b>Le statut :</b> chaque zone additionne les signalements des 45 dernières minutes.
+    Plus de « pas de lumière » que de « j'ai la lumière » → <b>⛔ Coupé</b> ;
+    autant ou plus de « j'ai la lumière » → <b>✅ Ça marche</b> ;
+    aucun signalement récent → <b>Aucune info</b>.
+    Les vieux signalements s'effacent tout seuls après 45 minutes, donc le tableau
+    reflète l'instant présent, pas l'historique.</p>
+  </details>
+</footer>
+<div id="toast" role="status"></div>
+<noscript><p class="empty">Ce site nécessite JavaScript.</p></noscript>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.110.8/dist/umd/supabase.js" integrity="sha384-M65KxMm/JqBppck6onbmAgPVMBHrmPCf1L17Q+71EcvI9/VVI8j5cqoxQf6lj6h2" crossorigin="anonymous"></script>
+<script>
+const db = supabase.createClient(
+  'https://njfulpklvqezflxiozhn.supabase.co',
+  'sb_publishable_C_7rg0jf6-e925Tji5n-qA_mLYruFUp'
+);
+const withTimeout = (p, ms = 15000) => Promise.race([p, new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), ms))]);
+const COOLDOWN = 10*60*1000, AUTO = 90*1000;
+const $ = id => document.getElementById(id);
+let zones = [], lastFetch = 0, open = null, query = '', rawQuery = '', loading = false;
+
+const esc = s => String(s??'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const norm = s => String(s??'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+
+function deviceId(){
+  let id = localStorage.getItem('fd_device_id');
+  if(!id){
+    id = crypto.randomUUID ? crypto.randomUUID()
+      : 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+          const r = Math.random()*16|0; return (c=='x' ? r : r&3|8).toString(16);
+        });
+    localStorage.setItem('fd_device_id', id);
+  }
+  return id;
+}
+
+function rel(ts){
+  if(!ts) return '';
+  const s = Math.max(0, Math.floor((Date.now() - new Date(ts).getTime())/1000));
+  if(s < 60) return `il y a ${s}s`;
+  if(s < 3600) return `il y a ${Math.floor(s/60)} min`;
+  return `il y a ${Math.floor(s/3600)}h`;
+}
+
+function cooldownLeft(slug){
+  const t = +localStorage.getItem('fd_cd_' + slug) || 0;
+  return Math.max(0, t - Date.now());
+}
+
+function status(z){
+  const total = (z.off_count||0) + (z.on_count||0);
+  if(!total) return 'na';
+  return z.off_count > z.on_count ? 'off' : 'on';
+}
+
+let toastTimer;
+function toast(msg){
+  const t = $('toast');
+  t.textContent = msg;
+  t.classList.add('on');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('on'), 3500);
+}
+
+async function load(){
+  if(loading) return;
+  loading = true;
+  $('refresh').disabled = true;
+  try{
+    const { data, error } = await withTimeout(db.from('zone_board').select('*'));
+    if(error) throw error;
+    zones = data || [];
+    lastFetch = Date.now();
+    $('offline').classList.remove('on');
+    render();
+  }catch(e){
+    $('offline').classList.add('on');
+    if(!zones.length) $('list').innerHTML = '<p class="empty">Impossible de charger les données.<br>Vérifie ta connexion puis appuie sur ⟳.</p>';
+  }finally{
+    loading = false;
+    $('refresh').disabled = false;
+    renderStats();
+  }
+}
+
+function renderStats(){
+  const el = $('stats');
+  el.classList.remove('pulse');
+  if(!lastFetch){ el.textContent = 'Aucune donnée'; return; }
+  const cut = zones.filter(z => status(z) === 'off').length;
+  const reports = zones.reduce((n,z) => n + (z.off_count||0) + (z.on_count||0), 0);
+  const s = Math.floor((Date.now() - lastFetch)/1000);
+  const maj = s < 60 ? `${s}s` : `${Math.floor(s/60)} min`;
+  el.innerHTML = `<b>${cut}</b> zone${cut>1?'s':''} coupée${cut>1?'s':''} sur ${zones.length} · <b>${reports}</b> signalement${reports>1?'s':''} (45 min) · MAJ il y a ${maj}`;
+}
+
+function zoneHTML(z){
+  const st = status(z), isOpen = open === z.slug;
+  const badge = st === 'off' ? '<span class="badge b-off">⛔ Coupé</span>'
+    : st === 'on' ? '<span class="badge b-on">✅ Ça marche</span>'
+    : '<span class="badge b-na">Aucune info</span>';
+  const sub = [`🔌 ${z.off_count||0} · 💡 ${z.on_count||0}`, rel(z.last_report)].filter(Boolean).join(' · ');
+  const left = cooldownLeft(z.slug), dis = left > 0 ? 'disabled' : '';
+  return `<div class="zone s-${st}${isOpen?' open':''}" data-slug="${esc(z.slug)}">
+    <button class="zrow" aria-expanded="${isOpen}">
+      <span class="zname">${esc(z.name)}<span class="zsub">${sub}</span></span>${badge}
+    </button>
+    <div class="panel">
+      <div class="btns">
+        <button class="vote v-off" data-vote="0" ${dis}>🔌 Pas de lumière</button>
+        <button class="vote v-on" data-vote="1" ${dis}>💡 J'ai la lumière</button>
+      </div>
+      ${left > 0 ? `<p class="cd">Déjà signalé · réessaie dans <span data-cd="${esc(z.slug)}"></span></p>` : ''}
+    </div>
+  </div>`;
+}
+
+function render(){
+  const list = $('list');
+  renderStats();
+  if(!zones.length){
+    if(lastFetch) list.innerHTML = '<p class="empty">Aucune zone pour l\'instant.</p>';
+    return;
+  }
+  const shown = query ? zones.filter(z => norm(z.name).includes(query)) : zones;
+  if(!shown.length){
+    list.innerHTML = '<p class="empty">Aucune zone ne correspond à ta recherche.</p>' +
+      (rawQuery === sentName
+        ? '<p class="empty">✅ Proposition envoyée — on l\'ajoutera bientôt.</p>'
+        : `<button class="sugg" id="sugg-send">📩 Ma zone « ${esc(rawQuery)} » n'existe pas → la proposer</button>`);
+    return;
+  }
+  let html = '';
+  const mine = localStorage.getItem('fd_my_zone');
+  const pinned = shown.find(z => z.slug === mine);
+  if(pinned) html += '<h2 class="mine">📍 Ma zone</h2>' + zoneHTML(pinned);
+  const PRIO = ['Tunis','Ariana','Ben Arous','Manouba'];
+  const govs = [...new Set(shown.map(z => z.gov))].sort((a,b) => {
+    const ia = PRIO.indexOf(a), ib = PRIO.indexOf(b);
+    if(ia !== -1 || ib !== -1) return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+    return String(a).localeCompare(String(b), 'fr');
+  });
+  for(const gov of govs){
+    const rows = shown.filter(z => z.gov === gov && z.slug !== mine)
+      .sort((a,b) => a.name.localeCompare(b.name, 'fr'));
+    if(!rows.length) continue;
+    html += `<h2>${esc(gov)}</h2>` + rows.map(zoneHTML).join('');
+  }
+  list.innerHTML = html;
+  tick();
+}
+
+let suggesting = false, sentName = '';
+async function suggest(){
+  const name = rawQuery;
+  if(name.length < 2){ toast('Écris le nom de ta zone (2 caractères minimum)'); return; }
+  if(suggesting) return;
+  suggesting = true;
+  if($('sugg-send')) $('sugg-send').disabled = true;
+  let res;
+  try{ res = await withTimeout(db.from('zone_suggestions').insert({ name, device_id: deviceId() })); }
+  catch(e){ res = { error: e }; }
+  const { error } = res;
+  suggesting = false;
+  if($('sugg-send')) $('sugg-send').disabled = false;
+  if(error){
+    toast(String(error.message).includes('rate_limited')
+      ? 'Doucement ! Réessaie dans quelques minutes'
+      : "Échec de l'envoi — vérifie ta connexion");
+    return;
+  }
+  sentName = name;
+  toast('Merci, on l\'ajoutera bientôt ✅');
+  render();
+}
+
+async function report(slug, hasPower){
+  let res;
+  try{ res = await withTimeout(db.from('reports').insert({ zone: slug, has_power: hasPower, device_id: deviceId() })); }
+  catch(e){ res = { error: e }; }
+  const { error } = res;
+  if(error){
+    if(String(error.message).includes('rate_limited')){
+      localStorage.setItem('fd_cd_' + slug, Date.now() + COOLDOWN);
+      render();
+      toast('Déjà signalé pour cette zone, réessaie dans quelques minutes');
+    }else{
+      toast("Échec de l'envoi — vérifie ta connexion");
+    }
+    return;
+  }
+  localStorage.setItem('fd_cd_' + slug, Date.now() + COOLDOWN);
+  localStorage.setItem('fd_my_zone', slug);
+  toast('Merci ! Signalement envoyé ✅');
+  load();
+}
+
+$('list').addEventListener('click', e => {
+  if(e.target.closest('#sugg-send')){ suggest(); return; }
+  const zone = e.target.closest('.zone');
+  if(!zone) return;
+  const slug = zone.dataset.slug;
+  const vote = e.target.closest('.vote');
+  if(vote){
+    if(cooldownLeft(slug) > 0) return;
+    report(slug, vote.dataset.vote === '1');
+    return;
+  }
+  if(e.target.closest('.zrow')){
+    open = open === slug ? null : slug;
+    render();
+  }
+});
+
+$('search').addEventListener('input', e => { rawQuery = e.target.value.trim(); query = norm(rawQuery); render(); });
+$('refresh').addEventListener('click', load);
+
+$('share').addEventListener('click', async () => {
+  const data = { title: 'Famma Dhaw ? ⚡', text: 'Coupures d\'électricité en direct en Tunisie. Signale ta zone en 5 secondes.', url: location.href };
+  try{
+    if(navigator.share) await navigator.share(data);
+    else{ await navigator.clipboard.writeText(location.href); toast('Lien copié !'); }
+  }catch(e){}
+});
+
+function tick(){
+  if(lastFetch) renderStats();
+  let expired = false;
+  document.querySelectorAll('[data-cd]').forEach(el => {
+    const left = cooldownLeft(el.dataset.cd);
+    if(left <= 0){ expired = true; return; }
+    const m = Math.floor(left/60000), sec = Math.floor(left%60000/1000);
+    el.textContent = `${m}:${String(sec).padStart(2,'0')}`;
+  });
+  if(expired) render();
+}
+setInterval(tick, 1000);
+
+(function autoRefresh(){
+  setTimeout(() => { if(!document.hidden) load(); autoRefresh(); }, AUTO + (Math.random()-0.5)*30000);
+})();
+document.addEventListener('visibilitychange', () => {
+  if(!document.hidden && Date.now() - lastFetch > AUTO) load();
+});
+
+deviceId();
+load();
+db.from('platform_stats').select('total_reports').single().then(({ data }) => {
+  if(data && data.total_reports > 0)
+    $('grand-total').textContent = ` · ${(+data.total_reports).toLocaleString('fr-FR')} signalements depuis le lancement`;
+});
+</script>
+
+
+</body></html>
