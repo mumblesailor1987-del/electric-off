@@ -1,11 +1,12 @@
-# TunisianH — Project Specification
+# Kahraba Live (TunisianH) — Project Specification
 
-> **Codename:** TunisianH
+> **Working name:** Kahraba Live — *kahraba* = "electricity" in Arabic; chosen to be trilingual-friendly and distinct from famma-dhaw's own branding (see §20.8 on naming ethics).
+> **Legacy codename:** TunisianH (kept as the GitHub account/org name: `tunisianh`)
 > **Tagline:** *Real-time electricity outage map for Tunisia, by citizens, for citizens.*
-> **Repository:** `tunisianh/tunisianh` (GitHub, public)
-> **Hosting:** GitHub Pages (free tier) + Cloudflare Workers (free tier) + Supabase (free tier)
-> **Source of truth for outage data:** `https://famma-dhaw.com/` (community-run, non-official)
-> **Document version:** 1.0
+> **Repository:** `tunisianh/kahraba-live` (GitHub, public)
+> **Hosting:** GitHub Pages (free tier) + Cloudflare Workers (free tier) + Supabase **or** Neon (free tier)
+> **Source of truth for outage data:** `https://famma-dhaw.com/` (community-run, non-official, built by Ghazi Ktata)
+> **Document version:** 1.1 (reconciled with `kahraba-live-spec.md`)
 > **Last updated:** 2026-07-23
 > **Owner:** Project Maintainer (you)
 > **Contributors:** TBD
@@ -59,6 +60,16 @@
 | Date | Author | Change |
 |---|---|---|
 | 2026-07-23 | Maintainer | Initial draft v1.0 |
+| 2026-07-23 | Maintainer | **v1.1** — Reconciled with `kahraba-live-spec.md`. Major changes: (1) adopted event-sourced `StateEvent` data model as the recommended approach (write-on-change instead of periodic snapshots — storage drops from ~30 MB/day to ~hundreds of KB/day); (2) added WebSocket push as the real-time delivery mechanism, replacing the 1-second client polling pattern; (3) renamed project from "TunisianH" to "Kahraba Live" (legacy codename retained for the GitHub org); (4) added Phase 0 task: inspect famma-dhaw's network requests for a JSON endpoint before assuming HTML scraping is required; (5) added ethics commitments re: reaching out to Ghazi Ktata (famma-dhaw's creator) and treating citizen claims as a first-class independent data source, not a supplement; (6) added Phase B estimation feature: temperature/heat forecast as a feature (outages are heat-driven); (7) added claims-vs-scraped agreement rate as a statistics metric; (8) added explicit RTL bidi guidance (keep numbers/timestamps LTR inside RTL layout); (9) adopted the "Grid Control Room" design language with IBM Plex Sans/Mono fonts and a breaker-switch mode selector; (10) added concrete Tunisian boundary-dataset references; (11) added Neon as a DB alternative with the Supabase 7-day-pause caveat; (12) bumped cooldown range to 15–30 min (tunable against observed abuse); (13) added SMS/USSD fallback to future ideas; (14) added explicit map-tile-provider warning against pointing production traffic at `tile.openstreetmap.org` directly. |
+
+### v1.1 Reconciliation Summary
+
+This document is a merger of two parallel drafts written independently:
+
+1. **TunisianH_SPEC.md v1.0** (this file, original) — deep on tasks, acceptance criteria, GDPR, security testing.
+2. **kahraba-live-spec.md v0.1.0** (external, by another author) — stronger on architecture honesty, ethics, data model, design language, real-world references.
+
+The merger adopts kahraba's superior ideas (listed in the changelog) while preserving TunisianH's depth in implementation planning. Where the two specs disagreed, the decision rationale is documented inline at the affected section. The two design philosophies are not in conflict — they are complementary.
 
 ---
 
@@ -79,7 +90,7 @@ Tunisia experiences recurring electricity load-shedding during summer heatwaves.
 
 ### 1.2 One-paragraph pitch
 
-TunisianH is a trilingual (Arabic / English / French), mobile-first, citizen-powered live outage map for Tunisia. It continuously scrapes the community dashboard famma-dhaw.com, merges those signals with its own user claims, and renders them on an OpenStreetMap-based map. Users can replay any past moment, explore rich statistics, and view algorithmic estimates of near-future states. The entire stack runs on free tiers: GitHub Pages for the static frontend, Cloudflare Workers for the 1-second scraper, and Supabase for storage.
+Kahraba Live (legacy codename TunisianH) is a trilingual (Arabic / English / French), mobile-first, citizen-powered live outage map for Tunisia. It ingests the community dashboard famma-dhaw.com on a respectful schedule, merges those signals with its own user claims, and renders them on an OpenStreetMap-based map. Users can replay any past moment, explore rich statistics, and view algorithmic estimates of near-future states. The entire stack runs on free tiers: GitHub Pages for the static frontend, Cloudflare Workers (or GitHub Actions) for the scraper, and Supabase or Neon for storage. **Real-time feel is delivered via WebSocket push on state change** — not via literal 1-second polling — because that is what "real-time" actually means to a user watching their region's power state.
 
 ### 1.3 Why this matters
 
@@ -87,6 +98,32 @@ TunisianH is a trilingual (Arabic / English / French), mobile-first, citizen-pow
 - **Journalists & researchers** get an open dataset of community-reported outages.
 - **Civic tech practitioners** get a reference architecture for free-tier, no-backend-provider, citizen-science dashboards.
 - **STEG and policymakers** get a second, independent signal to compare against official communications.
+
+### 1.4 Relationship to famma-dhaw.com (CRITICAL — read before building)
+
+famma-dhaw.com is **not a faceless data source** — it is a young, single-developer civic project built by **Ghazi Ktata** during the summer 2026 heatwave, shared for free, with no signup required. It explicitly labels itself: *"Données communautaires non officielles · Croisez avec les communiqués STEG"*.
+
+This has three consequences for Kahraba Live:
+
+1. **Outreach before scraping.** Phase 0 includes a task to reach out to Ghazi Ktata before building a scraper against his site — to ask about a data-sharing arrangement, an official API, or at minimum to make him aware of our intent. A reverse-engineered scraper against a single person's project is a fragile and somewhat uncollegial foundation; a known, agreed-upon data path is more robust and more respectful.
+2. **Citizen claims are first-class, not a supplement.** Kahraba Live's own user-claim flow is not a fallback for when scraping breaks — it is a primary, independent data source. If famma-dhaw.com access is withdrawn or breaks, Kahraba Live keeps producing meaningful data, because the citizens reporting directly to us are still there.
+3. **Naming and branding.** The project is deliberately renamed from "TunisianH" to "Kahraba Live" to avoid any impression of impersonating or free-riding on famma-dhaw's identity. Attribution to famma-dhaw.com is prominent on every screen, and the disclaimer mirrors famma-dhaw's own honesty about its unofficial status.
+
+### 1.5 Feasibility note: "real-time every 1 second" on a free tier
+
+The original brief asks for data refreshed every second, hosted on GitHub's free tier. This deserves an honest answer up front rather than a quiet workaround:
+
+- **GitHub Pages has no backend** — only static files. The per-second logic cannot live there.
+- **Free-tier cron services cap at minute granularity** (Cloudflare Workers Cron, GitHub Actions cron, etc.). Literal 1-second scraping requires a persistent always-on process outside any free tier.
+- **Storage:** naively storing a row per region per second is ~26 million rows/day for 300 regions — far beyond any free-tier DB's total quota.
+
+**What "real-time" actually means here:** the user sees their region's state flip within moments of the underlying change. This is achieved by:
+
+1. Scraping at a respectful 1–5 minute interval (the source site updates its 45-minute rolling window, so sub-minute scraping adds little signal).
+2. Writing to the DB **only when a region's state actually changes** (event-sourced model — see §8), not on every poll.
+3. Pushing the change to all connected dashboards instantly via WebSocket.
+
+The user perceives this as real-time. The infrastructure is not literally polling every second, and it does not need to be. See §9 for the full scraping strategy.
 
 ---
 
@@ -120,14 +157,19 @@ TunisianH is a trilingual (Arabic / English / French), mobile-first, citizen-pow
 
 ## 3. Architecture
 
-### 3.1 The GitHub Pages constraint (and why we need workers)
+### 3.1 The GitHub Pages constraint (and what "real-time" actually means)
 
-GitHub Pages is **static-only**: it serves HTML/CSS/JS/assets but cannot run server-side code, cannot maintain server-side state, and cannot run a cron job. A "scrape every 1 second" requirement therefore **cannot be done from the client** for two reasons:
+GitHub Pages is **static-only**: it serves HTML/CSS/JS/assets but cannot run server-side code, cannot maintain server-side state, and cannot run a cron job. A "scrape every 1 second" requirement therefore **cannot be done from the client**, and even from a serverless function the minimum cron interval on any free tier is 1 minute.
 
-1. **CORS & rate limiting.** famma-dhaw.com's Supabase endpoint may or may not allow arbitrary cross-origin browser reads; relying on it from a static page is fragile.
-2. **Coverage.** A client-side scraper only runs while a user has the page open. At 03:00 with zero users, no data is collected — destroying the historical record needed for replay and estimation.
+**The honest answer:** "real-time" in this context means *the user sees their region's state change within moments of the underlying change* — not that we are literally fetching every second. We achieve this with three design choices:
 
-**Solution: hybrid free-tier architecture.**
+1. **Scrape at a respectful 1–5 minute interval.** famma-dhaw's own aggregation is a 45-minute rolling window, so sub-minute scraping adds little signal and stresses a single-developer's infrastructure unnecessarily.
+2. **Write to the DB only when a region's state actually changes** (event-sourced `StateEvent` model — see §8.3). This keeps storage at a few hundred to a few thousand rows/day, sustainable indefinitely on a free tier.
+3. **Push each change to connected dashboards via WebSocket.** The user perceives the change instantly, without any polling.
+
+### 3.2 Architecture (recommended — v1.1)
+
+**Hybrid free-tier architecture:** static PWA on GitHub Pages + Cloudflare Worker scraper + Supabase (or Neon) for storage + Supabase Realtime (or a tiny FastAPI WebSocket relay) for push.
 
 ```
 ┌────────────────────────┐         ┌─────────────────────────┐
@@ -136,78 +178,109 @@ GitHub Pages is **static-only**: it serves HTML/CSS/JS/assets but cannot run ser
 └────────────────────────┘         │  - reports              │
                                    │  - zone_suggestions     │
                                    └────────────┬────────────┘
-                                                │ (public read)
+                                                │ (public read via REST)
                                                 ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  Cloudflare Worker — `tunisianh-scraper`                    │
-│  - Runs on a Cron Trigger every 1 second (Worker cron        │
-│    supports min interval 1 minute — see §9.2 for the trick) │
-│  - Reads famma-dhaw Supabase public tables                  │
-│  - Normalises and writes into our own Supabase project      │
+│  Cloudflare Worker — `kahraba-live-scraper`                 │
+│  - Cron Trigger every 1 minute (free tier min interval)     │
+│  - Fetches famma-dhaw zone_board                             │
+│  - Diffs against last-known state per region                │
+│  - Writes StateEvent rows ONLY on state change              │
+│  - Triggers Supabase Realtime broadcast on write            │
 └──────────────────────────────┬──────────────────────────────┘
                                │
                                ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  Our Supabase project — `tunisianh`                         │
-│  - snapshots   (1 row per region per scrape tick)           │
-│  - claims      (1 row per TunisianH user claim)             │
-│  - regions     (static reference: governorates, delegations)│
-│  - daily_stats (materialised nightly)                       │
-│  - estimates   (computed by worker every 5 min)             │
+│  Supabase (or Neon) Postgres — `kahraba-live` project      │
+│  - regions      (static reference: ~296 zones, trilingual)  │
+│  - state_events (event-sourced: 1 row per state CHANGE)     │
+│  - claims       (1 row per Kahraba Live user claim)         │
+│  - estimates    (computed every 5 min by worker)            │
+│  - daily_stats  (materialised nightly via pg_cron)          │
+│  - scrape_runs  (audit log of every scraper invocation)     │
 └──────────────────────────────┬──────────────────────────────┘
-                               │ (anon key, RLS-protected read)
+                               │
+                               │ (1) Supabase Realtime channel
+                               │     broadcasts new StateEvent
+                               │ (2) Client opens WebSocket
+                               │     on dashboard load
                                ▼
 ┌─────────────────────────────────────────────────────────────┐
 │  GitHub Pages — static PWA                                  │
-│  - HTML/CSS/JS (Next.js static export or plain Vite)        │
-│  - Leaflet + OSM tiles                                      │
+│  - HTML/CSS/JS (Vite + React + Leaflet)                     │
 │  - i18n bundles (ar / en / fr)                              │
-│  - Reads from our Supabase; writes user claims              │
+│  - Listens to Supabase Realtime channel for state changes   │
+│  - Falls back to 5s polling if WebSocket fails              │
+│  - Writes user claims directly to Supabase (RLS-protected)  │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### 3.2 Component inventory
+### 3.3 Alternative architecture (FastAPI + GitHub Actions + Neon)
+
+For maintainers more comfortable with Python than with Cloudflare Workers, an equivalent stack exists:
+
+| Component | Recommended stack (§3.2) | Alternative stack |
+|---|---|---|
+| Scraper host | Cloudflare Worker (cron) | GitHub Actions (cron — unlimited on public repos) |
+| Scraper language | TypeScript | Python (httpx or Playwright) |
+| Backend API | Supabase REST (no custom server) | FastAPI on Render/Fly.io free tier (cold-starts in seconds) |
+| DB | Supabase Postgres | Neon Postgres (no auto-delete, scales to zero) |
+| Realtime push | Supabase Realtime channels | FastAPI WebSocket + Postgres LISTEN/NOTIFY |
+| Historical archive | Supabase only | Git-committed JSON snapshots in `/data` (free, vendor-independent backup) |
+
+**When to choose the alternative:** if you anticipate needing custom server-side logic (e.g., complex aggregation, ML inference, CSV streaming) that doesn't fit cleanly in a Worker, or if you value the git-committed JSON snapshot as a vendor-independent backup.
+
+**When to choose the recommended stack:** if you want zero backend to maintain, the smallest possible attack surface, and the fastest cold-start (Cloudflare Workers have effectively no cold-start).
+
+Both stacks are documented in this spec; pick one and stick with it for v1. The data model (§8) and the scraper's public interface should be identical regardless of stack.
+
+### 3.4 Component inventory (recommended stack)
 
 | Layer | Component | Host | Free-tier limit | Our usage |
 |---|---|---|---|---|
 | Frontend | Static PWA (Vite + React + Leaflet) | GitHub Pages | 100 GB/mo bandwidth, 1 GB repo | < 100 MB, < 10 GB/mo |
-| Scraper | Cloudflare Worker + Cron Trigger | Cloudflare | 100k requests/day | ~86k/day (1/sec) |
-| DB | Supabase (Postgres) | Supabase | 500 MB DB, 50k MAU | < 200 MB, anon-only |
-| Map tiles | OpenStreetMap raster tiles | OSM tile servers | Fair-use policy | We self-host or use Stadia/MapTiler free tier to be polite |
+| Scraper | Cloudflare Worker + Cron Trigger | Cloudflare | 100k requests/day | ~1,440/day (1/min) — vast headroom |
+| DB | Supabase (Postgres) | Supabase | 500 MB DB, 50k MAU, **pauses after 7 days inactivity** | < 50 MB; scraper keeps it warm |
+| DB (alt) | Neon Postgres | Neon | 0.5 GB storage, scales to zero, **no inactivity pause** | < 50 MB; auto-resumes in ~1s |
+| Realtime | Supabase Realtime | Supabase | Included in free tier | < 300 concurrent listeners |
+| Map tiles | OSM-based (Stadia Maps Alidade) | Stadia | 250k loads/mo free | < 100k/mo |
 | i18n | Bundled JSON dictionaries | GitHub Pages | n/a | ~30 KB |
 
-### 3.3 Why not "scrape every 1 second" verbatim
+### 3.5 Why the DB choice matters (Supabase vs Neon)
 
-Cloudflare Workers Cron Triggers have a **minimum interval of 1 minute** on the free plan. To approximate 1-second scraping we use one of two patterns (decided in Phase 1):
+| Option | Inactivity pause? | Auto-delete? | Built-in realtime | Verdict |
+|---|---|---|---|---|
+| **Supabase free** | Yes — pauses after **7 days with no API activity** (data preserved; needs manual or automated resume) | No | Yes (Realtime channels) | OK if scraper keeps it warm (it will) |
+| **Neon free** | No — scales to zero, resumes in ~1s on first query | No | No (build push yourself) | Best for persistence paranoia |
+| **Render free Postgres** | n/a | **Yes — deleted after 30 days** | n/a | **AVOID** — incompatible with a historical-data project |
 
-- **Pattern A (preferred):** The worker, when triggered every minute, runs an in-worker `setInterval` loop for 60 iterations (one per second), fetching and writing to Supabase. Each invocation lasts up to 30s on free tier — so we split into 2 invocations per minute (every 30 seconds), each looping 30 times.
-- **Pattern B (fallback):** Accept 1-minute granularity from the scraper, and on the client side poll our Supabase every 1 second for the latest snapshot. The "1-second" feel is preserved for the user; the underlying data is at most 1 minute stale.
+Free-tier terms shift often (Render revised pricing April 2026; Supabase tightened pause policy February 2026). Re-verify on each provider's pricing page before committing. The scraper running every minute keeps Supabase warm indefinitely, so its pause risk is theoretical for this project; if you ever pause the scraper for >7 days, Neon is the safer choice.
 
-**Decision:** Pattern B. It is simpler, respects Cloudflare limits cleanly, and the user-perceived freshness is identical. The spec will refer to "1-second user-facing refresh" while the scraper runs every minute.
-
-### 3.4 High-level data flow
+### 3.6 High-level data flow (event-sourced)
 
 ```
-famma-dhaw.com  ──(scraped every 60s by CF Worker)──▶  our Supabase `snapshots`
-                                                          │
-                                                          ├──▶ `daily_stats` (nightly materialisation)
-                                                          │
-                                                          ├──▶ `estimates` (every 5 min by CF Worker)
-                                                          │
-TunisianH user  ──(claims ON/OFF via PWA)──────────▶  our Supabase `claims`
-                                                          │
-                                                          ▼
-                                          merged view `live_zone_state`
-                                                          │
-                                                          ▼
-                          PWA polls every 1s  ─────────────▶  Map / Stats / Estimation tabs
+famma-dhaw.com  ──(scraped every 1 min by CF Worker)──▶  diff per region
+                                                                │
+                                          ┌─────────────────────┴─────────────────────┐
+                                          │ state changed?                              │
+                                          ├── YES ──▶ INSERT state_events row           │
+                                          │           + broadcast via Realtime channel  │
+                                          │           + increment scrape_runs.regions_changed │
+                                          └── NO  ──▶ skip write (storage stays lean)   │
+                                                                │
+                                                                ▼
+                                          nightly pg_cron job  ──▶  daily_stats
+                                          5-min CF Worker job  ──▶  estimates
+                                                                │
+Kahraba Live user  ──(claims ON/OFF via PWA)──────────▶  claims (RLS INSERT)
+                                                                │
+                                                                ▼
+                                          live_zone_state view (latest event per region)
+                                                                │
+                                                                ▼
+                          PWA: WebSocket listener ─────────────▶  Map / Stats / Estimation tabs update instantly
+                          PWA: 5s polling fallback (if WS fails)
 ```
-
-### 3.5 Why Supabase and not just JSON files on GitHub
-
-- Supabase gives us RLS (row-level security), so user claims can be written directly from the client without exposing admin keys.
-- Postgres views let us compute the "live merged state" server-side, avoiding heavy client logic.
-- Free tier (500 MB) is more than enough: a snapshot row is ~80 bytes, 264 delegations × 1440 minutes/day = ~380k rows/day = ~30 MB/day uncompressed; with retention policies (see §8.4) we stay under 200 MB.
 
 ---
 
@@ -558,84 +631,107 @@ tunisianh/
 
 ## 8. Data Model
 
-### 8.1 Entity overview
+### 8.1 Entity overview (v1.1 — event-sourced)
 
 ```
-regions (static reference, 264 rows = delegations)
+regions (static reference, ~296 rows = famma-dhaw zones)
    │
-   ├──< snapshots (1 row per region per scrape tick, ~380k/day)
+   ├──< state_events (event-sourced: 1 row per state CHANGE per region)
    │
-   ├──< claims (1 row per TunisianH user claim)
+   ├──< claims (1 row per Kahraba Live user claim)
    │
    ├──< estimates (1 row per region per 5-min estimate tick)
    │
-   └──< daily_stats (1 row per region per day, materialised nightly)
+   ├──< daily_stats (1 row per region per day, materialised nightly)
+   │
+   └──< scrape_runs (audit log: 1 row per scraper invocation)
 ```
+
+**Why event-sourced, not periodic snapshots:** with ~300 regions, storing a row per region *per second* would be ~25.9 million rows/day — at ~50 bytes/row that's ~1.3 GB/day, blowing through any free-tier DB (typically 500 MB–1 GB total) in hours. Even at one row per region per minute (the actual scrape interval), it's ~430k rows/day = ~22 MB/day, which is sustainable but wasteful when most regions don't change state for hours at a time.
+
+Storing a row **only when a region's state actually changes** — realistically a few state changes per region per day even during an active crisis — keeps the same table at a few hundred to a few thousand rows/day, sustainable indefinitely on a free tier, while still supporting exact-state-at-any-timestamp replay queries (the latest event at or before time T *is* the state at time T).
 
 ### 8.2 `regions` table
 
 | Column | Type | Notes |
 |---|---|---|
-| `slug` | text PK | e.g. `ariana-ariana` (governorate-delegation) |
+| `slug` | text PK | Stable identifier matching famma-dhaw's zone naming |
 | `governorate` | text | e.g. `Ariana` |
 | `delegation` | text | e.g. `Ariana` |
 | `name_ar` | text | e.g. `أريانة` |
 | `name_fr` | text | e.g. `Ariana` |
 | `name_en` | text | e.g. `Ariana` |
-| `famma_slug` | text | Matching slug in famma-dhaw (nullable) |
+| `famma_slug` | text | Matching slug in famma-dhaw (nullable until Phase 0 mapping is done) |
 | `lat` | numeric | Centroid latitude |
 | `lng` | numeric | Centroid longitude |
 | `geojson` | jsonb | Polygon for the map |
 | `created_at` | timestamptz | default now() |
 
-Seed: 24 governorates + 264 delegations. Source: GADM + manual cross-check against famma-dhaw zone list.
+Seed: ~296 zones (matching famma-dhaw's own zone list, which fluctuates slightly). Source: famma-dhaw zone list + Tunisian administrative boundary datasets (see Appendix D for concrete GitHub repos).
 
-### 8.3 `snapshots` table (the core historical record)
+### 8.3 `state_events` table (THE core historical record)
 
 | Column | Type | Notes |
 |---|---|---|
 | `id` | bigint PK | identity |
 | `region_slug` | text FK → regions.slug | |
-| `ts` | timestamptz | scrape tick time (UTC) |
-| `on_count_scraped` | int | from famma-dhaw |
-| `off_count_scraped` | int | from famma-dhaw |
-| `on_count_local` | int | from TunisianH claims (last 45 min) |
-| `off_count_local` | int | from TunisianH claims (last 45 min) |
-| `state` | text | `on` / `off` / `no_data` (computed) |
-| `confidence` | numeric | 0..1 |
-| `source_worker_run_id` | text | for traceability |
+| `state` | text | `on` / `off` / `mixed` / `unknown` (computed from counts at scrape time) |
+| `on_count_scraped` | int | from famma-dhaw at this moment |
+| `off_count_scraped` | int | from famma-dhaw at this moment |
+| `on_count_local` | int | from Kahraba Live claims (rolling 45-min window) at this moment |
+| `off_count_local` | int | from Kahraba Live claims (rolling 45-min window) at this moment |
+| `source` | text | `scraped` (state changed during a scrape) / `claim_aggregate` (state changed because of a user claim tipping the balance) |
+| `confidence` | numeric | 0..1 (computed from count agreement) |
+| `scrape_run_id` | bigint FK → scrape_runs.id | nullable; null for claim-triggered events |
+| `changed_at` | timestamptz | when the change was detected (default now()) |
 
-**Partitioning.** Partition by month (`PARTITION BY RANGE (ts)`). Keeps individual indexes small.
+**Partitioning.** Partition by month (`PARTITION BY RANGE (changed_at)`). Keeps individual indexes small.
 
 **Indexes.**
-- `(region_slug, ts DESC)` — main query path.
-- `(ts DESC)` — for replay "all regions at time T".
-- `(state, ts DESC)` — for stats.
+- `(region_slug, changed_at DESC)` — main query path (latest event per region).
+- `(changed_at DESC)` — for replay "all regions at time T".
+- `(state, changed_at DESC)` — for stats.
 
 **Retention.**
-- Raw `snapshots`: keep 90 days hot, then move to weekly aggregates.
-- Weekly aggregates: keep 5 years.
-- See §8.4.
+- Raw `state_events`: keep **indefinitely** — they are tiny (a few thousand rows/day) and are the source of truth for replay & stats.
+- After 5 years, archive to cold storage (CSV on archive.org, or Backblaze B2 free tier).
 
-### 8.4 `daily_stats` table (materialised)
+### 8.4 `scrape_runs` table (audit log)
+
+| Column | Type | Notes |
+|---|---|---|
+| `id` | bigint PK | |
+| `started_at` | timestamptz | when the scraper invocation began |
+| `finished_at` | timestamptz | nullable; null if still running or crashed |
+| `status` | text | `ok` / `partial` / `failed` |
+| `regions_fetched` | int | how many zones famma-dhaw returned |
+| `regions_changed` | int | how many state_events rows were inserted |
+| `latency_ms` | int | end-to-end scrape duration |
+| `error_detail` | text | nullable; short error message on failure |
+
+Used for: monitoring (alert if `regions_fetched` drops to 0, or `status='failed'` for 3 consecutive runs),"data may be stale" banner in the UI (if no successful run in last 5 minutes).
+
+### 8.5 `daily_stats` table (materialised nightly)
 
 | Column | Type | Notes |
 |---|---|---|
 | `region_slug` | text FK | |
 | `day` | date | Local time (Africa/Tunis) |
-| `total_off_minutes` | int | Sum of minutes where state = off |
+| `total_off_minutes` | int | Sum of minutes where state = off (interpolated from state_events) |
 | `total_on_minutes` | int | |
-| `total_no_data_minutes` | int | |
+| `total_unknown_minutes` | int | Gaps where no event exists for that period |
 | `longest_off_streak_min` | int | Longest continuous OFF period |
-| `peak_off_count` | int | Max simultaneous OFF reports |
-| `outage_count` | int | Number of distinct OFF→ON transitions |
+| `peak_off_count` | int | Max simultaneous OFF reports (from state_events.off_count_*) |
+| `outage_count` | int | Number of distinct on→off transitions |
 | `first_off_ts` | timestamptz | First OFF of the day |
 | `last_off_ts` | timestamptz | Last OFF of the day |
-| `computed_at` | timestamptz | |
+| `claims_submitted` | int | Total Kahraba Live claims for this region on this day |
+| `agreement_rate` | numeric | 0..1 — fraction of times scraped state agreed with claim-aggregate state |
+| `computed_at` | timestamptz | when this row was materialised |
 
 Refreshed nightly by `pg_cron` at 02:00 Africa/Tunis.
 
-### 8.5 `claims` table
+### 8.6 `claims` table
 
 | Column | Type | Notes |
 |---|---|---|
@@ -643,17 +739,18 @@ Refreshed nightly by `pg_cron` at 02:00 Africa/Tunis.
 | `region_slug` | text FK | |
 | `ts` | timestamptz | default now() |
 | `value` | text | `on` / `off` |
-| `device_hash` | text | SHA-256 of deviceId, truncated to 16 chars |
-| `ip_hash` | text | SHA-256 of IP + salt, truncated to 16 chars |
+| `device_hash` | text | SHA-256 of deviceId + salt, truncated to 16 chars |
+| `ip_hash` | text | SHA-256 of IP + salt, truncated to 16 chars (transient, for rate-limiting) |
 | `user_agent_hash` | text | optional, for spam analysis |
 
 **RLS.** Anyone can INSERT (anonymous claims). Anyone can SELECT (transparency). No UPDATE / DELETE from the client.
 
 **Anti-spam.**
-- DB-level constraint: one claim per `(device_hash, region_slug)` per 10-minute window (implemented as a trigger that rejects inserts within the window).
-- Optional IP-based rate limit at the Cloudflare Worker level (if we ever proxy claims through a worker — in v1 we let the client write directly to Supabase).
+- DB-level constraint: one claim per `(device_hash, region_slug)` per cooldown window (15–30 min, configurable; see §6.5). Implemented as a trigger that rejects inserts within the window.
+- Supabase rate-limit on the INSERT endpoint (e.g. max 10 claims/min/IP).
+- IP-hash-based rate limit at the Cloudflare Worker level (if claims are proxied through a worker — in v1 they go directly to Supabase).
 
-### 8.6 `estimates` table
+### 8.7 `estimates` table
 
 | Column | Type | Notes |
 |---|---|---|
@@ -661,15 +758,18 @@ Refreshed nightly by `pg_cron` at 02:00 Africa/Tunis.
 | `region_slug` | text FK | |
 | `generated_at` | timestamptz | when the estimate was computed |
 | `target_ts` | timestamptz | the future time being estimated |
-| `predicted_state` | text | `on` / `off` / `no_data` |
-| `confidence` | numeric | 0..1 |
-| `method` | text | algorithm version, e.g. `v1-historical-baseline` |
-| `reasoning` | jsonb | structured: `{ factors: [...], weights: {...} }` |
+| `horizon` | text | `1h` / `3h` / `6h` / `12h` / `24h` |
+| `predicted_state` | text | `on` / `off` / `unknown` |
+| `probability` | numeric | 0..1 |
+| `method` | text | algorithm version, e.g. `v1-historical-baseline` or `v2-heat-weighted` |
+| `reasoning` | jsonb | structured: `{ factors: [...], weights: {...}, temperature_c: ... }` |
 | `actual_state` | text | filled in later for backtesting (nullable) |
 
-### 8.7 Views
+### 8.8 Views
 
 #### `live_zone_state` (the dashboard's primary read)
+
+For each region, return the **latest** state_event row plus a snapshot of recent claims:
 
 ```sql
 CREATE VIEW live_zone_state AS
@@ -679,65 +779,76 @@ SELECT
   r.delegation,
   r.name_ar, r.name_fr, r.name_en,
   r.lat, r.lng,
-  COALESCE(s.on_count_scraped, 0)  + COALESCE(c.on_count_local, 0)  AS on_count,
-  COALESCE(s.off_count_scraped, 0) + COALESCE(c.off_count_local, 0) AS off_count,
-  -- compute state:
-  CASE
-    WHEN (COALESCE(s.on_count_scraped,0)+COALESCE(c.on_count_local,0)
-         +COALESCE(s.off_count_scraped,0)+COALESCE(c.off_count_local,0)) = 0 THEN 'no_data'
-    WHEN COALESCE(s.off_count_scraped,0)+COALESCE(c.off_count_local,0)
-       > COALESCE(s.on_count_scraped,0)+COALESCE(c.on_count_local,0) THEN 'off'
-    ELSE 'on'
-  END AS state,
-  s.ts AS last_snapshot_ts,
-  GREATEST(s.ts, c.last_claim_ts) AS last_update_ts
+  e.state,
+  e.on_count_scraped  + COALESCE(c.on_count_local, 0)  AS on_count_total,
+  e.off_count_scraped + COALESCE(c.off_count_local, 0) AS off_count_total,
+  e.on_count_scraped  AS on_count_scraped,
+  e.off_count_scraped AS off_count_scraped,
+  COALESCE(c.on_count_local, 0)  AS on_count_local,
+  COALESCE(c.off_count_local, 0) AS off_count_local,
+  e.confidence,
+  e.changed_at AS last_update_ts
 FROM regions r
 LEFT JOIN LATERAL (
-  SELECT * FROM snapshots
+  SELECT * FROM state_events
   WHERE region_slug = r.slug
-  ORDER BY ts DESC LIMIT 1
-) s ON true
+  ORDER BY changed_at DESC LIMIT 1
+) e ON true
 LEFT JOIN LATERAL (
   SELECT
     COUNT(*) FILTER (WHERE value='on')  AS on_count_local,
-    COUNT(*) FILTER (WHERE value='off') AS off_count_local,
-    MAX(ts) AS last_claim_ts
+    COUNT(*) FILTER (WHERE value='off') AS off_count_local
   FROM claims
   WHERE region_slug = r.slug AND ts > now() - interval '45 minutes'
 ) c ON true;
 ```
 
-#### `region_history` (for replay & stats)
+#### `region_state_at(time_t)` (for replay)
 
 ```sql
-CREATE VIEW region_history AS
-SELECT
-  region_slug, ts,
-  on_count_scraped + on_count_local  AS on_count,
-  off_count_scraped + off_count_local AS off_count,
-  state, confidence
-FROM snapshots;
+CREATE OR REPLACE FUNCTION region_state_at(t timestamptz)
+RETURNS TABLE (
+  region_slug text, state text,
+  on_count_scraped int, off_count_scraped int,
+  on_count_local int, off_count_local int,
+  changed_at timestamptz
+)
+LANGUAGE sql STABLE AS $$
+  SELECT DISTINCT ON (region_slug)
+    region_slug, state,
+    on_count_scraped, off_count_scraped,
+    on_count_local, off_count_local,
+    changed_at
+  FROM state_events
+  WHERE changed_at <= t
+  ORDER BY region_slug, changed_at DESC;
+$$;
 ```
 
-### 8.8 Storage sizing (estimates)
+This is the magic of event sourcing: reconstructing the entire national state at any past timestamp is a single indexed query, not a scan of a giant per-second snapshot table.
 
-| Table | Rows/day | Row size | Daily growth | 90-day total |
+### 8.9 Storage sizing (event-sourced — DRAMATICALLY smaller than v1.0)
+
+| Table | Rows/day | Row size | Daily growth | 1-year total |
 |---|---|---|---|---|
-| `snapshots` | 264 × 1440 = 380,160 | ~80 B | ~30 MB | ~2.7 GB |
-| `claims` | ~5,000 (assumed) | ~120 B | ~600 KB | ~54 MB |
-| `estimates` | 264 × 288 = 76,032 | ~200 B | ~15 MB | ~1.4 GB |
-| `daily_stats` | 264 | ~100 B | ~26 KB | ~2.3 MB |
+| `state_events` | ~500–3,000 (depends on crisis intensity) | ~120 B | ~50–360 KB | ~18–130 MB |
+| `claims` | ~5,000 (assumed) | ~120 B | ~600 KB | ~220 MB |
+| `estimates` | ~3,000 (300 regions × ~10 horizon ticks/day, downsampled) | ~200 B | ~600 KB | ~220 MB |
+| `daily_stats` | ~300 | ~120 B | ~36 KB | ~13 MB |
+| `scrape_runs` | 1,440 (1/min) | ~80 B | ~115 KB | ~42 MB |
 
-**Problem:** `snapshots` and `estimates` exceed Supabase free-tier 500 MB within ~15 days.
+**Total steady-state after 1 year: ~500 MB.** This fits comfortably in Supabase's 500 MB free tier for the first ~6–12 months, and indefinitely in Neon's 0.5 GB free tier with periodic archival. Compare to v1.0's snapshot approach which would have hit 500 MB in ~15 days.
 
-**Solution — retention policy:**
+**No downsampling needed** for `state_events` (the table is intrinsically small). Only `estimates` may be downsampled after 30 days to hourly granularity if it grows large.
 
-- After 7 days, downsample `snapshots` to 5-minute granularity (keep only one row per region per 5-minute window, choosing the most recent).
-- After 30 days, downsample further to 1-hour granularity.
-- After 90 days, drop raw `snapshots` entirely; rely on `daily_stats`.
-- After 7 days, downsample `estimates` to 1-hour granularity.
+### 8.10 Migration from v1.0 snapshot model
 
-With this policy, steady-state storage ≈ 150 MB. See §9.4 for the downsampling job.
+If the project had shipped v1.0's `snapshots` table and accumulated data before upgrading to v1.1:
+1. Backfill `state_events` from `snapshots` by iterating in chronological order and INSERTing only when `(on_count, off_count, state)` changes between consecutive rows for the same region.
+2. Drop the `snapshots` table after backfill is verified.
+3. Update all view definitions to use `state_events` instead.
+
+For a greenfield project (which this is), skip this migration step.
 
 ---
 
