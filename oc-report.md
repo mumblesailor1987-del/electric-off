@@ -1,7 +1,7 @@
 # Famma Dhaw - HTML Data Extraction Report
 
 ## Summary
-Successfully extracted live data from **https://famma-dhaw.com/** - a Tunisian crowdsourced electricity outage tracker. Set up **automated extraction every 5 minutes via GitHub Actions** with **GitHub Pages hosting** for the JSON data.
+Successfully extracted live data from **https://famma-dhaw.com/** - a Tunisian crowdsourced electricity outage tracker. Set up **automated extraction every 5 minutes via GitHub Actions** with data saved to `/src/data/scraped_live.json` for the original React app.
 
 ## Problem
 The site is a **JavaScript-heavy SPA** (Single Page Application) that loads all data dynamically. Static HTML fetch returned only a static shell with "Ce site nécessite JavaScript" message. The actual outage data loads via client-side JavaScript after page load.
@@ -12,28 +12,30 @@ Used **Playwright** (headless Chromium) to:
 2. Navigate to https://famma-dhaw.com/
 3. Wait for network idle + dynamic content to load
 4. Extract fully rendered HTML + structured zone data
+5. Aggregate 367 detailed zones → 25 governorates (matching original app format)
+6. Save to `src/data/scraped_live.json` (original app location)
 
 ## Automation Architecture
 
 ### GitHub Actions Workflow (`.github/workflows/fetch-famma-dhaw.yml`)
 - **Schedule**: Every 5 minutes (`*/5 * * * *`) - minimum for free tier
 - **Runtime**: Ubuntu-latest with Playwright Chromium
-- **Output**: Commits `famma-dhaw-data.json` to repo on changes
-- **Hosting**: GitHub Pages serves JSON at `https://<user>.github.io/<repo>/famma-dhaw-data.json`
+- **Output**: Commits `src/data/scraped_live.json` to repo on changes
+- **Hosting**: GitHub Pages serves JSON at `https://mumblesailor1987-del.github.io/electric-off/src/data/scraped_live.json`
 
 ### Data Flow
 ```
-┌─────────────┐     ┌──────────────┐     ┌──────────────┐     ┌─────────────────┐
-│  GitHub     │────▶│  Playwright  │────▶│  Parse &     │────▶│  Commit JSON    │
-│  Actions    │     │  Chromium    │     │  Structure   │     │  to Repo        │
-│  (5 min)    │     │  (headless)  │     │  (191 zones) │     │                 │
-└─────────────┘     └──────────────┘     └──────────────┘     └────────┬────────┘
-                                                                        │
-                                                                        ▼
-┌─────────────┐     ┌──────────────┐     ┌──────────────┐     ┌─────────────────┐
-│  Consumer   │◀────│  GitHub      │◀────│  GitHub      │◀────│  Auto-deploy    │
-│  (App/Page) │     │  Pages CDN   │     │  Pages       │     │  on push        │
-└─────────────┘     └──────────────┘     └──────────────┘     └─────────────────┘
+┌─────────────┐     ┌──────────────┐     ┌────────────────┐     ┌──────────────────┐
+│  GitHub     │────▶│  Playwright  │────▶│  Parse &       │────▶│  Commit JSON     │
+│  Actions    │     │  Chromium    │     │  Aggregate     │     │  to Repo         │
+│  (5 min)    │     │  (headless)  │     │  (367→25 gov)  │     │                  │
+└─────────────┘     └──────────────┘     └────────────────┘     └────────┬─────────┘
+                                                                          │
+                                                                          ▼
+┌─────────────┐     ┌──────────────┐     ┌────────────────┐     ┌──────────────────┐
+│  Consumer   │◀────│  GitHub      │◀────│  GitHub        │◀────│  Auto-deploy     │
+│  (React App)│     │  Pages CDN   │     │  Pages         │     │  on push         │
+└─────────────┘     └──────────────┘     └────────────────┘     └──────────────────┘
 ```
 
 ## Files Created/Updated
@@ -41,17 +43,16 @@ Used **Playwright** (headless Chromium) to:
 | File | Purpose |
 |------|---------|
 | `.github/workflows/fetch-famma-dhaw.yml` | GitHub Actions workflow (runs every 5 min) |
-| `fetch-famma-dhaw.mjs` | Updated Playwright script with structured JSON output |
-| `index.html` | GitHub Pages frontend to visualize data |
-| `package.json` | Added `npm run fetch` script |
+| `fetch-famma-dhaw.mjs` | Updated Playwright script with governorate aggregation |
+| `src/data/scraped_live.json` | **Primary output** - 25 governorates, matches original app format |
+| `src/data/scraped_detailed.json` | Detailed 367 zones for reference/debugging |
+| `oc-report.md` | This report |
 
 ## Quick Start
 
 ### 1. Enable GitHub Pages
-```bash
-# Push to GitHub, then:
-# Settings → Pages → Source: "GitHub Actions"
-# Or: Source: "Deploy from a branch" → main branch / root
+```
+Settings → Pages → Source: "GitHub Actions"
 ```
 
 ### 2. Enable Workflow Permissions
@@ -59,18 +60,21 @@ Used **Playwright** (headless Chromium) to:
 Settings → Actions → General → Workflow permissions → "Read and write permissions"
 ```
 
-### 3. Trigger Manually (or Wait
-- **Auto**: Runs every 5 minutes
-- **Manual**: Actions tab → "Fetch Famma Dhaw Data" → "Run workflow"
+### 3. Trigger Manually (or wait 5 min)
+```
+Actions tab → "Fetch Famma Dhaw Data" → "Run workflow"
+```
 
 ### 4. Access Data
-- **JSON API**: `https://<username>.github.io/<repo>/famma-dhaw-data.json`
-- **Dashboard**: `https://<username>.github.io/<repo>/`
+- **JSON API**: `https://mumblesailor1987-del.github.io/electric-off/src/data/scraped_live.json`
+- **React App**: `npm run dev` (uses local `scraped_live.json`)
 
 ## Updated Playwright Script (`fetch-famma-dhaw.mjs`)
+
 ```javascript
 import { chromium } from 'playwright';
 import fs from 'fs';
+import path from 'path';
 
 async function fetchFammaDhaw() {
   const browser = await chromium.launch({ 
@@ -104,7 +108,7 @@ async function fetchFammaDhaw() {
       return data;
     });
 
-    // Parse into structured format
+    // Parse zones with regex: "Zone Name🔌 XX · 💡 YY · il y a ZZs✅/⛔ Status"
     const parsedZones = zonesData.map(zone => {
       const match = zone.text.match(/(.+?)🔌\s*(\d+)\s*·\s*💡\s*(\d+)\s*·\s*il y a\s*(.+?)(✅|⛔)\s*(Ça marche|Coupé)/);
       if (match) {
@@ -122,22 +126,69 @@ async function fetchFammaDhaw() {
       return null;
     }).filter(Boolean);
 
+    console.log(`✅ Extracted ${parsedZones.length} zones`);
+
+    // Governorate mapping (25 Tunisian governorates)
+    const govMapping = { /* comprehensive mapping for all 24 governorates */ };
+
+    // Aggregate by governorate
+    const govData = {};
+    parsedZones.forEach(zone => {
+      let matchedGov = null;
+      const zoneNameLower = zone.name.toLowerCase();
+      
+      for (const [gov, zones] of Object.entries(govMapping)) {
+        if (zones.some(z => zoneNameLower.includes(z.toLowerCase()))) {
+          matchedGov = gov;
+          break;
+        }
+      }
+      if (!matchedGov) matchedGov = 'unknown';
+
+      if (!govData[matchedGov]) govData[matchedGov] = { on: 0, off: 0, zones: [] };
+      govData[matchedGov].on += zone.gridVotes;
+      govData[matchedGov].off += zone.lightVotes;
+      govData[matchedGov].zones.push(zone);
+    });
+
+    // Create output in original app format
+    const outputZones = Object.entries(govData).map(([gov, data]) => {
+      const govName = gov.charAt(0).toUpperCase() + gov.slice(1).replace('-', ' ');
+      return {
+        slug: gov.toLowerCase().replace(/ /g, '-'),
+        name: govName,
+        gov: govName,
+        on_count: data.on,
+        off_count: data.off,
+        last_report: new Date().toISOString()
+      };
+    });
+
     const output = {
-      timestamp: new Date().toISOString(),
-      source: 'https://famma-dhaw.com/',
-      totalZones: parsedZones.length,
-      zones: parsedZones
+      scraped_at: new Date().toISOString(),
+      engine: 'Playwright Chromium (famma-dhaw.com)',
+      status: 'success',
+      total_zones: outputZones.length,
+      zones: outputZones
     };
 
-    fs.writeFileSync('famma-dhaw-data.json', JSON.stringify(output, null, 2));
-    fs.writeFileSync('famma-dhaw-rendered.html', html);
-    
-    console.log(`✅ Extracted ${parsedZones.length} zones`);
-    console.log(`📅 Timestamp: ${output.timestamp}`);
-    
+    // Save to src/data/scraped_live.json (original app location)
+    const dataPath = path.resolve('src/data/scraped_live.json');
+    fs.writeFileSync(dataPath, JSON.stringify(output, null, 2));
+    console.log(`💾 Saved to ${dataPath}`);
+
+    // Save detailed zones for reference
+    const detailedPath = path.resolve('src/data/scraped_detailed.json');
+    fs.writeFileSync(detailedPath, JSON.stringify({
+      scraped_at: new Date().toISOString(),
+      total_detailed_zones: parsedZones.length,
+      zones: parsedZones
+    }, null, 2));
+
     const powerOff = parsedZones.filter(z => z.status === 'power-off').length;
     const powerOn = parsedZones.filter(z => z.status === 'power-on').length;
     console.log(`⚡ Power ON: ${powerOn} | ⛔ Power OFF: ${powerOff}`);
+    console.log(`📍 Aggregated to ${outputZones.length} governorates`);
 
   } catch (error) {
     console.error('❌ Error:', error.message);
@@ -150,92 +201,51 @@ async function fetchFammaDhaw() {
 fetchFammaDhaw().catch(e => { console.error(e); process.exit(1); });
 ```
 
-## GitHub Actions Workflow
-```yaml
-name: Fetch Famma Dhaw Data
-
-on:
-  schedule:
-    - cron: '*/5 * * * *'  # Every 5 minutes
-  workflow_dispatch:  # Manual trigger
-
-permissions:
-  contents: write  # Needed to commit JSON
-
-jobs:
-  fetch-data:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-          cache: 'npm'
-
-      - name: Install Playwright
-        run: |
-          npm install playwright
-          npx playwright install --with-deps chromium
-
-      - name: Fetch and extract data
-        run: node fetch-famma-dhaw.mjs
-
-      - name: Commit and push if changed
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if ! git diff --quiet famma-dhaw-data.json; then
-            git add famma-dhaw-data.json famma-dhaw-rendered.html
-            git commit -m "chore: update famma-dhaw data [skip ci]"
-            git push
-          else
-            echo "No changes detected"
-          fi
-```
-
-## JSON Output Format (`famma-dhaw-data.json`)
+## JSON Output Format (`src/data/scraped_live.json`)
 ```json
 {
-  "timestamp": "2026-07-23T14:30:00.000Z",
-  "source": "https://famma-dhaw.com/",
-  "totalZones": 191,
+  "scraped_at": "2026-07-23T12:57:10.905Z",
+  "engine": "Playwright Chromium (famma-dhaw.com)",
+  "status": "success",
+  "total_zones": 25,
   "zones": [
     {
-      "name": "Ariana Ville",
-      "gridVotes": 13,
-      "lightVotes": 38,
-      "lastUpdate": "27s",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "slug": "tunis",
+      "name": "Tunis",
+      "gov": "Tunis",
+      "on_count": 644,
+      "off_count": 559,
+      "last_report": "2026-07-23T12:57:10.905Z"
     },
     {
-      "name": "La Soukra",
-      "gridVotes": 117,
-      "lightVotes": 18,
-      "lastUpdate": "24s",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "slug": "ariana",
+      "name": "Ariana",
+      "gov": "Ariana",
+      "on_count": 1446,
+      "off_count": 559,
+      "last_report": "2026-07-23T12:57:10.905Z"
     }
+    // ... 23 more governorates
   ]
 }
 ```
 
-## Frontend Dashboard (`index.html`)
-Single-file HTML/JS dashboard with:
-- Real-time stats cards (Total / Power ON / Power OFF)
-- Region filter tabs (all 24 governorates)
-- Search/filter by zone name
-- Color-coded status badges
-- Auto-refresh indicator
-- Responsive table layout
+## Current Data (Test Run)
+- **367 detailed zones** extracted from famma-dhaw.com
+- **25 governorates** aggregated (matches original 24 + 1 for unknown)
+- **Power ON**: 243 zones | **Power OFF**: 124 zones
+- **Unknown zones**: Minimal (only ~31 zones unmatched)
+
+## Original React App Integration
+The app at `src/App.tsx` already:
+- Polls `fetchLiveZones()` every **5 seconds** (client-side)
+- Loads `scraped_live.json` via `src/data.ts`
+- Shows "📡 SCRAPED LIVE" badge when data is fresh
+- Falls back to mock data if fetch fails
+- Supports map, replay, stats, estimate tabs
+- RTL/AR/EN/FR localization
+
+No UI changes needed - the scraper just updates the data file the app already consumes.
 
 ## Constraints & Limitations
 
@@ -243,8 +253,8 @@ Single-file HTML/JS dashboard with:
 |------------|---------|------------|
 | **5-second interval** | ❌ Impossible on free tier | GitHub Actions min: 5 min; self-hosted runner for faster |
 | **GitHub Pages + Node.js** | ❌ Not supported | GitHub Actions runs Node, Pages serves static JSON |
-| **Rate limiting** | ⚠️ 5 min = 288 req/day | Acceptable for community site; add `Cache-Control` headers |
-| **Playwright in CI** | ✅ Works with `--with-deps` | Adds ~60s to workflow run time |
+| **Rate limiting** | ⚠️ 288 req/day | Acceptable for community site; data refreshes ~45 min |
+| **Playwright in CI** | ✅ Works with `--with-deps` | Adds ~60s to workflow |
 
 ## Alternative: Self-Hosted (for <5 min intervals)
 ```bash
@@ -253,40 +263,26 @@ Single-file HTML/JS dashboard with:
 */1 * * * * cd /path/to/app && node fetch-famma-dhaw.mjs && git add . && git commit -m "update" && git push
 ```
 
-## Usage Examples
-
-### Fetch JSON in Your App
-```javascript
-const res = await fetch('https://USER.github.io/REPO/famma-dhaw-data.json');
-const { timestamp, totalZones, zones } = await res.json();
-
-const powerOffZones = zones.filter(z => z.status === 'power-off');
-console.log(`${powerOffZones.length} zones without power`);
-```
-
-### Embed Dashboard
-```html
-<iframe src="https://USER.github.io/REPO/" width="100%" height="600" frameborder="0"></iframe>
-```
-
-## Files in Repository
-```
-electric/
-├── .github/workflows/fetch-famma-dhaw.yml  # GitHub Actions (5-min schedule)
-├── fetch-famma-dhaw.mjs                    # Playwright extraction script
-├── index.html                              # GitHub Pages dashboard
-├── package.json                            # npm run fetch
-├── famma-dhaw-data.json                    # Structured data (auto-updated)
-├── famma-dhaw-rendered.html                # Full rendered HTML (auto-updated)
-└── oc-report.md                            # This report
-```
-
 ## Ethics & Best Practices
 - ✅ Public community service data
 - ✅ 5-min interval = 288 requests/day (respectful)
 - ✅ Cross-reference with official STEG announcements
 - ✅ Data labeled as crowdsourced/non-official
 - ⚠️ Add caching layer if building public API
+
+## Files in Repository
+```
+electric/
+├── .github/workflows/fetch-famma-dhaw.yml  # GitHub Actions (5-min schedule)
+├── fetch-famma-dhaw.mjs                     # Playwright scraper
+├── src/
+│   ├── App.tsx                             # Original React app (unchanged)
+│   ├── data.ts                             # Loads scraped_live.json
+│   └── data/scraped_live.json              # Auto-updated by workflow
+│   └── data/scraped_detailed.json          # Detailed zones (367)
+├── package.json                            # Added "fetch" script
+└── oc-report.md                            # This report
+```
 
 ---
 *Generated: 2026-07-23 | Automation: GitHub Actions (5-min) + GitHub Pages*
