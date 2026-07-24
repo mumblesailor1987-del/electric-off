@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-24T22:46:07.760Z",
+  "scraped_at": "2026-07-24T23:47:32.275Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
   "total_zones": 25,
@@ -8,201 +8,201 @@
       "slug": "tunis",
       "name": "Tunis",
       "gov": "Tunis",
-      "on_count": 106,
-      "off_count": 249,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 136,
+      "off_count": 272,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "ben-arous",
       "name": "Ben arous",
       "gov": "Ben arous",
-      "on_count": 205,
-      "off_count": 433,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 256,
+      "off_count": 403,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "manouba",
       "name": "Manouba",
       "gov": "Manouba",
-      "on_count": 60,
-      "off_count": 176,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 38,
+      "off_count": 145,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "ariana",
       "name": "Ariana",
       "gov": "Ariana",
-      "on_count": 601,
-      "off_count": 541,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 193,
+      "off_count": 451,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "mahdia",
       "name": "Mahdia",
       "gov": "Mahdia",
-      "on_count": 80,
-      "off_count": 88,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 117,
+      "off_count": 77,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "unknown",
       "name": "Unknown",
       "gov": "Unknown",
-      "on_count": 9,
-      "off_count": 31,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 11,
+      "off_count": 21,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "béja",
       "name": "Béja",
       "gov": "Béja",
-      "on_count": 5,
-      "off_count": 8,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 7,
+      "off_count": 12,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "bizerte",
       "name": "Bizerte",
       "gov": "Bizerte",
-      "on_count": 103,
-      "off_count": 99,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 131,
+      "off_count": 96,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "gabès",
       "name": "Gabès",
       "gov": "Gabès",
-      "on_count": 28,
-      "off_count": 34,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 30,
+      "off_count": 40,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "gafsa",
       "name": "Gafsa",
       "gov": "Gafsa",
-      "on_count": 1,
-      "off_count": 8,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 7,
+      "off_count": 6,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "jendouba",
       "name": "Jendouba",
       "gov": "Jendouba",
-      "on_count": 7,
-      "off_count": 9,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 9,
+      "off_count": 12,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "kairouan",
       "name": "Kairouan",
       "gov": "Kairouan",
-      "on_count": 7,
-      "off_count": 8,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 10,
+      "off_count": 18,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "kasserine",
       "name": "Kasserine",
       "gov": "Kasserine",
-      "on_count": 9,
+      "on_count": 3,
       "off_count": 8,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "kébili",
       "name": "Kébili",
       "gov": "Kébili",
       "on_count": 9,
-      "off_count": 12,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "off_count": 11,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "le-kef",
       "name": "Le kef",
       "gov": "Le kef",
-      "on_count": 4,
-      "off_count": 15,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 8,
+      "off_count": 14,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "médenine",
       "name": "Médenine",
       "gov": "Médenine",
-      "on_count": 93,
-      "off_count": 121,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 137,
+      "off_count": 94,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "monastir",
       "name": "Monastir",
       "gov": "Monastir",
-      "on_count": 40,
-      "off_count": 63,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 39,
+      "off_count": 52,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "nabeul",
       "name": "Nabeul",
       "gov": "Nabeul",
-      "on_count": 209,
-      "off_count": 251,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 93,
+      "off_count": 154,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "sfax",
       "name": "Sfax",
       "gov": "Sfax",
-      "on_count": 647,
-      "off_count": 512,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 577,
+      "off_count": 497,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "sidi-bouzid",
       "name": "Sidi bouzid",
       "gov": "Sidi bouzid",
-      "on_count": 0,
-      "off_count": 8,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 10,
+      "off_count": 6,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "siliana",
       "name": "Siliana",
       "gov": "Siliana",
       "on_count": 6,
-      "off_count": 3,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "off_count": 9,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "sousse",
       "name": "Sousse",
       "gov": "Sousse",
-      "on_count": 125,
-      "off_count": 109,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 161,
+      "off_count": 137,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "tataouine",
       "name": "Tataouine",
       "gov": "Tataouine",
-      "on_count": 11,
-      "off_count": 18,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 6,
+      "off_count": 16,
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "tozeur",
       "name": "Tozeur",
       "gov": "Tozeur",
-      "on_count": 5,
+      "on_count": 4,
       "off_count": 6,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "last_report": "2026-07-24T23:47:32.275Z"
     },
     {
       "slug": "zaghouan",
       "name": "Zaghouan",
       "gov": "Zaghouan",
-      "on_count": 4,
-      "off_count": 16,
-      "last_report": "2026-07-24T22:46:07.760Z"
+      "on_count": 5,
+      "off_count": 15,
+      "last_report": "2026-07-24T23:47:32.275Z"
     }
   ]
 }
