@@ -1,55 +1,19 @@
 {
-  "scraped_at": "2026-08-10T05:47:48.388Z",
-  "total_detailed_zones": 16,
+  "scraped_at": "2026-08-10T06:59:52.956Z",
+  "total_detailed_zones": 18,
   "zones": [
     {
       "name": "Bhar Lazreg",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "3 min",
+      "lastUpdate": "13 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Cité El Wahat (L'Aouina)",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "30 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "La Marsa",
+      "name": "Cité Ezzouhour",
       "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "32 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Cité Ennozha",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "16 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "El Mhamdia / Fouchana",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "38 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Oued Gueriana / Denden",
-      "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "4 min",
       "status": "power-on",
@@ -57,91 +21,145 @@
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Corniche Bizerte",
+      "name": "Jardins de Carthage (côté parc / forêt)",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "24 min",
+      "lastUpdate": "11 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Ghar El Melh / Utique",
+      "name": "La Marsa",
       "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "9 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Mahdia Ville",
-      "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "19 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Salakta",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "42 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Djerba Erriadh",
-      "gridVotes": 1,
-      "lightVotes": 0,
       "lastUpdate": "2 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     },
     {
-      "name": "Djerba Midoun",
+      "name": "Le Bardo",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "23 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Borj Louzir",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "1 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Cité El Faouz",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "37 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Cité El Ghazela",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "35 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Cité Jaafar",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "35 min",
+      "lastUpdate": "23 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Monastir Ville / Skanes",
+      "name": "La Soukra",
+      "gridVotes": 2,
+      "lightVotes": 1,
+      "lastUpdate": "25s",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Ezzahra",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "20 min",
+      "lastUpdate": "28 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Cité AFH Nabeul",
+      "name": "Mornag",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "13 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Douar Hicher",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "24 min",
+      "lastUpdate": "42 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Hammam Ghezaz",
+      "name": "Métouia / Ghannouch",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "5 min",
+      "lastUpdate": "12 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Kalâa Seghira",
+      "name": "El Mida / El Somâa",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "21 min",
+      "lastUpdate": "18 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Korba",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "2 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Route Lafrane",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "14 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Cité Erriadh",
+      "gridVotes": 0,
+      "lightVotes": 2,
+      "lastUpdate": "30 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
