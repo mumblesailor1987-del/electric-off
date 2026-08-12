@@ -1,24 +1,60 @@
 {
-  "scraped_at": "2026-08-12T08:06:30.541Z",
-  "total_detailed_zones": 17,
+  "scraped_at": "2026-08-12T09:23:02.052Z",
+  "total_detailed_zones": 41,
   "zones": [
     {
-      "name": "Cité El Khadra / Olympique",
+      "name": "Aïn Zaghouan",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "6 min",
+      "lastUpdate": "23 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Cité El Wahat (L'Aouina)",
+      "name": "Aïn Zaghouan Nord",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "38 min",
+      "lastUpdate": "19 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Bhar Lazreg",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "40 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Carthage Dermech",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "21 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Cité El Wahat (L'Aouina)",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "23 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Ezzahrouni",
+      "gridVotes": 2,
+      "lightVotes": 2,
+      "lastUpdate": "13 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     },
     {
       "name": "Gammarth",
@@ -30,43 +66,7 @@
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Le Bardo",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "37 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "El Manar 1-2",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "5 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Mnihla",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "3 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Nouvelle Soukra",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "10 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Raoued",
+      "name": "Jardins de Carthage (côté ISC / villas)",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "34 min",
@@ -75,61 +75,79 @@
       "rawClasses": "zone s-on"
     },
     {
+      "name": "Le Bardo",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "6 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Borj Touil",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "7 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Chotrana 3",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "35 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Dar Fadhal",
+      "gridVotes": 0,
+      "lightVotes": 2,
+      "lastUpdate": "12 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Ennasr 2",
+      "gridVotes": 1,
+      "lightVotes": 1,
+      "lastUpdate": "34 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Ben Arous Ville",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "8 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
       "name": "Bougarnine",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "7 min",
+      "lastUpdate": "27 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
       "name": "Ezzahra",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "10 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "6 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     },
     {
-      "name": "Mégrine Sidi Rezig",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "36 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Manouba Ville / Denden",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "32 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Mahdia Ville",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "21 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Cité AFH Nabeul",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "25 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Maâmoura",
+      "name": "Radès",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "12 min",
@@ -138,19 +156,217 @@
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Kalâa Kebira",
+      "name": "Tebourba",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "21 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Ghar El Melh / Utique",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "37 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Raf Raf",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "34 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Métouia / Ghannouch",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "28 min",
+      "lastUpdate": "16 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Kalâa Seghira",
+      "name": "Zarzis",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "23 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Béni Khalled",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "45 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Cité AFH Nabeul",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "20 min",
+      "lastUpdate": "5 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "El Haouaria",
+      "gridVotes": 2,
+      "lightVotes": 0,
+      "lastUpdate": "13 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Mida / El Somâa",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "8 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Korba",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "27 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Bouzayène",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "18 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Kerkennah",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "12 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Route de Gremda",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "40 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Route de l'Aéroport",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "40 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Route de Mahdia",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "40 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Route de Saltnia",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "40 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Route de Sidi Mansour",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "40 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Route de Sokra",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "39 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Route de Teniour",
+      "gridVotes": 0,
+      "lightVotes": 2,
+      "lastUpdate": "14 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Route Lafrane",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "40 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Route Menzel Chaker",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "40 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Route Mharza",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "39 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Route Tbolbi",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "39 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Thyna / Route Gabès",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "40 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
