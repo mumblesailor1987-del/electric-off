@@ -1,36 +1,18 @@
 {
-  "scraped_at": "2026-08-12T05:18:03.973Z",
-  "total_detailed_zones": 10,
+  "scraped_at": "2026-08-12T06:48:25.483Z",
+  "total_detailed_zones": 13,
   "zones": [
     {
-      "name": "Jardins de Carthage (côté parc / forêt)",
+      "name": "Bab Jdid",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "28 min",
+      "lastUpdate": "20 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "La Marsa",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "33 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Le Bardo",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "6 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "El Manar 1-2",
+      "name": "Carthage / Sidi Bou Saïd (autre)",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "41 min",
@@ -39,55 +21,100 @@
       "rawClasses": "zone s-on"
     },
     {
-      "name": "El Mourouj",
+      "name": "El Omrane",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "4 min",
+      "lastUpdate": "13 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Hammam Lif / Hammam Chott",
+      "name": "Médina",
       "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "3 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Borj Touil",
+      "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "7 min",
+      "lastUpdate": "10 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Oued Ellil",
+      "name": "El Jedaïda",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "18 min",
+      "lastUpdate": "12 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Sbeïtla",
+      "name": "Raf Raf",
+      "gridVotes": 3,
+      "lightVotes": 1,
+      "lastUpdate": "3 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Kélibia",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "5 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Maâmoura",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "43 min",
+      "lastUpdate": "33 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Bir Challouf",
+      "name": "Mrezga",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "27 min",
+      "lastUpdate": "42 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
       "name": "Nabeul Ville",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "5 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Route de Sidi Mansour",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "28 min",
+      "lastUpdate": "2 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Cité Erriadh",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "34 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"

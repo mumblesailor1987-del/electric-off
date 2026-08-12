@@ -1,56 +1,64 @@
 {
-  "scraped_at": "2026-08-12T05:18:03.973Z",
+  "scraped_at": "2026-08-12T06:48:25.483Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 6,
+  "total_zones": 7,
   "zones": [
-    {
-      "slug": "ariana",
-      "name": "Ariana",
-      "gov": "Ariana",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-08-12T05:18:03.973Z"
-    },
-    {
-      "slug": "manouba",
-      "name": "Manouba",
-      "gov": "Manouba",
-      "on_count": 0,
-      "off_count": 2,
-      "last_report": "2026-08-12T05:18:03.973Z"
-    },
     {
       "slug": "tunis",
       "name": "Tunis",
       "gov": "Tunis",
       "on_count": 1,
-      "off_count": 1,
-      "last_report": "2026-08-12T05:18:03.973Z"
+      "off_count": 3,
+      "last_report": "2026-08-12T06:48:25.483Z"
     },
     {
       "slug": "ben-arous",
       "name": "Ben arous",
       "gov": "Ben arous",
-      "on_count": 1,
-      "off_count": 2,
-      "last_report": "2026-08-12T05:18:03.973Z"
-    },
-    {
-      "slug": "gafsa",
-      "name": "Gafsa",
-      "gov": "Gafsa",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-08-12T05:18:03.973Z"
+      "last_report": "2026-08-12T06:48:25.483Z"
+    },
+    {
+      "slug": "unknown",
+      "name": "Unknown",
+      "gov": "Unknown",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-08-12T06:48:25.483Z"
+    },
+    {
+      "slug": "bizerte",
+      "name": "Bizerte",
+      "gov": "Bizerte",
+      "on_count": 3,
+      "off_count": 1,
+      "last_report": "2026-08-12T06:48:25.483Z"
     },
     {
       "slug": "nabeul",
       "name": "Nabeul",
       "gov": "Nabeul",
-      "on_count": 0,
+      "on_count": 2,
       "off_count": 2,
-      "last_report": "2026-08-12T05:18:03.973Z"
+      "last_report": "2026-08-12T06:48:25.483Z"
+    },
+    {
+      "slug": "sfax",
+      "name": "Sfax",
+      "gov": "Sfax",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-08-12T06:48:25.483Z"
+    },
+    {
+      "slug": "médenine",
+      "name": "Médenine",
+      "gov": "Médenine",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-08-12T06:48:25.483Z"
     }
   ]
 }
