@@ -1,40 +1,16 @@
 {
-  "scraped_at": "2026-08-13T03:18:31.028Z",
+  "scraped_at": "2026-08-13T05:13:31.586Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 9,
+  "total_zones": 4,
   "zones": [
-    {
-      "slug": "tunis",
-      "name": "Tunis",
-      "gov": "Tunis",
-      "on_count": 1,
-      "off_count": 2,
-      "last_report": "2026-08-13T03:18:31.028Z"
-    },
     {
       "slug": "ariana",
       "name": "Ariana",
       "gov": "Ariana",
       "on_count": 1,
-      "off_count": 5,
-      "last_report": "2026-08-13T03:18:31.028Z"
-    },
-    {
-      "slug": "ben-arous",
-      "name": "Ben arous",
-      "gov": "Ben arous",
-      "on_count": 0,
-      "off_count": 2,
-      "last_report": "2026-08-13T03:18:31.028Z"
-    },
-    {
-      "slug": "bizerte",
-      "name": "Bizerte",
-      "gov": "Bizerte",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-08-13T03:18:31.028Z"
+      "off_count": 1,
+      "last_report": "2026-08-13T05:13:31.586Z"
     },
     {
       "slug": "mahdia",
@@ -42,39 +18,23 @@
       "gov": "Mahdia",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-08-13T03:18:31.028Z"
-    },
-    {
-      "slug": "nabeul",
-      "name": "Nabeul",
-      "gov": "Nabeul",
-      "on_count": 2,
-      "off_count": 5,
-      "last_report": "2026-08-13T03:18:31.028Z"
+      "last_report": "2026-08-13T05:13:31.586Z"
     },
     {
       "slug": "sfax",
       "name": "Sfax",
       "gov": "Sfax",
-      "on_count": 1,
+      "on_count": 2,
       "off_count": 0,
-      "last_report": "2026-08-13T03:18:31.028Z"
-    },
-    {
-      "slug": "sidi-bouzid",
-      "name": "Sidi bouzid",
-      "gov": "Sidi bouzid",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-08-13T03:18:31.028Z"
+      "last_report": "2026-08-13T05:13:31.586Z"
     },
     {
       "slug": "sousse",
       "name": "Sousse",
       "gov": "Sousse",
-      "on_count": 2,
-      "off_count": 0,
-      "last_report": "2026-08-13T03:18:31.028Z"
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-08-13T05:13:31.586Z"
     }
   ]
 }
