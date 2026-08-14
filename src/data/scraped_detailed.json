@@ -1,57 +1,57 @@
 {
-  "scraped_at": "2026-08-14T18:28:45.327Z",
-  "total_detailed_zones": 28,
+  "scraped_at": "2026-08-14T19:30:40.643Z",
+  "total_detailed_zones": 26,
   "zones": [
     {
-      "name": "Cité Ibn Khaldoun",
+      "name": "Aïn Zaghouan",
+      "gridVotes": 3,
+      "lightVotes": 1,
+      "lastUpdate": "4 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Bhar Lazreg",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "35 min",
+      "lastUpdate": "31 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "El Menzah 1",
+      "name": "Bouchoucha",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "44 min",
+      "lastUpdate": "42 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Sidi Hassine / Séjoumi",
+      "name": "Carthage / Sidi Bou Saïd (autre)",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "4 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Cité El Wahat (L'Aouina)",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "28 min",
+      "lastUpdate": "31 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Ariana Ville",
-      "gridVotes": 2,
-      "lightVotes": 1,
-      "lastUpdate": "11 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Borj Louzir",
-      "gridVotes": 5,
-      "lightVotes": 2,
-      "lastUpdate": "30 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Chotrana 1",
+      "name": "La Marsa",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "25 min",
+      "lastUpdate": "31 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -60,61 +60,34 @@
       "name": "Cité El Ghazela",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "43 min",
+      "lastUpdate": "16 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Cité Ennozha",
-      "gridVotes": 4,
-      "lightVotes": 2,
-      "lastUpdate": "9 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "name": "Cité Ennahli",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "5 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     },
     {
       "name": "Cité Hédi Nouira",
-      "gridVotes": 24,
-      "lightVotes": 4,
-      "lastUpdate": "5 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Cité Intilaka",
       "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "40 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "El Manar 1-2",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "32 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "El Menzah 9",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "36 min",
+      "lightVotes": 2,
+      "lastUpdate": "18 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
       "name": "Ennkhilette",
-      "gridVotes": 22,
-      "lightVotes": 12,
-      "lastUpdate": "2 min",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "40 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -123,40 +96,31 @@
       "name": "Jardins d'El Menzah 2",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "25 min",
+      "lastUpdate": "6 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Raoued",
+      "name": "La Soukra",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "43 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Nouvelle Ariana",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "36 min",
+      "lastUpdate": "35 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Chebedda",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "4 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "El Mourouj 3",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "25 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Douar Hicher",
+      "name": "Soukra Park",
       "gridVotes": 1,
       "lightVotes": 0,
       "lastUpdate": "41 min",
@@ -165,7 +129,25 @@
       "rawClasses": "zone s-off"
     },
     {
-      "name": "El Jedaïda",
+      "name": "Ben Arous Ville",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "39 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "El Mhamdia / Fouchana",
+      "gridVotes": 0,
+      "lightVotes": 2,
+      "lastUpdate": "16 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "El Mourouj 5",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "12 min",
@@ -174,43 +156,43 @@
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Corniche Bizerte",
+      "name": "Mornag",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "9 min",
+      "lastUpdate": "36 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Ghar El Melh / Utique",
+      "name": "Nouvelle Médina",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "10 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Menzel Bourguiba",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "20 min",
+      "lastUpdate": "4 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Jendouba Ville",
+      "name": "Raf Raf",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "1 min",
+      "lastUpdate": "40 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Djerba Midoun",
-      "gridVotes": 2,
-      "lightVotes": 0,
-      "lastUpdate": "25 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Zarzis",
+      "name": "Tinja",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "15 min",
@@ -219,34 +201,34 @@
       "rawClasses": "zone s-on"
     },
     {
-      "name": "El Haouaria",
+      "name": "Bou Hajla / Nasrallah",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "20 min",
+      "lastUpdate": "30 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Korba",
+      "name": "Kélibia",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "17 min",
+      "lastUpdate": "4 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Soliman Erriadh",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "23 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "name": "Chihia",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "28 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     },
     {
-      "name": "Jilma",
+      "name": "Route Tbolbi",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "34 min",
