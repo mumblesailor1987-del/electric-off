@@ -1,105 +1,132 @@
 {
-  "scraped_at": "2026-08-14T05:57:18.639Z",
-  "total_detailed_zones": 11,
+  "scraped_at": "2026-08-14T07:37:55.331Z",
+  "total_detailed_zones": 14,
   "zones": [
     {
-      "name": "Sidi Hassine / Séjoumi",
+      "name": "Aïn Zaghouan",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "19 min",
+      "lastUpdate": "1 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Dar Fadhal",
+      "name": "Centre-ville / Lafayette",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "37 min",
+      "lastUpdate": "13 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Boumhel",
-      "gridVotes": 1,
-      "lightVotes": 1,
+      "name": "La Marsa",
+      "gridVotes": 2,
+      "lightVotes": 0,
       "lastUpdate": "24 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Raf Raf",
+      "name": "Ariana Ville",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "14 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Dar Fadhal",
+      "gridVotes": 1,
+      "lightVotes": 1,
+      "lastUpdate": "14 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "El Manar 1-2",
       "gridVotes": 2,
       "lightVotes": 0,
-      "lastUpdate": "5 min",
+      "lastUpdate": "3 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Mhamdia / Fouchana",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "15 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Raf Raf",
+      "gridVotes": 5,
+      "lightVotes": 2,
+      "lastUpdate": "13 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     },
     {
       "name": "Ras Jebel",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "4 min",
+      "gridVotes": 12,
+      "lightVotes": 4,
+      "lastUpdate": "1 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Salakta",
+      "name": "Mahdia Ville",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "33 min",
+      "lastUpdate": "8 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Béni Khalled",
+      "name": "Djerba Aghir",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "43 min",
+      "lastUpdate": "56s",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Cité AFH Nabeul",
+      "name": "El Mida / El Somâa",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "9 min",
+      "lastUpdate": "34 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "El Haouaria",
-      "gridVotes": 1,
+      "name": "Hammam Ghezaz",
+      "gridVotes": 2,
       "lightVotes": 0,
-      "lastUpdate": "22 min",
+      "lastUpdate": "12 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Soliman / Menzel Bouzelfa",
-      "gridVotes": 0,
+      "name": "Kélibia",
+      "gridVotes": 1,
       "lightVotes": 1,
-      "lastUpdate": "43 min",
+      "lastUpdate": "20 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Kalâa Kebira",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "28 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
     }
   ]
 }
