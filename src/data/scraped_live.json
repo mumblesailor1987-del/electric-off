@@ -1,16 +1,16 @@
 {
-  "scraped_at": "2026-08-15T04:54:13.162Z",
+  "scraped_at": "2026-08-15T05:20:05.485Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
   "total_zones": 3,
   "zones": [
     {
-      "slug": "bizerte",
-      "name": "Bizerte",
-      "gov": "Bizerte",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-08-15T04:54:13.162Z"
+      "slug": "tunis",
+      "name": "Tunis",
+      "gov": "Tunis",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-08-15T05:20:05.485Z"
     },
     {
       "slug": "kasserine",
@@ -18,15 +18,15 @@
       "gov": "Kasserine",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-08-15T04:54:13.162Z"
+      "last_report": "2026-08-15T05:20:05.485Z"
     },
     {
-      "slug": "monastir",
-      "name": "Monastir",
-      "gov": "Monastir",
+      "slug": "nabeul",
+      "name": "Nabeul",
+      "gov": "Nabeul",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-08-15T04:54:13.162Z"
+      "last_report": "2026-08-15T05:20:05.485Z"
     }
   ]
 }
