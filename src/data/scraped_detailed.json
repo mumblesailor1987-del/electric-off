@@ -1,36 +1,36 @@
 {
-  "scraped_at": "2026-08-15T06:13:30.378Z",
-  "total_detailed_zones": 6,
+  "scraped_at": "2026-08-15T06:59:59.843Z",
+  "total_detailed_zones": 7,
   "zones": [
     {
-      "name": "Dar Fadhal",
-      "gridVotes": 0,
-      "lightVotes": 2,
-      "lastUpdate": "3 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
       "name": "Ennkhilette",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "33 min",
+      "gridVotes": 2,
+      "lightVotes": 1,
+      "lastUpdate": "16 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Bir Bouregba",
+      "name": "Sidi Thabet",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "34 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Mourouj 5",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "1 min",
+      "lastUpdate": "16 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Cité AFH Nabeul",
+      "name": "Ezzahra",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "21 min",
@@ -39,7 +39,16 @@
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Hammam Ghezaz",
+      "name": "Menzel Kamel",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "16 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Soliman Erriadh",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "2 min",
@@ -48,13 +57,13 @@
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Korba",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "22 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "name": "Kalâa Seghira",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "16 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     }
   ]
 }
