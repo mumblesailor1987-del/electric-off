@@ -1,33 +1,33 @@
 {
-  "scraped_at": "2026-08-15T05:20:05.485Z",
+  "scraped_at": "2026-08-15T05:47:09.278Z",
   "total_detailed_zones": 3,
   "zones": [
     {
-      "name": "Alain Savary",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "23 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Thala",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "33 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "name": "Ennkhilette",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "7 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     },
     {
       "name": "Cité AFH Nabeul",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "13 min",
+      "lastUpdate": "40 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Kalâa Kebira",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "22 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     }
   ]
 }
