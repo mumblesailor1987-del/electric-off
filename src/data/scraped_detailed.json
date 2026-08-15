@@ -1,21 +1,12 @@
 {
-  "scraped_at": "2026-08-15T03:53:10.122Z",
-  "total_detailed_zones": 9,
+  "scraped_at": "2026-08-15T04:22:09.024Z",
+  "total_detailed_zones": 5,
   "zones": [
-    {
-      "name": "Borj Louzir",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "32 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
     {
       "name": "Mégrine Riadh",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "8 min",
+      "lastUpdate": "36 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -24,25 +15,25 @@
       "name": "Mégrine Sidi Rezig",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "8 min",
+      "lastUpdate": "37 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Raf Raf",
+      "name": "Menzel Abderrahmen",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "19 min",
+      "lastUpdate": "7 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Djerba Houmt Souk",
+      "name": "Salakta",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "32 min",
+      "lastUpdate": "25 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
@@ -51,34 +42,7 @@
       "name": "Djerba Midoun",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "6 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Monastir Ville / Skanes",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "19 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "El Mida / El Somâa",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "32 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Chihia",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "33 min",
+      "lastUpdate": "35 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
