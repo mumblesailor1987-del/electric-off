@@ -1,16 +1,16 @@
 {
-  "scraped_at": "2026-08-15T02:19:49.277Z",
+  "scraped_at": "2026-08-15T03:09:16.467Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 6,
+  "total_zones": 8,
   "zones": [
     {
-      "slug": "ben-arous",
-      "name": "Ben arous",
-      "gov": "Ben arous",
+      "slug": "tunis",
+      "name": "Tunis",
+      "gov": "Tunis",
       "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-08-15T02:19:49.277Z"
+      "off_count": 2,
+      "last_report": "2026-08-15T03:09:16.466Z"
     },
     {
       "slug": "ariana",
@@ -18,39 +18,55 @@
       "gov": "Ariana",
       "on_count": 0,
       "off_count": 2,
-      "last_report": "2026-08-15T02:19:49.277Z"
+      "last_report": "2026-08-15T03:09:16.467Z"
     },
     {
-      "slug": "tunis",
-      "name": "Tunis",
-      "gov": "Tunis",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-08-15T02:19:49.277Z"
+      "slug": "manouba",
+      "name": "Manouba",
+      "gov": "Manouba",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-08-15T03:09:16.467Z"
     },
     {
       "slug": "bizerte",
       "name": "Bizerte",
       "gov": "Bizerte",
-      "on_count": 1,
+      "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-08-15T02:19:49.277Z"
+      "last_report": "2026-08-15T03:09:16.467Z"
     },
     {
       "slug": "médenine",
       "name": "Médenine",
       "gov": "Médenine",
-      "on_count": 5,
-      "off_count": 0,
-      "last_report": "2026-08-15T02:19:49.277Z"
+      "on_count": 0,
+      "off_count": 2,
+      "last_report": "2026-08-15T03:09:16.467Z"
     },
     {
-      "slug": "sousse",
-      "name": "Sousse",
-      "gov": "Sousse",
+      "slug": "monastir",
+      "name": "Monastir",
+      "gov": "Monastir",
+      "on_count": 2,
+      "off_count": 2,
+      "last_report": "2026-08-15T03:09:16.467Z"
+    },
+    {
+      "slug": "nabeul",
+      "name": "Nabeul",
+      "gov": "Nabeul",
       "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-08-15T02:19:49.277Z"
+      "off_count": 3,
+      "last_report": "2026-08-15T03:09:16.467Z"
+    },
+    {
+      "slug": "sfax",
+      "name": "Sfax",
+      "gov": "Sfax",
+      "on_count": 0,
+      "off_count": 2,
+      "last_report": "2026-08-15T03:09:16.467Z"
     }
   ]
 }
