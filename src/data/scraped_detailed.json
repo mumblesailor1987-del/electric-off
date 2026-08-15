@@ -1,141 +1,87 @@
 {
-  "scraped_at": "2026-08-15T03:09:16.467Z",
-  "total_detailed_zones": 15,
+  "scraped_at": "2026-08-15T03:53:10.122Z",
+  "total_detailed_zones": 9,
   "zones": [
     {
-      "name": "Bab Saadoun",
+      "name": "Borj Louzir",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "32 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Mégrine Riadh",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "37 min",
+      "lastUpdate": "8 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Bouchoucha",
+      "name": "Mégrine Sidi Rezig",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "38 min",
+      "lastUpdate": "8 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Cité El Ghazela",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "41 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "La Soukra",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "39 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Douar Hicher",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "44 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Corniche Bizerte",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "34 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Djerba Guellala",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "13 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "name": "Raf Raf",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "19 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     },
     {
       "name": "Djerba Houmt Souk",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "13 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "32 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     },
     {
-      "name": "Lamta",
+      "name": "Djerba Midoun",
       "gridVotes": 1,
-      "lightVotes": 1,
-      "lastUpdate": "13 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "lightVotes": 0,
+      "lastUpdate": "6 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     },
     {
       "name": "Monastir Ville / Skanes",
       "gridVotes": 1,
-      "lightVotes": 1,
-      "lastUpdate": "13 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "lightVotes": 0,
+      "lastUpdate": "19 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     },
     {
-      "name": "Kélibia",
+      "name": "El Mida / El Somâa",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "39 min",
+      "lastUpdate": "32 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Maâmoura",
+      "name": "Chihia",
       "gridVotes": 1,
-      "lightVotes": 1,
-      "lastUpdate": "13 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Takelsa",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "39 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Jebeniana / El Hencha",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "12 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Thyna / Route Gabès",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "7 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "lightVotes": 0,
+      "lastUpdate": "33 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     }
   ]
 }
