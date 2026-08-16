@@ -1,39 +1,12 @@
 {
-  "scraped_at": "2026-08-16T07:50:42.038Z",
-  "total_detailed_zones": 12,
+  "scraped_at": "2026-08-16T08:13:12.763Z",
+  "total_detailed_zones": 15,
   "zones": [
     {
-      "name": "Bhar Lazreg",
+      "name": "Bab Souika",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "24 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Carthage / Sidi Bou Saïd (autre)",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "32 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Le Kram",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "41 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Cité Ennozha",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "35 min",
+      "lastUpdate": "14 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -42,34 +15,61 @@
       "name": "Cité Hédi Nouira",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "22 min",
+      "lastUpdate": "44 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
+      "name": "Cité Jaafar",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "4 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Ennkhilette",
+      "gridVotes": 4,
+      "lightVotes": 0,
+      "lastUpdate": "1 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
       "name": "Jardins d'El Menzah 2",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "15 min",
+      "lastUpdate": "37 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "El Mhamdia / Fouchana",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "4 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
       "name": "El Mourouj 3",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "23 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "13 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     },
     {
-      "name": "El Mourouj 4",
+      "name": "El Yasminette",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "23 min",
+      "lastUpdate": "17 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -78,34 +78,61 @@
       "name": "Ezzahra",
       "gridVotes": 1,
       "lightVotes": 0,
+      "lastUpdate": "31 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Mornag",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "3 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Mornaguia / Borj El Amri",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "12 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Tabarka",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "12 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Djerba Sidi Mehrez (zone touristique)",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "23 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Jemmal / Sahline",
+      "gridVotes": 1,
+      "lightVotes": 0,
       "lastUpdate": "9 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Ghar El Melh / Utique",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "34 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Djerba Sidi Mehrez (zone touristique)",
-      "gridVotes": 1,
+      "name": "Skhira",
+      "gridVotes": 2,
       "lightVotes": 0,
-      "lastUpdate": "1 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Meknassy / Mezzouna",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "32 min",
+      "lastUpdate": "13 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"

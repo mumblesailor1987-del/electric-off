@@ -1,56 +1,56 @@
 {
-  "scraped_at": "2026-08-16T07:50:42.037Z",
+  "scraped_at": "2026-08-16T08:13:12.763Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
   "total_zones": 6,
   "zones": [
     {
-      "slug": "ben-arous",
-      "name": "Ben arous",
-      "gov": "Ben arous",
-      "on_count": 1,
-      "off_count": 3,
-      "last_report": "2026-08-16T07:50:42.037Z"
-    },
-    {
       "slug": "tunis",
       "name": "Tunis",
       "gov": "Tunis",
       "on_count": 0,
-      "off_count": 2,
-      "last_report": "2026-08-16T07:50:42.037Z"
+      "off_count": 1,
+      "last_report": "2026-08-16T08:13:12.762Z"
     },
     {
       "slug": "ariana",
       "name": "Ariana",
       "gov": "Ariana",
-      "on_count": 0,
-      "off_count": 3,
-      "last_report": "2026-08-16T07:50:42.037Z"
+      "on_count": 5,
+      "off_count": 2,
+      "last_report": "2026-08-16T08:13:12.763Z"
     },
     {
-      "slug": "bizerte",
-      "name": "Bizerte",
-      "gov": "Bizerte",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-08-16T07:50:42.037Z"
+      "slug": "ben-arous",
+      "name": "Ben arous",
+      "gov": "Ben arous",
+      "on_count": 2,
+      "off_count": 3,
+      "last_report": "2026-08-16T08:13:12.763Z"
     },
     {
       "slug": "unknown",
       "name": "Unknown",
       "gov": "Unknown",
       "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-08-16T07:50:42.037Z"
+      "off_count": 1,
+      "last_report": "2026-08-16T08:13:12.763Z"
     },
     {
-      "slug": "sidi-bouzid",
-      "name": "Sidi bouzid",
-      "gov": "Sidi bouzid",
+      "slug": "jendouba",
+      "name": "Jendouba",
+      "gov": "Jendouba",
       "on_count": 1,
       "off_count": 0,
-      "last_report": "2026-08-16T07:50:42.037Z"
+      "last_report": "2026-08-16T08:13:12.763Z"
+    },
+    {
+      "slug": "monastir",
+      "name": "Monastir",
+      "gov": "Monastir",
+      "on_count": 3,
+      "off_count": 0,
+      "last_report": "2026-08-16T08:13:12.763Z"
     }
   ]
 }
