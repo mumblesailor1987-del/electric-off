@@ -1,21 +1,12 @@
 {
-  "scraped_at": "2026-08-16T17:43:32.312Z",
-  "total_detailed_zones": 14,
+  "scraped_at": "2026-08-16T17:58:13.855Z",
+  "total_detailed_zones": 12,
   "zones": [
-    {
-      "name": "Petite Ariana",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "40 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
     {
       "name": "Ben Arous Ville",
       "gridVotes": 0,
-      "lightVotes": 2,
-      "lastUpdate": "3 min",
+      "lightVotes": 1,
+      "lastUpdate": "18 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -24,7 +15,7 @@
       "name": "Boumhel",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "29 min",
+      "lastUpdate": "44 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -33,34 +24,16 @@
       "name": "El Mourouj",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "29 min",
+      "lastUpdate": "43 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "El Mourouj 3",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "38 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "El Mourouj 4",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "32 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
       "name": "El Mourouj 6",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "5 min",
+      "lastUpdate": "20 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -69,25 +42,34 @@
       "name": "Bejaoua",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "17 min",
+      "lastUpdate": "32 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
       "name": "El Jedaïda",
-      "gridVotes": 8,
+      "gridVotes": 5,
       "lightVotes": 0,
-      "lastUpdate": "3 min",
+      "lastUpdate": "18 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Manouba Ville / Denden",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "6 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
       "name": "Sanhaja",
-      "gridVotes": 1,
-      "lightVotes": 2,
-      "lastUpdate": "24 min",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "39 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -96,7 +78,7 @@
       "name": "Cité El Habib",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "22 min",
+      "lastUpdate": "37 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -105,7 +87,7 @@
       "name": "Route Mharza",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "22 min",
+      "lastUpdate": "37 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -114,7 +96,7 @@
       "name": "Jawhara",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "8 min",
+      "lastUpdate": "23 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -123,7 +105,7 @@
       "name": "Msaken",
       "gridVotes": 4,
       "lightVotes": 1,
-      "lastUpdate": "3 min",
+      "lastUpdate": "9 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
