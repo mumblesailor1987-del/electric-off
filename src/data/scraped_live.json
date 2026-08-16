@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-16T10:33:28.840Z",
+  "scraped_at": "2026-08-16T10:54:33.429Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
   "total_zones": 9,
@@ -8,41 +8,33 @@
       "slug": "ariana",
       "name": "Ariana",
       "gov": "Ariana",
-      "on_count": 3,
-      "off_count": 5,
-      "last_report": "2026-08-16T10:33:28.840Z"
+      "on_count": 2,
+      "off_count": 6,
+      "last_report": "2026-08-16T10:54:33.429Z"
     },
     {
       "slug": "manouba",
       "name": "Manouba",
       "gov": "Manouba",
-      "on_count": 1,
+      "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-08-16T10:33:28.840Z"
+      "last_report": "2026-08-16T10:54:33.429Z"
     },
     {
       "slug": "tunis",
       "name": "Tunis",
       "gov": "Tunis",
-      "on_count": 0,
+      "on_count": 2,
       "off_count": 1,
-      "last_report": "2026-08-16T10:33:28.840Z"
-    },
-    {
-      "slug": "mahdia",
-      "name": "Mahdia",
-      "gov": "Mahdia",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-08-16T10:33:28.840Z"
+      "last_report": "2026-08-16T10:54:33.429Z"
     },
     {
       "slug": "ben-arous",
       "name": "Ben arous",
       "gov": "Ben arous",
       "on_count": 1,
-      "off_count": 2,
-      "last_report": "2026-08-16T10:33:28.840Z"
+      "off_count": 5,
+      "last_report": "2026-08-16T10:54:33.429Z"
     },
     {
       "slug": "monastir",
@@ -50,23 +42,23 @@
       "gov": "Monastir",
       "on_count": 1,
       "off_count": 1,
-      "last_report": "2026-08-16T10:33:28.840Z"
+      "last_report": "2026-08-16T10:54:33.429Z"
     },
     {
       "slug": "nabeul",
       "name": "Nabeul",
       "gov": "Nabeul",
-      "on_count": 0,
+      "on_count": 2,
       "off_count": 1,
-      "last_report": "2026-08-16T10:33:28.840Z"
+      "last_report": "2026-08-16T10:54:33.429Z"
     },
     {
       "slug": "sfax",
       "name": "Sfax",
       "gov": "Sfax",
-      "on_count": 2,
-      "off_count": 0,
-      "last_report": "2026-08-16T10:33:28.840Z"
+      "on_count": 0,
+      "off_count": 4,
+      "last_report": "2026-08-16T10:54:33.429Z"
     },
     {
       "slug": "sidi-bouzid",
@@ -74,7 +66,15 @@
       "gov": "Sidi bouzid",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-08-16T10:33:28.840Z"
+      "last_report": "2026-08-16T10:54:33.429Z"
+    },
+    {
+      "slug": "sousse",
+      "name": "Sousse",
+      "gov": "Sousse",
+      "on_count": 1,
+      "off_count": 0,
+      "last_report": "2026-08-16T10:54:33.429Z"
     }
   ]
 }
