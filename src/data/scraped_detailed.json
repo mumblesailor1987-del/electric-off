@@ -1,87 +1,60 @@
 {
-  "scraped_at": "2026-08-16T05:57:56.867Z",
-  "total_detailed_zones": 9,
+  "scraped_at": "2026-08-16T06:47:57.809Z",
+  "total_detailed_zones": 6,
   "zones": [
     {
       "name": "Jardins de Carthage (côté parc / forêt)",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "16 min",
+      "lastUpdate": "33 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "La Marsa",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "16 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "name": "El Manar 1-2",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "31 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     },
     {
       "name": "Ennkhilette",
       "gridVotes": 1,
       "lightVotes": 0,
+      "lastUpdate": "40 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "La Soukra",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "34 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Béni Hassen",
+      "gridVotes": 1,
+      "lightVotes": 0,
       "lastUpdate": "16 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Jardins d'El Menzah 2",
+      "name": "Enfidha / Hergla",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "19 min",
+      "lastUpdate": "40 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
-    },
-    {
-      "name": "El Mourouj 6",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "26 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Radès",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "12 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Sayada",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "36 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Route de Sidi Mansour",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "43 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Route de Tunis",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "32 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
     }
   ]
 }
