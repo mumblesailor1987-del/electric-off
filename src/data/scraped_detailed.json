@@ -1,36 +1,63 @@
 {
-  "scraped_at": "2026-08-16T02:54:25.256Z",
-  "total_detailed_zones": 8,
+  "scraped_at": "2026-08-16T03:43:55.377Z",
+  "total_detailed_zones": 9,
   "zones": [
     {
-      "name": "Bab Jdid",
-      "gridVotes": 1,
-      "lightVotes": 1,
-      "lastUpdate": "1 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "La Marsa",
+      "name": "Cité El Wahat (L'Aouina)",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "30s",
+      "lastUpdate": "36 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Mnihla",
+      "name": "La Marsa Ville",
+      "gridVotes": 2,
+      "lightVotes": 0,
+      "lastUpdate": "16 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Le Bardo",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "25 min",
+      "lastUpdate": "16 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Boumhel",
+      "name": "Ennkhilette",
+      "gridVotes": 2,
+      "lightVotes": 0,
+      "lastUpdate": "10 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Raoued",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "42 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Salakta",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "39 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Zeramdine / Ouerdanine",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "44 min",
@@ -39,40 +66,22 @@
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Medjez el-Bab",
+      "name": "Route de Tunis",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "37 min",
+      "lastUpdate": "39 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Djerba El May",
+      "name": "Gaâfour",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "35 min",
+      "lastUpdate": "16 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Zeramdine / Ouerdanine",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "11 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Bouzayène",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "26 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
     }
   ]
 }
