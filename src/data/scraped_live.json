@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-15T23:48:54.814Z",
+  "scraped_at": "2026-08-16T00:01:28.277Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
   "total_zones": 8,
@@ -9,24 +9,24 @@
       "name": "Tunis",
       "gov": "Tunis",
       "on_count": 0,
-      "off_count": 4,
-      "last_report": "2026-08-15T23:48:54.814Z"
+      "off_count": 3,
+      "last_report": "2026-08-16T00:01:28.277Z"
     },
     {
       "slug": "ariana",
       "name": "Ariana",
       "gov": "Ariana",
-      "on_count": 0,
+      "on_count": 1,
       "off_count": 3,
-      "last_report": "2026-08-15T23:48:54.814Z"
+      "last_report": "2026-08-16T00:01:28.277Z"
     },
     {
       "slug": "ben-arous",
       "name": "Ben arous",
       "gov": "Ben arous",
       "on_count": 1,
-      "off_count": 5,
-      "last_report": "2026-08-15T23:48:54.814Z"
+      "off_count": 3,
+      "last_report": "2026-08-16T00:01:28.277Z"
     },
     {
       "slug": "bizerte",
@@ -34,39 +34,39 @@
       "gov": "Bizerte",
       "on_count": 1,
       "off_count": 1,
-      "last_report": "2026-08-15T23:48:54.814Z"
+      "last_report": "2026-08-16T00:01:28.277Z"
     },
     {
       "slug": "mahdia",
       "name": "Mahdia",
       "gov": "Mahdia",
-      "on_count": 4,
-      "off_count": 0,
-      "last_report": "2026-08-15T23:48:54.814Z"
+      "on_count": 3,
+      "off_count": 1,
+      "last_report": "2026-08-16T00:01:28.277Z"
     },
     {
       "slug": "médenine",
       "name": "Médenine",
       "gov": "Médenine",
       "on_count": 1,
-      "off_count": 1,
-      "last_report": "2026-08-15T23:48:54.814Z"
+      "off_count": 2,
+      "last_report": "2026-08-16T00:01:28.277Z"
     },
     {
       "slug": "nabeul",
       "name": "Nabeul",
       "gov": "Nabeul",
-      "on_count": 3,
-      "off_count": 4,
-      "last_report": "2026-08-15T23:48:54.814Z"
+      "on_count": 1,
+      "off_count": 3,
+      "last_report": "2026-08-16T00:01:28.277Z"
     },
     {
       "slug": "sfax",
       "name": "Sfax",
       "gov": "Sfax",
-      "on_count": 11,
-      "off_count": 4,
-      "last_report": "2026-08-15T23:48:54.814Z"
+      "on_count": 5,
+      "off_count": 5,
+      "last_report": "2026-08-16T00:01:28.277Z"
     }
   ]
 }
