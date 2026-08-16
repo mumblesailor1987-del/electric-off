@@ -1,30 +1,57 @@
 {
-  "scraped_at": "2026-08-16T05:32:29.299Z",
-  "total_detailed_zones": 6,
+  "scraped_at": "2026-08-16T05:57:56.867Z",
+  "total_detailed_zones": 9,
   "zones": [
     {
-      "name": "Dar Fadhal",
+      "name": "Jardins de Carthage (côté parc / forêt)",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "44 min",
+      "lastUpdate": "16 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Soukra Park",
+      "name": "La Marsa",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "16 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Ennkhilette",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "30 min",
+      "lastUpdate": "16 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
+      "name": "Jardins d'El Menzah 2",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "19 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
       "name": "El Mourouj 6",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "1 min",
+      "lastUpdate": "26 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Radès",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "12 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -33,16 +60,16 @@
       "name": "Sayada",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "10 min",
+      "lastUpdate": "36 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
       "name": "Route de Sidi Mansour",
-      "gridVotes": 2,
+      "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "17 min",
+      "lastUpdate": "43 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
@@ -51,7 +78,7 @@
       "name": "Route de Tunis",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "7 min",
+      "lastUpdate": "32 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
