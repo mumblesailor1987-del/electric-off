@@ -1,56 +1,64 @@
 {
-  "scraped_at": "2026-08-16T08:13:12.763Z",
+  "scraped_at": "2026-08-16T08:49:10.876Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 6,
+  "total_zones": 7,
   "zones": [
     {
       "slug": "tunis",
       "name": "Tunis",
       "gov": "Tunis",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-08-16T08:13:12.762Z"
+      "on_count": 3,
+      "off_count": 0,
+      "last_report": "2026-08-16T08:49:10.876Z"
     },
     {
       "slug": "ariana",
       "name": "Ariana",
       "gov": "Ariana",
-      "on_count": 5,
-      "off_count": 2,
-      "last_report": "2026-08-16T08:13:12.763Z"
+      "on_count": 7,
+      "off_count": 5,
+      "last_report": "2026-08-16T08:49:10.876Z"
     },
     {
       "slug": "ben-arous",
       "name": "Ben arous",
       "gov": "Ben arous",
       "on_count": 2,
-      "off_count": 3,
-      "last_report": "2026-08-16T08:13:12.763Z"
+      "off_count": 4,
+      "last_report": "2026-08-16T08:49:10.876Z"
     },
     {
       "slug": "unknown",
       "name": "Unknown",
       "gov": "Unknown",
       "on_count": 1,
-      "off_count": 1,
-      "last_report": "2026-08-16T08:13:12.763Z"
+      "off_count": 0,
+      "last_report": "2026-08-16T08:49:10.876Z"
     },
     {
-      "slug": "jendouba",
-      "name": "Jendouba",
-      "gov": "Jendouba",
+      "slug": "manouba",
+      "name": "Manouba",
+      "gov": "Manouba",
       "on_count": 1,
       "off_count": 0,
-      "last_report": "2026-08-16T08:13:12.763Z"
+      "last_report": "2026-08-16T08:49:10.876Z"
+    },
+    {
+      "slug": "médenine",
+      "name": "Médenine",
+      "gov": "Médenine",
+      "on_count": 1,
+      "off_count": 1,
+      "last_report": "2026-08-16T08:49:10.876Z"
     },
     {
       "slug": "monastir",
       "name": "Monastir",
       "gov": "Monastir",
-      "on_count": 3,
-      "off_count": 0,
-      "last_report": "2026-08-16T08:13:12.763Z"
+      "on_count": 2,
+      "off_count": 2,
+      "last_report": "2026-08-16T08:49:10.876Z"
     }
   ]
 }
