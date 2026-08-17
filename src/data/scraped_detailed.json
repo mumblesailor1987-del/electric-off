@@ -1,33 +1,60 @@
 {
-  "scraped_at": "2026-08-17T04:25:04.379Z",
-  "total_detailed_zones": 3,
+  "scraped_at": "2026-08-17T05:08:23.811Z",
+  "total_detailed_zones": 6,
   "zones": [
     {
-      "name": "La Marsa",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "17 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Jardins d'El Menzah 1",
+      "name": "Cité El Wahat (L'Aouina)",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "37 min",
+      "lastUpdate": "22 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Djerba Midoun",
+      "name": "La Marsa",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "3 min",
+      "lastUpdate": "5 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Mornag",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "36 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Nouvelle Médina",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "1 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Korba",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "6 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Menzel Temime",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "15 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }
