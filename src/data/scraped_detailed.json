@@ -1,30 +1,12 @@
 {
-  "scraped_at": "2026-08-17T05:08:23.811Z",
-  "total_detailed_zones": 6,
+  "scraped_at": "2026-08-17T05:48:45.690Z",
+  "total_detailed_zones": 5,
   "zones": [
-    {
-      "name": "Cité El Wahat (L'Aouina)",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "22 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "La Marsa",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "5 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
     {
       "name": "Mornag",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "36 min",
+      "lastUpdate": "15 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -33,25 +15,34 @@
       "name": "Nouvelle Médina",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "1 min",
+      "lastUpdate": "41 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Korba",
+      "name": "Cité AFH Nabeul",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "6 min",
+      "lastUpdate": "33 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Menzel Temime",
+      "name": "Route El Aïn",
+      "gridVotes": 3,
+      "lightVotes": 0,
+      "lastUpdate": "3 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Hammam Sousse",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "15 min",
+      "lastUpdate": "20 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
