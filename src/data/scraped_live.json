@@ -1,48 +1,56 @@
 {
-  "scraped_at": "2026-08-17T08:09:59.468Z",
+  "scraped_at": "2026-08-17T09:00:38.814Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 5,
+  "total_zones": 6,
   "zones": [
-    {
-      "slug": "ben-arous",
-      "name": "Ben arous",
-      "gov": "Ben arous",
-      "on_count": 2,
-      "off_count": 1,
-      "last_report": "2026-08-17T08:09:59.467Z"
-    },
     {
       "slug": "tunis",
       "name": "Tunis",
       "gov": "Tunis",
-      "on_count": 3,
-      "off_count": 0,
-      "last_report": "2026-08-17T08:09:59.468Z"
+      "on_count": 5,
+      "off_count": 3,
+      "last_report": "2026-08-17T09:00:38.813Z"
     },
     {
-      "slug": "bizerte",
-      "name": "Bizerte",
-      "gov": "Bizerte",
-      "on_count": 2,
-      "off_count": 0,
-      "last_report": "2026-08-17T08:09:59.468Z"
+      "slug": "manouba",
+      "name": "Manouba",
+      "gov": "Manouba",
+      "on_count": 16,
+      "off_count": 6,
+      "last_report": "2026-08-17T09:00:38.814Z"
     },
     {
-      "slug": "nabeul",
-      "name": "Nabeul",
-      "gov": "Nabeul",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-08-17T08:09:59.468Z"
+      "slug": "ariana",
+      "name": "Ariana",
+      "gov": "Ariana",
+      "on_count": 43,
+      "off_count": 14,
+      "last_report": "2026-08-17T09:00:38.814Z"
     },
     {
-      "slug": "sfax",
-      "name": "Sfax",
-      "gov": "Sfax",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-08-17T08:09:59.468Z"
+      "slug": "ben-arous",
+      "name": "Ben arous",
+      "gov": "Ben arous",
+      "on_count": 5,
+      "off_count": 2,
+      "last_report": "2026-08-17T09:00:38.814Z"
+    },
+    {
+      "slug": "unknown",
+      "name": "Unknown",
+      "gov": "Unknown",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-08-17T09:00:38.814Z"
+    },
+    {
+      "slug": "monastir",
+      "name": "Monastir",
+      "gov": "Monastir",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-08-17T09:00:38.814Z"
     }
   ]
 }
