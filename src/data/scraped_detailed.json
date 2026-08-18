@@ -1,234 +1,18 @@
 {
-  "scraped_at": "2026-08-18T23:03:24.840Z",
-  "total_detailed_zones": 29,
+  "scraped_at": "2026-08-18T23:32:48.338Z",
+  "total_detailed_zones": 21,
   "zones": [
     {
-      "name": "Cité El Wahat (L'Aouina)",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "30 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "name": "Cité El Khadra / Olympique",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "14 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     },
     {
       "name": "Ezzahrouni",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "16 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Sidi Hassine / Séjoumi",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "18 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Cité Ettadhamen",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "19 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Dar Fadhal",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "34 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Ennasr 1",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "26 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Ennasr 2",
-      "gridVotes": 0,
-      "lightVotes": 2,
-      "lastUpdate": "27 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Jardins d'El Menzah 1",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "8 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Jardins d'El Menzah 2",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "24 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "La Soukra",
-      "gridVotes": 2,
-      "lightVotes": 0,
-      "lastUpdate": "9 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Mnihla",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "40 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Raoued",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "31 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "El Mhamdia / Fouchana",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "33 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Hammam Lif / Hammam Chott",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "1 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Manouba Ville / Denden",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "12 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Mornaguia / Borj El Amri",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "18 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Oued Ellil",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "43 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Ras Jebel",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "7 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Mareth",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "6 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Djerba Houmt Souk",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "19 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Monastir Ville / Skanes",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "40 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Dar Chaâbane / Béni Khiar",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "41 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Route de Gremda",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "22 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Route El Aïn",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "36 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Bouficha",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "28 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Chott Meriem",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "14 min",
@@ -237,28 +21,172 @@
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Hammam Sousse",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "25 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Kalâa Seghira",
+      "name": "Gammarth Village",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "37 min",
+      "lastUpdate": "23 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Port El Kantaoui",
+      "name": "Chotrana 3",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "34 min",
+      "lastUpdate": "24 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Jardins d'El Menzah 1",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "38 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Jardins d'El Menzah 2",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "13 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "La Soukra",
+      "gridVotes": 2,
+      "lightVotes": 1,
+      "lastUpdate": "12 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Mourouj 2",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "27 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Hammam Lif / Hammam Chott",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "31 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Manouba Ville / Denden",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "42 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Ras Jebel",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "37 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Sejnane",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "24 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Mareth",
+      "gridVotes": 2,
+      "lightVotes": 0,
+      "lastUpdate": "14 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Ben Guerdane",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "21 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Djerba Houmt Souk",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "3 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Route de l'Aéroport",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "1 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Route de Teniour",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "6 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Route El Aïn",
+      "gridVotes": 2,
+      "lightVotes": 0,
+      "lastUpdate": "2 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Route Lafrane",
+      "gridVotes": 3,
+      "lightVotes": 0,
+      "lastUpdate": "2 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Route Menzel Chaker",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "6 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Chott Meriem",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "44 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
