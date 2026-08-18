@@ -1,27 +1,36 @@
 {
-  "scraped_at": "2026-08-18T04:12:14.179Z",
-  "total_detailed_zones": 7,
+  "scraped_at": "2026-08-18T04:51:36.290Z",
+  "total_detailed_zones": 8,
   "zones": [
     {
-      "name": "Cité Ibn Sina",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "10 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Le Kram Est",
+      "name": "El Omrane Supérieur",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "14 min",
+      "lastUpdate": "21 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Manouba Ville / Denden",
+      "name": "Cité Hédi Nouira",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "18 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Cité Intilaka",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "2 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Petite Ariana",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "38 min",
@@ -30,40 +39,40 @@
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Djerba Aghir",
-      "gridVotes": 2,
-      "lightVotes": 0,
-      "lastUpdate": "17 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Djerba Midoun",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "24 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Kélibia",
-      "gridVotes": 2,
-      "lightVotes": 0,
-      "lastUpdate": "2 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Kalâa Kebira",
+      "name": "Mornag",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "29 min",
+      "lastUpdate": "15 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Oued Ellil",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "36 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Kélibia",
+      "gridVotes": 6,
+      "lightVotes": 0,
+      "lastUpdate": "9 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Cité Jardin (Sfax)",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "1 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     }
   ]
 }
