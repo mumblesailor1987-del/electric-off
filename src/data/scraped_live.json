@@ -1,64 +1,48 @@
 {
-  "scraped_at": "2026-08-18T01:45:13.621Z",
+  "scraped_at": "2026-08-18T02:43:12.524Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 7,
+  "total_zones": 5,
   "zones": [
     {
       "slug": "ariana",
       "name": "Ariana",
       "gov": "Ariana",
-      "on_count": 5,
-      "off_count": 3,
-      "last_report": "2026-08-18T01:45:13.621Z"
-    },
-    {
-      "slug": "tunis",
-      "name": "Tunis",
-      "gov": "Tunis",
-      "on_count": 1,
+      "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-08-18T01:45:13.621Z"
+      "last_report": "2026-08-18T02:43:12.524Z"
     },
     {
       "slug": "manouba",
       "name": "Manouba",
       "gov": "Manouba",
-      "on_count": 2,
-      "off_count": 0,
-      "last_report": "2026-08-18T01:45:13.621Z"
+      "on_count": 0,
+      "off_count": 2,
+      "last_report": "2026-08-18T02:43:12.524Z"
     },
     {
       "slug": "ben-arous",
       "name": "Ben arous",
       "gov": "Ben arous",
       "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-08-18T01:45:13.621Z"
+      "off_count": 4,
+      "last_report": "2026-08-18T02:43:12.524Z"
     },
     {
-      "slug": "bizerte",
-      "name": "Bizerte",
-      "gov": "Bizerte",
+      "slug": "mahdia",
+      "name": "Mahdia",
+      "gov": "Mahdia",
       "on_count": 0,
-      "off_count": 2,
-      "last_report": "2026-08-18T01:45:13.621Z"
-    },
-    {
-      "slug": "médenine",
-      "name": "Médenine",
-      "gov": "Médenine",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-08-18T01:45:13.621Z"
+      "off_count": 1,
+      "last_report": "2026-08-18T02:43:12.524Z"
     },
     {
       "slug": "sfax",
       "name": "Sfax",
       "gov": "Sfax",
-      "on_count": 3,
+      "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-08-18T01:45:13.621Z"
+      "last_report": "2026-08-18T02:43:12.524Z"
     }
   ]
 }
