@@ -1,48 +1,39 @@
 {
-  "scraped_at": "2026-08-19T04:02:07.076Z",
+  "scraped_at": "2026-08-19T05:17:04.633Z",
   "total_detailed_zones": 6,
   "zones": [
     {
-      "name": "Carthage Mohamed Ali",
+      "name": "Cité Ettadhamen",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "26 min",
+      "lastUpdate": "20 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Cité Ezzouhour",
-      "gridVotes": 1,
+      "name": "Jardins d'El Menzah 2",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "18 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Mnihla",
+      "gridVotes": 2,
       "lightVotes": 0,
-      "lastUpdate": "37 min",
+      "lastUpdate": "24 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Chotrana 1",
+      "name": "Menzel Bourguiba",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "26 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "La Soukra",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "34 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Ezzahra",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "36 min",
+      "lastUpdate": "29 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -51,7 +42,16 @@
       "name": "Soliman / Menzel Bouzelfa",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "27 min",
+      "lastUpdate": "33 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Hammam Sousse",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "18 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
