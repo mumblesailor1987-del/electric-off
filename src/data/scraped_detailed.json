@@ -1,12 +1,12 @@
 {
-  "scraped_at": "2026-08-20T05:35:53.419Z",
-  "total_detailed_zones": 6,
+  "scraped_at": "2026-08-20T06:01:01.462Z",
+  "total_detailed_zones": 7,
   "zones": [
     {
       "name": "Aïn Zaghouan",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "14 min",
+      "lastUpdate": "39 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -14,26 +14,26 @@
     {
       "name": "La Soukra",
       "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "3 min",
+      "lightVotes": 2,
+      "lastUpdate": "16 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
       "name": "Mnihla",
-      "gridVotes": 1,
+      "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "14 min",
+      "lastUpdate": "39 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Mornag",
+      "name": "Douar Hicher",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "36 min",
+      "lastUpdate": "4 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -42,7 +42,7 @@
       "name": "Metline",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "1 min",
+      "lastUpdate": "26 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
@@ -51,10 +51,19 @@
       "name": "Route Menzel Chaker",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "3 min",
+      "lastUpdate": "28 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Chott Meriem",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "3 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }
