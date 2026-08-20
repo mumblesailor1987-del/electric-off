@@ -1,32 +1,40 @@
 {
-  "scraped_at": "2026-08-20T03:32:02.342Z",
+  "scraped_at": "2026-08-20T04:18:09.945Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 4,
+  "total_zones": 5,
   "zones": [
     {
-      "slug": "ariana",
-      "name": "Ariana",
-      "gov": "Ariana",
-      "on_count": 0,
-      "off_count": 4,
-      "last_report": "2026-08-20T03:32:02.342Z"
-    },
-    {
-      "slug": "béja",
-      "name": "Béja",
-      "gov": "Béja",
+      "slug": "tunis",
+      "name": "Tunis",
+      "gov": "Tunis",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-08-20T03:32:02.342Z"
+      "last_report": "2026-08-20T04:18:09.945Z"
+    },
+    {
+      "slug": "ben-arous",
+      "name": "Ben arous",
+      "gov": "Ben arous",
+      "on_count": 1,
+      "off_count": 0,
+      "last_report": "2026-08-20T04:18:09.945Z"
+    },
+    {
+      "slug": "bizerte",
+      "name": "Bizerte",
+      "gov": "Bizerte",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-08-20T04:18:09.945Z"
     },
     {
       "slug": "nabeul",
       "name": "Nabeul",
       "gov": "Nabeul",
       "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-08-20T03:32:02.342Z"
+      "off_count": 2,
+      "last_report": "2026-08-20T04:18:09.945Z"
     },
     {
       "slug": "sfax",
@@ -34,7 +42,7 @@
       "gov": "Sfax",
       "on_count": 1,
       "off_count": 0,
-      "last_report": "2026-08-20T03:32:02.342Z"
+      "last_report": "2026-08-20T04:18:09.945Z"
     }
   ]
 }
