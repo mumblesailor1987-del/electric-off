@@ -1,72 +1,40 @@
 {
-  "scraped_at": "2026-08-20T01:44:49.166Z",
+  "scraped_at": "2026-08-20T02:44:10.535Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 8,
+  "total_zones": 4,
   "zones": [
-    {
-      "slug": "tunis",
-      "name": "Tunis",
-      "gov": "Tunis",
-      "on_count": 3,
-      "off_count": 0,
-      "last_report": "2026-08-20T01:44:49.166Z"
-    },
     {
       "slug": "ariana",
       "name": "Ariana",
       "gov": "Ariana",
-      "on_count": 1,
-      "off_count": 3,
-      "last_report": "2026-08-20T01:44:49.166Z"
+      "on_count": 3,
+      "off_count": 2,
+      "last_report": "2026-08-20T02:44:10.535Z"
     },
     {
-      "slug": "mahdia",
-      "name": "Mahdia",
-      "gov": "Mahdia",
-      "on_count": 2,
-      "off_count": 4,
-      "last_report": "2026-08-20T01:44:49.166Z"
+      "slug": "tunis",
+      "name": "Tunis",
+      "gov": "Tunis",
+      "on_count": 1,
+      "off_count": 1,
+      "last_report": "2026-08-20T02:44:10.535Z"
     },
     {
       "slug": "ben-arous",
       "name": "Ben arous",
       "gov": "Ben arous",
-      "on_count": 6,
-      "off_count": 8,
-      "last_report": "2026-08-20T01:44:49.166Z"
-    },
-    {
-      "slug": "jendouba",
-      "name": "Jendouba",
-      "gov": "Jendouba",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-08-20T01:44:49.166Z"
-    },
-    {
-      "slug": "nabeul",
-      "name": "Nabeul",
-      "gov": "Nabeul",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-08-20T01:44:49.166Z"
+      "on_count": 1,
+      "off_count": 2,
+      "last_report": "2026-08-20T02:44:10.535Z"
     },
     {
       "slug": "sfax",
       "name": "Sfax",
       "gov": "Sfax",
-      "on_count": 11,
-      "off_count": 6,
-      "last_report": "2026-08-20T01:44:49.166Z"
-    },
-    {
-      "slug": "sousse",
-      "name": "Sousse",
-      "gov": "Sousse",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-08-20T01:44:49.166Z"
+      "on_count": 2,
+      "off_count": 0,
+      "last_report": "2026-08-20T02:44:10.535Z"
     }
   ]
 }
