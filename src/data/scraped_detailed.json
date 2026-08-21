@@ -1,123 +1,96 @@
 {
-  "scraped_at": "2026-08-21T03:34:47.058Z",
-  "total_detailed_zones": 13,
+  "scraped_at": "2026-08-21T04:21:24.855Z",
+  "total_detailed_zones": 10,
   "zones": [
     {
-      "name": "Cité El Wahat (L'Aouina)",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "2 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "name": "Berges du Lac 1",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "30 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Cité Ibn Khaldoun",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "6 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     },
     {
       "name": "El Omrane Supérieur",
-      "gridVotes": 1,
-      "lightVotes": 1,
-      "lastUpdate": "34 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Jardins de Carthage (côté ISC / villas)",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "37 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "gridVotes": 4,
+      "lightVotes": 0,
+      "lastUpdate": "19 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     },
     {
       "name": "Ras Tabia",
-      "gridVotes": 4,
+      "gridVotes": 3,
       "lightVotes": 0,
-      "lastUpdate": "18 min",
+      "lastUpdate": "23 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "El Menzah 7",
+      "name": "Borj Louzir",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "27 min",
+      "lastUpdate": "33 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "El Menzah 8",
+      "name": "El Menzah 9",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "27 min",
+      "lastUpdate": "31 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Raoued",
-      "gridVotes": 2,
-      "lightVotes": 0,
-      "lastUpdate": "17 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "El Mourouj 5",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "35 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Mégrine",
+      "name": "Mornag",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "38 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Mégrine Riadh",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "38 min",
+      "lastUpdate": "30 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
       "name": "Radès",
-      "gridVotes": 0,
-      "lightVotes": 2,
-      "lastUpdate": "2 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Gabès Sud",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "22 min",
+      "lastUpdate": "37 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Korba",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "11 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "name": "El Jedaïda",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "37 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Route de Gremda",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "38 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     }
   ]
 }
