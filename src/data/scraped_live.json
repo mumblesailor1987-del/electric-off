@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-21T05:41:06.715Z",
+  "scraped_at": "2026-08-21T06:04:36.929Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
   "total_zones": 8,
@@ -9,32 +9,40 @@
       "name": "Tunis",
       "gov": "Tunis",
       "on_count": 3,
-      "off_count": 3,
-      "last_report": "2026-08-21T05:41:06.715Z"
-    },
-    {
-      "slug": "manouba",
-      "name": "Manouba",
-      "gov": "Manouba",
-      "on_count": 1,
-      "off_count": 1,
-      "last_report": "2026-08-21T05:41:06.715Z"
+      "off_count": 2,
+      "last_report": "2026-08-21T06:04:36.929Z"
     },
     {
       "slug": "ariana",
       "name": "Ariana",
       "gov": "Ariana",
+      "on_count": 3,
+      "off_count": 5,
+      "last_report": "2026-08-21T06:04:36.929Z"
+    },
+    {
+      "slug": "manouba",
+      "name": "Manouba",
+      "gov": "Manouba",
       "on_count": 2,
-      "off_count": 2,
-      "last_report": "2026-08-21T05:41:06.715Z"
+      "off_count": 0,
+      "last_report": "2026-08-21T06:04:36.929Z"
     },
     {
       "slug": "ben-arous",
       "name": "Ben arous",
       "gov": "Ben arous",
-      "on_count": 0,
+      "on_count": 2,
       "off_count": 3,
-      "last_report": "2026-08-21T05:41:06.715Z"
+      "last_report": "2026-08-21T06:04:36.929Z"
+    },
+    {
+      "slug": "gabès",
+      "name": "Gabès",
+      "gov": "Gabès",
+      "on_count": 0,
+      "off_count": 2,
+      "last_report": "2026-08-21T06:04:36.929Z"
     },
     {
       "slug": "mahdia",
@@ -42,15 +50,15 @@
       "gov": "Mahdia",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-08-21T05:41:06.715Z"
+      "last_report": "2026-08-21T06:04:36.929Z"
     },
     {
       "slug": "nabeul",
       "name": "Nabeul",
       "gov": "Nabeul",
-      "on_count": 2,
-      "off_count": 2,
-      "last_report": "2026-08-21T05:41:06.715Z"
+      "on_count": 1,
+      "off_count": 0,
+      "last_report": "2026-08-21T06:04:36.929Z"
     },
     {
       "slug": "sousse",
@@ -58,15 +66,7 @@
       "gov": "Sousse",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-08-21T05:41:06.715Z"
-    },
-    {
-      "slug": "tozeur",
-      "name": "Tozeur",
-      "gov": "Tozeur",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-08-21T05:41:06.715Z"
+      "last_report": "2026-08-21T06:04:36.929Z"
     }
   ]
 }
