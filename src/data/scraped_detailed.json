@@ -1,36 +1,45 @@
 {
-  "scraped_at": "2026-08-22T05:38:09.821Z",
+  "scraped_at": "2026-08-22T06:00:01.378Z",
   "total_detailed_zones": 11,
   "zones": [
-    {
-      "name": "Le Kram",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "32 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
     {
       "name": "Le Kram Est",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "13 min",
+      "lastUpdate": "35 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
       "name": "Le Kram Ouest",
-      "gridVotes": 3,
+      "gridVotes": 2,
       "lightVotes": 0,
-      "lastUpdate": "13 min",
+      "lastUpdate": "35 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
       "name": "Borj Louzir",
+      "gridVotes": 1,
+      "lightVotes": 1,
+      "lastUpdate": "14 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Cité El Ghazela",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "8 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Cité Ennozha",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "1 min",
@@ -40,9 +49,9 @@
     },
     {
       "name": "Cité Hédi Nouira",
-      "gridVotes": 2,
+      "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "21 min",
+      "lastUpdate": "43 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
@@ -51,14 +60,14 @@
       "name": "Cité Jaafar",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "23 min",
+      "lastUpdate": "7 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
       "name": "Sidi Fraj",
-      "gridVotes": 1,
+      "gridVotes": 2,
       "lightVotes": 0,
       "lastUpdate": "16 min",
       "status": "power-off",
@@ -67,9 +76,9 @@
     },
     {
       "name": "Manouba Ville / Denden",
-      "gridVotes": 9,
+      "gridVotes": 5,
       "lightVotes": 0,
-      "lastUpdate": "23s",
+      "lastUpdate": "20 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
@@ -78,25 +87,16 @@
       "name": "Dar Chaâbane El Fehri",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "16 min",
+      "lastUpdate": "38 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Soliman / Menzel Bouzelfa",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "30 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Sakiet Ezzit",
+      "name": "Hammam Sousse",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "29 min",
+      "lastUpdate": "20 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"

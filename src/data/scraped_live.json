@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-22T05:38:09.821Z",
+  "scraped_at": "2026-08-22T06:00:01.377Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
   "total_zones": 7,
@@ -8,57 +8,57 @@
       "slug": "tunis",
       "name": "Tunis",
       "gov": "Tunis",
-      "on_count": 5,
+      "on_count": 3,
       "off_count": 0,
-      "last_report": "2026-08-22T05:38:09.821Z"
+      "last_report": "2026-08-22T06:00:01.377Z"
     },
     {
       "slug": "ben-arous",
       "name": "Ben arous",
       "gov": "Ben arous",
-      "on_count": 0,
+      "on_count": 1,
       "off_count": 1,
-      "last_report": "2026-08-22T05:38:09.821Z"
+      "last_report": "2026-08-22T06:00:01.377Z"
     },
     {
       "slug": "ariana",
       "name": "Ariana",
       "gov": "Ariana",
-      "on_count": 3,
-      "off_count": 0,
-      "last_report": "2026-08-22T05:38:09.821Z"
+      "on_count": 2,
+      "off_count": 2,
+      "last_report": "2026-08-22T06:00:01.377Z"
     },
     {
       "slug": "mahdia",
       "name": "Mahdia",
       "gov": "Mahdia",
-      "on_count": 1,
+      "on_count": 2,
       "off_count": 0,
-      "last_report": "2026-08-22T05:38:09.821Z"
+      "last_report": "2026-08-22T06:00:01.377Z"
     },
     {
       "slug": "manouba",
       "name": "Manouba",
       "gov": "Manouba",
-      "on_count": 9,
+      "on_count": 5,
       "off_count": 0,
-      "last_report": "2026-08-22T05:38:09.821Z"
+      "last_report": "2026-08-22T06:00:01.377Z"
     },
     {
       "slug": "nabeul",
       "name": "Nabeul",
       "gov": "Nabeul",
       "on_count": 1,
-      "off_count": 1,
-      "last_report": "2026-08-22T05:38:09.821Z"
+      "off_count": 0,
+      "last_report": "2026-08-22T06:00:01.377Z"
     },
     {
-      "slug": "sfax",
-      "name": "Sfax",
-      "gov": "Sfax",
+      "slug": "sousse",
+      "name": "Sousse",
+      "gov": "Sousse",
       "on_count": 1,
       "off_count": 0,
-      "last_report": "2026-08-22T05:38:09.821Z"
+      "last_report": "2026-08-22T06:00:01.377Z"
     }
   ]
 }
