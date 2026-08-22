@@ -1,21 +1,12 @@
 {
-  "scraped_at": "2026-08-22T03:57:12.090Z",
-  "total_detailed_zones": 9,
+  "scraped_at": "2026-08-22T04:35:34.556Z",
+  "total_detailed_zones": 7,
   "zones": [
     {
       "name": "Bhar Lazreg",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "38s",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Cité El Wahat (L'Aouina)",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "14 min",
+      "lastUpdate": "39 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -23,62 +14,53 @@
     {
       "name": "Le Kram Ouest",
       "gridVotes": 3,
-      "lightVotes": 1,
-      "lastUpdate": "7 min",
+      "lightVotes": 0,
+      "lastUpdate": "16 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
       "name": "Borj Louzir",
-      "gridVotes": 1,
+      "gridVotes": 3,
       "lightVotes": 0,
-      "lastUpdate": "27 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Borj Touil",
-      "gridVotes": 2,
-      "lightVotes": 0,
-      "lastUpdate": "21 min",
+      "lastUpdate": "9 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
       "name": "Cité Hédi Nouira",
-      "gridVotes": 2,
+      "gridVotes": 5,
       "lightVotes": 0,
-      "lastUpdate": "2 min",
+      "lastUpdate": "18 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "El Menzah 5",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "38 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "name": "Manouba Ville / Denden",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "30s",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     },
     {
-      "name": "Kébili Ville",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "43 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "name": "Béni Khedache",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "26 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     },
     {
-      "name": "Route de Mahdia",
+      "name": "Zaouiet Djedidi",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "8 min",
+      "lastUpdate": "19 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
