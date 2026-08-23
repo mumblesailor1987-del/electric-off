@@ -1,24 +1,40 @@
 {
-  "scraped_at": "2026-08-23T04:40:29.924Z",
+  "scraped_at": "2026-08-23T05:13:00.894Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 6,
+  "total_zones": 7,
   "zones": [
     {
       "slug": "tunis",
       "name": "Tunis",
       "gov": "Tunis",
-      "on_count": 13,
-      "off_count": 0,
-      "last_report": "2026-08-23T04:40:29.924Z"
+      "on_count": 11,
+      "off_count": 5,
+      "last_report": "2026-08-23T05:13:00.894Z"
     },
     {
-      "slug": "unknown",
-      "name": "Unknown",
-      "gov": "Unknown",
+      "slug": "ben-arous",
+      "name": "Ben arous",
+      "gov": "Ben arous",
+      "on_count": 0,
+      "off_count": 5,
+      "last_report": "2026-08-23T05:13:00.894Z"
+    },
+    {
+      "slug": "ariana",
+      "name": "Ariana",
+      "gov": "Ariana",
+      "on_count": 0,
+      "off_count": 2,
+      "last_report": "2026-08-23T05:13:00.894Z"
+    },
+    {
+      "slug": "bizerte",
+      "name": "Bizerte",
+      "gov": "Bizerte",
       "on_count": 1,
       "off_count": 0,
-      "last_report": "2026-08-23T04:40:29.924Z"
+      "last_report": "2026-08-23T05:13:00.894Z"
     },
     {
       "slug": "gafsa",
@@ -26,23 +42,15 @@
       "gov": "Gafsa",
       "on_count": 1,
       "off_count": 0,
-      "last_report": "2026-08-23T04:40:29.924Z"
+      "last_report": "2026-08-23T05:13:00.894Z"
     },
     {
       "slug": "nabeul",
       "name": "Nabeul",
       "gov": "Nabeul",
       "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-08-23T04:40:29.924Z"
-    },
-    {
-      "slug": "sfax",
-      "name": "Sfax",
-      "gov": "Sfax",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-08-23T04:40:29.924Z"
+      "off_count": 2,
+      "last_report": "2026-08-23T05:13:00.894Z"
     },
     {
       "slug": "sousse",
@@ -50,7 +58,7 @@
       "gov": "Sousse",
       "on_count": 3,
       "off_count": 0,
-      "last_report": "2026-08-23T04:40:29.924Z"
+      "last_report": "2026-08-23T05:13:00.894Z"
     }
   ]
 }
