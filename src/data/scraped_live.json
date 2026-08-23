@@ -1,64 +1,56 @@
 {
-  "scraped_at": "2026-08-23T03:00:25.048Z",
+  "scraped_at": "2026-08-23T03:57:02.283Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 7,
+  "total_zones": 6,
   "zones": [
     {
       "slug": "tunis",
       "name": "Tunis",
       "gov": "Tunis",
-      "on_count": 8,
-      "off_count": 1,
-      "last_report": "2026-08-23T03:00:25.048Z"
+      "on_count": 7,
+      "off_count": 3,
+      "last_report": "2026-08-23T03:57:02.283Z"
     },
     {
       "slug": "ariana",
       "name": "Ariana",
       "gov": "Ariana",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-08-23T03:00:25.048Z"
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-08-23T03:57:02.283Z"
     },
     {
       "slug": "ben-arous",
       "name": "Ben arous",
       "gov": "Ben arous",
-      "on_count": 5,
-      "off_count": 3,
-      "last_report": "2026-08-23T03:00:25.048Z"
+      "on_count": 6,
+      "off_count": 6,
+      "last_report": "2026-08-23T03:57:02.283Z"
     },
     {
-      "slug": "manouba",
-      "name": "Manouba",
-      "gov": "Manouba",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-08-23T03:00:25.048Z"
-    },
-    {
-      "slug": "jendouba",
-      "name": "Jendouba",
-      "gov": "Jendouba",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-08-23T03:00:25.048Z"
-    },
-    {
-      "slug": "monastir",
-      "name": "Monastir",
-      "gov": "Monastir",
+      "slug": "bizerte",
+      "name": "Bizerte",
+      "gov": "Bizerte",
       "on_count": 1,
       "off_count": 0,
-      "last_report": "2026-08-23T03:00:25.048Z"
+      "last_report": "2026-08-23T03:57:02.283Z"
     },
     {
       "slug": "sfax",
       "name": "Sfax",
       "gov": "Sfax",
-      "on_count": 1,
+      "on_count": 0,
+      "off_count": 2,
+      "last_report": "2026-08-23T03:57:02.283Z"
+    },
+    {
+      "slug": "sousse",
+      "name": "Sousse",
+      "gov": "Sousse",
+      "on_count": 2,
       "off_count": 0,
-      "last_report": "2026-08-23T03:00:25.048Z"
+      "last_report": "2026-08-23T03:57:02.283Z"
     }
   ]
 }
