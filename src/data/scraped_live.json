@@ -1,40 +1,40 @@
 {
-  "scraped_at": "2026-08-26T03:38:51.572Z",
+  "scraped_at": "2026-08-26T04:23:47.321Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 12,
+  "total_zones": 15,
   "zones": [
     {
       "slug": "tunis",
       "name": "Tunis",
       "gov": "Tunis",
-      "on_count": 10,
-      "off_count": 9,
-      "last_report": "2026-08-26T03:38:51.572Z"
-    },
-    {
-      "slug": "manouba",
-      "name": "Manouba",
-      "gov": "Manouba",
-      "on_count": 2,
-      "off_count": 3,
-      "last_report": "2026-08-26T03:38:51.572Z"
-    },
-    {
-      "slug": "ariana",
-      "name": "Ariana",
-      "gov": "Ariana",
-      "on_count": 3,
-      "off_count": 20,
-      "last_report": "2026-08-26T03:38:51.572Z"
+      "on_count": 12,
+      "off_count": 7,
+      "last_report": "2026-08-26T04:23:47.321Z"
     },
     {
       "slug": "ben-arous",
       "name": "Ben arous",
       "gov": "Ben arous",
-      "on_count": 5,
-      "off_count": 9,
-      "last_report": "2026-08-26T03:38:51.572Z"
+      "on_count": 4,
+      "off_count": 7,
+      "last_report": "2026-08-26T04:23:47.321Z"
+    },
+    {
+      "slug": "manouba",
+      "name": "Manouba",
+      "gov": "Manouba",
+      "on_count": 4,
+      "off_count": 5,
+      "last_report": "2026-08-26T04:23:47.321Z"
+    },
+    {
+      "slug": "ariana",
+      "name": "Ariana",
+      "gov": "Ariana",
+      "on_count": 2,
+      "off_count": 3,
+      "last_report": "2026-08-26T04:23:47.321Z"
     },
     {
       "slug": "bizerte",
@@ -42,7 +42,7 @@
       "gov": "Bizerte",
       "on_count": 0,
       "off_count": 2,
-      "last_report": "2026-08-26T03:38:51.572Z"
+      "last_report": "2026-08-26T04:23:47.321Z"
     },
     {
       "slug": "gabès",
@@ -50,31 +50,55 @@
       "gov": "Gabès",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-08-26T03:38:51.572Z"
+      "last_report": "2026-08-26T04:23:47.321Z"
+    },
+    {
+      "slug": "gafsa",
+      "name": "Gafsa",
+      "gov": "Gafsa",
+      "on_count": 3,
+      "off_count": 0,
+      "last_report": "2026-08-26T04:23:47.321Z"
+    },
+    {
+      "slug": "jendouba",
+      "name": "Jendouba",
+      "gov": "Jendouba",
+      "on_count": 1,
+      "off_count": 0,
+      "last_report": "2026-08-26T04:23:47.321Z"
+    },
+    {
+      "slug": "le-kef",
+      "name": "Le kef",
+      "gov": "Le kef",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-08-26T04:23:47.321Z"
     },
     {
       "slug": "mahdia",
       "name": "Mahdia",
       "gov": "Mahdia",
-      "on_count": 6,
+      "on_count": 7,
       "off_count": 5,
-      "last_report": "2026-08-26T03:38:51.572Z"
+      "last_report": "2026-08-26T04:23:47.321Z"
     },
     {
       "slug": "médenine",
       "name": "Médenine",
       "gov": "Médenine",
-      "on_count": 2,
+      "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-08-26T03:38:51.572Z"
+      "last_report": "2026-08-26T04:23:47.321Z"
     },
     {
       "slug": "monastir",
       "name": "Monastir",
       "gov": "Monastir",
-      "on_count": 3,
-      "off_count": 1,
-      "last_report": "2026-08-26T03:38:51.572Z"
+      "on_count": 7,
+      "off_count": 5,
+      "last_report": "2026-08-26T04:23:47.321Z"
     },
     {
       "slug": "nabeul",
@@ -82,23 +106,23 @@
       "gov": "Nabeul",
       "on_count": 1,
       "off_count": 3,
-      "last_report": "2026-08-26T03:38:51.572Z"
+      "last_report": "2026-08-26T04:23:47.321Z"
     },
     {
       "slug": "sfax",
       "name": "Sfax",
       "gov": "Sfax",
-      "on_count": 10,
-      "off_count": 12,
-      "last_report": "2026-08-26T03:38:51.572Z"
+      "on_count": 19,
+      "off_count": 9,
+      "last_report": "2026-08-26T04:23:47.321Z"
     },
     {
       "slug": "sousse",
       "name": "Sousse",
       "gov": "Sousse",
-      "on_count": 3,
+      "on_count": 1,
       "off_count": 0,
-      "last_report": "2026-08-26T03:38:51.572Z"
+      "last_report": "2026-08-26T04:23:47.321Z"
     }
   ]
 }
