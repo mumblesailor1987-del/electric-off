@@ -1,48 +1,64 @@
 {
-  "scraped_at": "2026-09-16T17:02:43.763Z",
+  "scraped_at": "2026-09-16T20:02:33.313Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 5,
+  "total_zones": 7,
   "zones": [
     {
-      "slug": "ben-arous",
-      "name": "Ben arous",
-      "gov": "Ben arous",
+      "slug": "tunis",
+      "name": "Tunis",
+      "gov": "Tunis",
       "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-09-16T17:02:43.763Z"
+      "off_count": 6,
+      "last_report": "2026-09-16T20:02:33.313Z"
     },
     {
       "slug": "ariana",
       "name": "Ariana",
       "gov": "Ariana",
+      "on_count": 1,
+      "off_count": 4,
+      "last_report": "2026-09-16T20:02:33.313Z"
+    },
+    {
+      "slug": "manouba",
+      "name": "Manouba",
+      "gov": "Manouba",
       "on_count": 0,
       "off_count": 2,
-      "last_report": "2026-09-16T17:02:43.763Z"
+      "last_report": "2026-09-16T20:02:33.313Z"
     },
     {
-      "slug": "bizerte",
-      "name": "Bizerte",
-      "gov": "Bizerte",
+      "slug": "ben-arous",
+      "name": "Ben arous",
+      "gov": "Ben arous",
       "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-09-16T17:02:43.763Z"
+      "off_count": 2,
+      "last_report": "2026-09-16T20:02:33.313Z"
     },
     {
-      "slug": "médenine",
-      "name": "Médenine",
-      "gov": "Médenine",
+      "slug": "gafsa",
+      "name": "Gafsa",
+      "gov": "Gafsa",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-09-16T17:02:43.763Z"
+      "last_report": "2026-09-16T20:02:33.313Z"
+    },
+    {
+      "slug": "monastir",
+      "name": "Monastir",
+      "gov": "Monastir",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-09-16T20:02:33.313Z"
     },
     {
       "slug": "sfax",
       "name": "Sfax",
       "gov": "Sfax",
       "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-09-16T17:02:43.763Z"
+      "off_count": 9,
+      "last_report": "2026-09-16T20:02:33.313Z"
     }
   ]
 }
