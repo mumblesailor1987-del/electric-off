@@ -1,5 +1,33 @@
 {
-  "scraped_at": "2026-09-16T01:42:50.738Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-09-16T06:49:14.984Z",
+  "total_detailed_zones": 3,
+  "zones": [
+    {
+      "name": "El Hraïria",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "44 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Riadh El Andalous",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "32 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Mornag",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "38 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    }
+  ]
 }
