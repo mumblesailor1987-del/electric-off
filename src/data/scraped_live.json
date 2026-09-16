@@ -1,64 +1,48 @@
 {
-  "scraped_at": "2026-09-16T12:13:44.086Z",
+  "scraped_at": "2026-09-16T17:02:43.763Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 7,
+  "total_zones": 5,
   "zones": [
     {
       "slug": "ben-arous",
       "name": "Ben arous",
       "gov": "Ben arous",
-      "on_count": 1,
-      "off_count": 4,
-      "last_report": "2026-09-16T12:13:44.086Z"
-    },
-    {
-      "slug": "manouba",
-      "name": "Manouba",
-      "gov": "Manouba",
-      "on_count": 2,
+      "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-09-16T12:13:44.086Z"
-    },
-    {
-      "slug": "tunis",
-      "name": "Tunis",
-      "gov": "Tunis",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-09-16T12:13:44.086Z"
+      "last_report": "2026-09-16T17:02:43.763Z"
     },
     {
       "slug": "ariana",
       "name": "Ariana",
       "gov": "Ariana",
       "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-09-16T12:13:44.086Z"
+      "off_count": 2,
+      "last_report": "2026-09-16T17:02:43.763Z"
     },
     {
-      "slug": "gafsa",
-      "name": "Gafsa",
-      "gov": "Gafsa",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-09-16T12:13:44.086Z"
+      "slug": "bizerte",
+      "name": "Bizerte",
+      "gov": "Bizerte",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-09-16T17:02:43.763Z"
     },
     {
       "slug": "médenine",
       "name": "Médenine",
       "gov": "Médenine",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-09-16T12:13:44.086Z"
-    },
-    {
-      "slug": "nabeul",
-      "name": "Nabeul",
-      "gov": "Nabeul",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-09-16T12:13:44.086Z"
+      "last_report": "2026-09-16T17:02:43.763Z"
+    },
+    {
+      "slug": "sfax",
+      "name": "Sfax",
+      "gov": "Sfax",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-09-16T17:02:43.763Z"
     }
   ]
 }
