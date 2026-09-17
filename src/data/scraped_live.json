@@ -1,80 +1,72 @@
 {
-  "scraped_at": "2026-09-17T19:15:33.431Z",
+  "scraped_at": "2026-09-17T22:15:01.365Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 9,
+  "total_zones": 8,
   "zones": [
     {
       "slug": "tunis",
       "name": "Tunis",
       "gov": "Tunis",
-      "on_count": 11,
+      "on_count": 7,
       "off_count": 5,
-      "last_report": "2026-09-17T19:15:33.431Z"
-    },
-    {
-      "slug": "ben-arous",
-      "name": "Ben arous",
-      "gov": "Ben arous",
-      "on_count": 2,
-      "off_count": 3,
-      "last_report": "2026-09-17T19:15:33.431Z"
-    },
-    {
-      "slug": "manouba",
-      "name": "Manouba",
-      "gov": "Manouba",
-      "on_count": 2,
-      "off_count": 1,
-      "last_report": "2026-09-17T19:15:33.431Z"
+      "last_report": "2026-09-17T22:15:01.365Z"
     },
     {
       "slug": "ariana",
       "name": "Ariana",
       "gov": "Ariana",
-      "on_count": 4,
+      "on_count": 1,
       "off_count": 2,
-      "last_report": "2026-09-17T19:15:33.431Z"
+      "last_report": "2026-09-17T22:15:01.365Z"
     },
     {
-      "slug": "bizerte",
-      "name": "Bizerte",
-      "gov": "Bizerte",
+      "slug": "manouba",
+      "name": "Manouba",
+      "gov": "Manouba",
       "on_count": 1,
       "off_count": 1,
-      "last_report": "2026-09-17T19:15:33.431Z"
+      "last_report": "2026-09-17T22:15:01.365Z"
     },
     {
-      "slug": "le-kef",
-      "name": "Le kef",
-      "gov": "Le kef",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-09-17T19:15:33.431Z"
-    },
-    {
-      "slug": "nabeul",
-      "name": "Nabeul",
-      "gov": "Nabeul",
+      "slug": "ben-arous",
+      "name": "Ben arous",
+      "gov": "Ben arous",
       "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-09-17T19:15:33.431Z"
-    },
-    {
-      "slug": "sfax",
-      "name": "Sfax",
-      "gov": "Sfax",
-      "on_count": 14,
-      "off_count": 1,
-      "last_report": "2026-09-17T19:15:33.431Z"
+      "off_count": 2,
+      "last_report": "2026-09-17T22:15:01.365Z"
     },
     {
       "slug": "unknown",
       "name": "Unknown",
       "gov": "Unknown",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-09-17T22:15:01.365Z"
+    },
+    {
+      "slug": "gabès",
+      "name": "Gabès",
+      "gov": "Gabès",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-09-17T22:15:01.365Z"
+    },
+    {
+      "slug": "kébili",
+      "name": "Kébili",
+      "gov": "Kébili",
       "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-09-17T19:15:33.431Z"
+      "off_count": 1,
+      "last_report": "2026-09-17T22:15:01.365Z"
+    },
+    {
+      "slug": "sfax",
+      "name": "Sfax",
+      "gov": "Sfax",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-09-17T22:15:01.365Z"
     }
   ]
 }
