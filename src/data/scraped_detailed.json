@@ -1,57 +1,93 @@
 {
-  "scraped_at": "2026-09-18T09:37:03.033Z",
-  "total_detailed_zones": 6,
+  "scraped_at": "2026-09-18T13:48:46.911Z",
+  "total_detailed_zones": 10,
   "zones": [
     {
-      "name": "Bab Saadoun",
+      "name": "Berges du Lac 2",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "13 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "L'Aouina",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "5 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "La Marsa",
       "gridVotes": 1,
       "lightVotes": 0,
+      "lastUpdate": "14 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Borj Louzir",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "41 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Boumhel",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "43 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Naassen",
+      "gridVotes": 4,
+      "lightVotes": 0,
+      "lastUpdate": "4 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Tebourba",
+      "gridVotes": 2,
+      "lightVotes": 1,
       "lastUpdate": "25 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "La Marsa",
-      "gridVotes": 1,
+      "name": "Route de Sokra",
+      "gridVotes": 2,
       "lightVotes": 0,
-      "lastUpdate": "3 min",
+      "lastUpdate": "26 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "La Marsa Ville",
-      "gridVotes": 1,
+      "name": "Route Lafrane",
+      "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "24 min",
+      "lastUpdate": "15 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "El Menzah 9",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "23 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Sounine",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "1 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Djerba Oualegh",
+      "name": "Kalâa Seghira",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "21 min",
+      "lastUpdate": "14 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
