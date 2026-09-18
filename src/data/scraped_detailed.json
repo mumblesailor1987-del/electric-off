@@ -1,24 +1,5 @@
 {
-  "scraped_at": "2026-09-18T00:25:27.809Z",
-  "total_detailed_zones": 2,
-  "zones": [
-    {
-      "name": "Borj Louzir",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "19 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Route de l'Aéroport",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "31 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    }
-  ]
+  "scraped_at": "2026-09-18T05:00:26.216Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
