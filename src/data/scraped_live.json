@@ -1,40 +1,40 @@
 {
-  "scraped_at": "2026-09-19T21:42:59.626Z",
+  "scraped_at": "2026-09-19T23:36:52.521Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 8,
+  "total_zones": 7,
   "zones": [
     {
       "slug": "tunis",
       "name": "Tunis",
       "gov": "Tunis",
-      "on_count": 66,
-      "off_count": 6,
-      "last_report": "2026-09-19T21:42:59.626Z"
+      "on_count": 1,
+      "off_count": 7,
+      "last_report": "2026-09-19T23:36:52.520Z"
     },
     {
       "slug": "ben-arous",
       "name": "Ben arous",
       "gov": "Ben arous",
-      "on_count": 12,
-      "off_count": 9,
-      "last_report": "2026-09-19T21:42:59.626Z"
-    },
-    {
-      "slug": "ariana",
-      "name": "Ariana",
-      "gov": "Ariana",
-      "on_count": 45,
-      "off_count": 26,
-      "last_report": "2026-09-19T21:42:59.626Z"
+      "on_count": 5,
+      "off_count": 2,
+      "last_report": "2026-09-19T23:36:52.521Z"
     },
     {
       "slug": "manouba",
       "name": "Manouba",
       "gov": "Manouba",
-      "on_count": 5,
-      "off_count": 2,
-      "last_report": "2026-09-19T21:42:59.626Z"
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-09-19T23:36:52.521Z"
+    },
+    {
+      "slug": "ariana",
+      "name": "Ariana",
+      "gov": "Ariana",
+      "on_count": 32,
+      "off_count": 17,
+      "last_report": "2026-09-19T23:36:52.521Z"
     },
     {
       "slug": "mahdia",
@@ -42,31 +42,23 @@
       "gov": "Mahdia",
       "on_count": 5,
       "off_count": 1,
-      "last_report": "2026-09-19T21:42:59.626Z"
+      "last_report": "2026-09-19T23:36:52.521Z"
     },
     {
-      "slug": "bizerte",
-      "name": "Bizerte",
-      "gov": "Bizerte",
+      "slug": "unknown",
+      "name": "Unknown",
+      "gov": "Unknown",
+      "on_count": 1,
+      "off_count": 1,
+      "last_report": "2026-09-19T23:36:52.521Z"
+    },
+    {
+      "slug": "gabès",
+      "name": "Gabès",
+      "gov": "Gabès",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-09-19T21:42:59.626Z"
-    },
-    {
-      "slug": "nabeul",
-      "name": "Nabeul",
-      "gov": "Nabeul",
-      "on_count": 0,
-      "off_count": 2,
-      "last_report": "2026-09-19T21:42:59.626Z"
-    },
-    {
-      "slug": "sousse",
-      "name": "Sousse",
-      "gov": "Sousse",
-      "on_count": 2,
-      "off_count": 2,
-      "last_report": "2026-09-19T21:42:59.626Z"
+      "last_report": "2026-09-19T23:36:52.521Z"
     }
   ]
 }
