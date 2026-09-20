@@ -1,75 +1,66 @@
 {
-  "scraped_at": "2026-09-20T18:49:55.260Z",
-  "total_detailed_zones": 8,
+  "scraped_at": "2026-09-20T21:06:10.854Z",
+  "total_detailed_zones": 7,
   "zones": [
     {
-      "name": "Bab Souika",
+      "name": "Ennasr 2",
       "gridVotes": 0,
-      "lightVotes": 2,
-      "lastUpdate": "16 min",
+      "lightVotes": 1,
+      "lastUpdate": "22 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Cité Ezzouhour",
+      "name": "La Soukra",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "1 min",
+      "lastUpdate": "44 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Cité Ibn Sina",
+      "name": "Boumhel",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "41 min",
+      "lastUpdate": "2 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "La Marsa",
+      "name": "Cité Jardin (Sfax)",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "20 min",
+      "lastUpdate": "21 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Chotrana 1",
+      "name": "Route de Gremda",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "18 min",
+      "lastUpdate": "39 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Dar Fadhal",
+      "name": "Route de l'Aéroport",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "26 min",
+      "lastUpdate": "39 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "El Mourouj 3",
+      "name": "Kalâa Kebira",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "24 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Nabeul Ville",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "34 min",
+      "lastUpdate": "40 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
