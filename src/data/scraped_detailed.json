@@ -1,12 +1,84 @@
 {
-  "scraped_at": "2026-09-21T06:19:11.040Z",
-  "total_detailed_zones": 1,
+  "scraped_at": "2026-09-21T13:02:08.225Z",
+  "total_detailed_zones": 9,
   "zones": [
     {
-      "name": "Ariana Ville",
-      "gridVotes": 2,
-      "lightVotes": 0,
+      "name": "Berges du Lac 2",
+      "gridVotes": 1,
+      "lightVotes": 1,
+      "lastUpdate": "4 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Cité Ettahrir",
+      "gridVotes": 0,
+      "lightVotes": 1,
       "lastUpdate": "3 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Sidi Daoud (La Marsa)",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "43 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Nouvelle Ariana",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "38 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "El Mhamdia / Fouchana",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "12 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Mégrine",
+      "gridVotes": 3,
+      "lightVotes": 0,
+      "lastUpdate": "26 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Naassen",
+      "gridVotes": 3,
+      "lightVotes": 0,
+      "lastUpdate": "4 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Tebourba",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "29 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Route de l'Aéroport",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "25 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
