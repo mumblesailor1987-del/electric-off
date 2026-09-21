@@ -1,39 +1,66 @@
 {
-  "scraped_at": "2026-09-21T13:02:08.225Z",
-  "total_detailed_zones": 9,
+  "scraped_at": "2026-09-21T18:37:36.218Z",
+  "total_detailed_zones": 12,
   "zones": [
     {
-      "name": "Berges du Lac 2",
+      "name": "Aïn Zaghouan Nord",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "15 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "El Omrane",
       "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "22 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Montfleury",
+      "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "4 min",
+      "lastUpdate": "2 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Cité Ettahrir",
+      "name": "Ras Tabia",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "3 min",
+      "lastUpdate": "33 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Sidi Daoud (La Marsa)",
+      "name": "El Menzah 7",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "43 min",
+      "lastUpdate": "35 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Nouvelle Ariana",
+      "name": "Ennasr 2",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "38 min",
+      "lastUpdate": "12 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "La Soukra",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "32 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -49,39 +76,39 @@
     },
     {
       "name": "Mégrine",
-      "gridVotes": 3,
-      "lightVotes": 0,
-      "lastUpdate": "26 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Naassen",
-      "gridVotes": 3,
-      "lightVotes": 0,
-      "lastUpdate": "4 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Tebourba",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "29 min",
+      "lastUpdate": "28 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Route de l'Aéroport",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "25 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "name": "Mornag",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "21 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Ouardanine",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "12 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Dar Chaâbane / Béni Khiar",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "31 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }
