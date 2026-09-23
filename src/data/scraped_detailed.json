@@ -1,57 +1,66 @@
 {
-  "scraped_at": "2026-09-23T07:43:32.124Z",
-  "total_detailed_zones": 6,
+  "scraped_at": "2026-09-23T13:02:14.891Z",
+  "total_detailed_zones": 7,
   "zones": [
     {
-      "name": "Bab Saadoun",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "19 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Centre-ville / Lafayette",
+      "name": "Cité Ibn Sina",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "11 min",
+      "lastUpdate": "31 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Cité du Stade (La Marsa)",
-      "gridVotes": 1,
+      "name": "Borj Touil",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "45 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Mégrine",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "7 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Mornag",
+      "gridVotes": 2,
       "lightVotes": 0,
-      "lastUpdate": "1 min",
+      "lastUpdate": "3 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "La Marsa",
+      "name": "Bou Arada / Gaâfour",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "24 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Gaâfour",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "24 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Kalâa Seghira",
       "gridVotes": 2,
       "lightVotes": 1,
-      "lastUpdate": "1 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Ennasr 2",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "18 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Jemmal / Sahline",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "37 min",
+      "lastUpdate": "23 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
