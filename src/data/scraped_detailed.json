@@ -1,15 +1,5 @@
 {
-  "scraped_at": "2026-09-22T23:51:34.795Z",
-  "total_detailed_zones": 1,
-  "zones": [
-    {
-      "name": "Ennasr 1",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "6 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    }
-  ]
+  "scraped_at": "2026-09-23T02:07:20.098Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
