@@ -1,12 +1,21 @@
 {
-  "scraped_at": "2026-09-24T01:27:21.720Z",
-  "total_detailed_zones": 1,
+  "scraped_at": "2026-09-24T06:35:42.369Z",
+  "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Ennasr 2",
+      "name": "Cité El Wahat (El Agba)",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "30 min",
+      "lastUpdate": "15 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Borj Touil",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "29 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
