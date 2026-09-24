@@ -1,9 +1,9 @@
 {
-  "scraped_at": "2026-09-24T06:35:42.369Z",
-  "total_detailed_zones": 2,
+  "scraped_at": "2026-09-24T12:10:32.825Z",
+  "total_detailed_zones": 6,
   "zones": [
     {
-      "name": "Cité El Wahat (El Agba)",
+      "name": "Cité El Wahat (L'Aouina)",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "15 min",
@@ -12,10 +12,46 @@
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Borj Touil",
+      "name": "Jardins de Carthage (côté parc / forêt)",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "30 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Sidi Thabet",
+      "gridVotes": 3,
+      "lightVotes": 0,
+      "lastUpdate": "13 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Ben Arous Ville",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "29 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Mornag",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "31 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Maâmoura",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "15 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
