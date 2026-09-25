@@ -1,5 +1,24 @@
 {
-  "scraped_at": "2026-09-25T01:41:30.095Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-09-25T06:38:48.994Z",
+  "total_detailed_zones": 2,
+  "zones": [
+    {
+      "name": "La Soukra",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "35 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Djerba Midoun",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "32 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    }
+  ]
 }

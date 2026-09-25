@@ -1,7 +1,24 @@
 {
-  "scraped_at": "2026-09-25T01:41:30.094Z",
+  "scraped_at": "2026-09-25T06:38:48.994Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 0,
-  "zones": []
+  "total_zones": 2,
+  "zones": [
+    {
+      "slug": "ariana",
+      "name": "Ariana",
+      "gov": "Ariana",
+      "on_count": 1,
+      "off_count": 0,
+      "last_report": "2026-09-25T06:38:48.994Z"
+    },
+    {
+      "slug": "médenine",
+      "name": "Médenine",
+      "gov": "Médenine",
+      "on_count": 1,
+      "off_count": 0,
+      "last_report": "2026-09-25T06:38:48.994Z"
+    }
+  ]
 }
