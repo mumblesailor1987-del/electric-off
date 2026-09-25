@@ -1,33 +1,33 @@
 {
-  "scraped_at": "2026-09-25T12:14:16.555Z",
+  "scraped_at": "2026-09-25T17:18:17.447Z",
   "total_detailed_zones": 3,
   "zones": [
     {
-      "name": "Borj Cédria",
-      "gridVotes": 4,
-      "lightVotes": 0,
-      "lastUpdate": "13 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "name": "Cité du Stade (La Marsa)",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "37 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     },
     {
-      "name": "Mornag",
-      "gridVotes": 2,
-      "lightVotes": 0,
-      "lastUpdate": "3 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "name": "Mutuelleville / Belvédère",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "4 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     },
     {
-      "name": "Route de Sidi Mansour",
-      "gridVotes": 2,
-      "lightVotes": 0,
-      "lastUpdate": "12 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "name": "Hammam Lif / Hammam Chott",
+      "gridVotes": 0,
+      "lightVotes": 2,
+      "lastUpdate": "29 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }
