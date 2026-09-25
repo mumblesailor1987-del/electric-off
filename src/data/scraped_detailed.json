@@ -1,21 +1,30 @@
 {
-  "scraped_at": "2026-09-25T06:38:48.994Z",
-  "total_detailed_zones": 2,
+  "scraped_at": "2026-09-25T12:14:16.555Z",
+  "total_detailed_zones": 3,
   "zones": [
     {
-      "name": "La Soukra",
-      "gridVotes": 1,
+      "name": "Borj Cédria",
+      "gridVotes": 4,
       "lightVotes": 0,
-      "lastUpdate": "35 min",
+      "lastUpdate": "13 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Djerba Midoun",
-      "gridVotes": 1,
+      "name": "Mornag",
+      "gridVotes": 2,
       "lightVotes": 0,
-      "lastUpdate": "32 min",
+      "lastUpdate": "3 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Route de Sidi Mansour",
+      "gridVotes": 2,
+      "lightVotes": 0,
+      "lastUpdate": "12 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
