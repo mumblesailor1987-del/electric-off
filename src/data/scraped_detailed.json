@@ -1,12 +1,66 @@
 {
-  "scraped_at": "2026-09-27T05:36:35.178Z",
-  "total_detailed_zones": 1,
+  "scraped_at": "2026-09-27T10:43:51.765Z",
+  "total_detailed_zones": 7,
   "zones": [
     {
-      "name": "Cité AFH Nabeul",
+      "name": "Cité Ibn Sina",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "37 min",
+      "lastUpdate": "19 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "El Menzah 9",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "13 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Mhamdia / Fouchana",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "5 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Mornag",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "8 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Ras Jebel",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "29 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Route de Sidi Mansour",
+      "gridVotes": 2,
+      "lightVotes": 0,
+      "lastUpdate": "22 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Sahloul 3",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "16 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
