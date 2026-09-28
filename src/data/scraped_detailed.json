@@ -1,30 +1,30 @@
 {
-  "scraped_at": "2026-09-27T22:04:29.295Z",
+  "scraped_at": "2026-09-28T00:37:57.007Z",
   "total_detailed_zones": 3,
   "zones": [
     {
-      "name": "Metline",
+      "name": "Aïn Zaghouan Nord",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "23 min",
+      "lastUpdate": "22 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "La Soukra",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "1 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
       "name": "Zeramdine / Ouerdanine",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "45s",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Route El Aïn",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "1 min",
+      "lastUpdate": "39 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"

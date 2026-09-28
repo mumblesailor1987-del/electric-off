@@ -1,32 +1,32 @@
 {
-  "scraped_at": "2026-09-27T22:04:29.294Z",
+  "scraped_at": "2026-09-28T00:37:57.007Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
   "total_zones": 3,
   "zones": [
     {
-      "slug": "bizerte",
-      "name": "Bizerte",
-      "gov": "Bizerte",
+      "slug": "tunis",
+      "name": "Tunis",
+      "gov": "Tunis",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-09-27T22:04:29.294Z"
+      "last_report": "2026-09-28T00:37:57.007Z"
+    },
+    {
+      "slug": "ariana",
+      "name": "Ariana",
+      "gov": "Ariana",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-09-28T00:37:57.007Z"
     },
     {
       "slug": "mahdia",
       "name": "Mahdia",
       "gov": "Mahdia",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-09-27T22:04:29.294Z"
-    },
-    {
-      "slug": "sfax",
-      "name": "Sfax",
-      "gov": "Sfax",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-09-27T22:04:29.294Z"
+      "last_report": "2026-09-28T00:37:57.007Z"
     }
   ]
 }
