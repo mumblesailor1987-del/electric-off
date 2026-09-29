@@ -1,30 +1,129 @@
 {
-  "scraped_at": "2026-09-29T16:57:34.482Z",
-  "total_detailed_zones": 3,
+  "scraped_at": "2026-09-29T21:19:21.990Z",
+  "total_detailed_zones": 14,
   "zones": [
     {
-      "name": "Aïn Zaghouan Nord",
+      "name": "Borj Louzir",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "19 min",
+      "lastUpdate": "13 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "El Mhamdia / Fouchana",
+      "name": "Metline",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "16 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Raf Raf",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "16 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Ras Jebel",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "40 min",
+      "lastUpdate": "16 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Route de Saltnia",
+      "name": "Sejnane",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "22 min",
+      "lastUpdate": "16 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Sidi Salem",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "16 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Gabès Sud",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "16 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Gabès Ville",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "16 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Mareth",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "16 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Matmata",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "16 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Métouia / Ghannouch",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "16 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Oudhref",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "16 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Djerba Tezdaine",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "34 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Hammam Sousse",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "42 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
