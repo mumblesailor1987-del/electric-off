@@ -1,57 +1,57 @@
 {
-  "scraped_at": "2026-09-30T12:04:35.248Z",
+  "scraped_at": "2026-09-30T17:58:42.013Z",
   "total_detailed_zones": 6,
   "zones": [
     {
-      "name": "Cité El Wahat (L'Aouina)",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "2 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Boumhel",
+      "name": "Jbel Lahmar",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "17 min",
+      "lastUpdate": "38 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "El Mourouj 6",
+      "name": "El Menzah 6",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "21 min",
+      "lastUpdate": "30 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Route de Sidi Mansour",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "18 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Makthar",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "10 min",
+      "name": "El Menzah 7",
+      "gridVotes": 4,
+      "lightVotes": 3,
+      "lastUpdate": "5 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Kalâa Seghira",
+      "name": "El Mourouj 5",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "12 min",
+      "lastUpdate": "33 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Mégrine Sidi Rezig",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "36 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Menzel Bourguiba",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "6 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
