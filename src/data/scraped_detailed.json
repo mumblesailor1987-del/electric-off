@@ -1,15 +1,33 @@
 {
-  "scraped_at": "2026-09-30T00:34:46.378Z",
-  "total_detailed_zones": 1,
+  "scraped_at": "2026-09-30T05:56:33.576Z",
+  "total_detailed_zones": 3,
   "zones": [
     {
-      "name": "Monastir Ville / Skanes",
+      "name": "La Soukra",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "13 min",
+      "lastUpdate": "39 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Tebourba",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "45 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Route de Sidi Mansour",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "13 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     }
   ]
 }
