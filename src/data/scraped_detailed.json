@@ -1,57 +1,21 @@
 {
-  "scraped_at": "2026-09-30T17:58:42.013Z",
-  "total_detailed_zones": 6,
+  "scraped_at": "2026-09-30T22:08:44.100Z",
+  "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Jbel Lahmar",
+      "name": "Sidi Fraj",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "38 min",
+      "lastUpdate": "1 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "El Menzah 6",
+      "name": "Kalâa Seghira",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "30 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "El Menzah 7",
-      "gridVotes": 4,
-      "lightVotes": 3,
-      "lastUpdate": "5 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "El Mourouj 5",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "33 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Mégrine Sidi Rezig",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "36 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Menzel Bourguiba",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "6 min",
+      "lastUpdate": "23 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
