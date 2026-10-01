@@ -1,5 +1,51 @@
 {
-  "scraped_at": "2026-10-01T19:47:23.993Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-10-01T23:28:11.243Z",
+  "total_detailed_zones": 5,
+  "zones": [
+    {
+      "name": "El Mourouj",
+      "gridVotes": 2,
+      "lightVotes": 0,
+      "lastUpdate": "3 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Mourouj 3",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "8 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Mourouj 4",
+      "gridVotes": 15,
+      "lightVotes": 0,
+      "lastUpdate": "3 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Mourouj 5",
+      "gridVotes": 13,
+      "lightVotes": 0,
+      "lastUpdate": "2 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Mourouj 6",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "6 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    }
+  ]
 }
