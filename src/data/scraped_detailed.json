@@ -1,15 +1,15 @@
 {
-  "scraped_at": "2026-10-01T01:17:15.954Z",
+  "scraped_at": "2026-10-01T07:14:46.410Z",
   "total_detailed_zones": 1,
   "zones": [
     {
-      "name": "Route de Gremda",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "19 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "name": "Douar Hicher",
+      "gridVotes": 2,
+      "lightVotes": 0,
+      "lastUpdate": "26 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     }
   ]
 }

@@ -1,16 +1,16 @@
 {
-  "scraped_at": "2026-10-01T01:17:15.954Z",
+  "scraped_at": "2026-10-01T07:14:46.410Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
   "total_zones": 1,
   "zones": [
     {
-      "slug": "sfax",
-      "name": "Sfax",
-      "gov": "Sfax",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-10-01T01:17:15.954Z"
+      "slug": "manouba",
+      "name": "Manouba",
+      "gov": "Manouba",
+      "on_count": 2,
+      "off_count": 0,
+      "last_report": "2026-10-01T07:14:46.410Z"
     }
   ]
 }
