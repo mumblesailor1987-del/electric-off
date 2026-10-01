@@ -1,24 +1,5 @@
 {
-  "scraped_at": "2026-10-01T14:33:14.252Z",
-  "total_detailed_zones": 2,
-  "zones": [
-    {
-      "name": "Menzel Jemil",
-      "gridVotes": 3,
-      "lightVotes": 0,
-      "lastUpdate": "13 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Kalâa Seghira",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "24 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    }
-  ]
+  "scraped_at": "2026-10-01T19:47:23.993Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
