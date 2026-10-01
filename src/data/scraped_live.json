@@ -1,24 +1,16 @@
 {
-  "scraped_at": "2026-09-30T22:08:44.100Z",
+  "scraped_at": "2026-10-01T01:17:15.954Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 2,
+  "total_zones": 1,
   "zones": [
     {
-      "slug": "mahdia",
-      "name": "Mahdia",
-      "gov": "Mahdia",
+      "slug": "sfax",
+      "name": "Sfax",
+      "gov": "Sfax",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-09-30T22:08:44.099Z"
-    },
-    {
-      "slug": "sousse",
-      "name": "Sousse",
-      "gov": "Sousse",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-09-30T22:08:44.100Z"
+      "last_report": "2026-10-01T01:17:15.954Z"
     }
   ]
 }

@@ -1,21 +1,12 @@
 {
-  "scraped_at": "2026-09-30T22:08:44.100Z",
-  "total_detailed_zones": 2,
+  "scraped_at": "2026-10-01T01:17:15.954Z",
+  "total_detailed_zones": 1,
   "zones": [
     {
-      "name": "Sidi Fraj",
+      "name": "Route de Gremda",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "1 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Kalâa Seghira",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "23 min",
+      "lastUpdate": "19 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
