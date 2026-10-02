@@ -1,222 +1,42 @@
 {
-  "scraped_at": "2026-10-02T02:30:53.021Z",
-  "total_detailed_zones": 24,
+  "scraped_at": "2026-10-02T08:55:19.732Z",
+  "total_detailed_zones": 4,
   "zones": [
     {
-      "name": "Bab El Khadhra",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "14 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "name": "Sidi Hassine / Séjoumi",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "21 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     },
     {
-      "name": "Bab Souika",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "14 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Bellevue",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "13 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Berges du Lac 1",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "14 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Berges du Lac 3 (Kheireddine)",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "13 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Bhar Lazreg",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "17 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Carthage Yasmina",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "12 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Centre Urbain Nord",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "12 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Cité du Stade (La Marsa)",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "16 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Gorjani / 9 Avril",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "16 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Halfaouine",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "11 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Mellassine",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "11 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Borj Touil",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "11 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Cité El Faouz",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "12 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Bir El Bey",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "10 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Ksar Saïd",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "6 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Sanhaja",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "4 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Tebourba",
-      "gridVotes": 1,
-      "lightVotes": 0,
+      "name": "El Mhamdia / Fouchana",
+      "gridVotes": 0,
+      "lightVotes": 1,
       "lastUpdate": "3 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     },
     {
-      "name": "Metline",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "6 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Ras Jebel",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "2 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Mdhilla",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "5 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Sbikha",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "4 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Souassi / Bou Merdes",
-      "gridVotes": 1,
-      "lightVotes": 0,
+      "name": "El Mourouj 5",
+      "gridVotes": 0,
+      "lightVotes": 1,
       "lastUpdate": "1 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     },
     {
-      "name": "Zarzis",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "29s",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "name": "Menzel Bourguiba",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "19 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }
