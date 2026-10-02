@@ -1,33 +1,69 @@
 {
-  "scraped_at": "2026-10-02T20:01:51.369Z",
-  "total_detailed_zones": 3,
+  "scraped_at": "2026-10-02T23:43:23.079Z",
+  "total_detailed_zones": 7,
   "zones": [
     {
-      "name": "La Soukra",
+      "name": "Aïn Zaghouan",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "32 min",
+      "lastUpdate": "24 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Nouvelle Médina",
+      "name": "Chotrana 2",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "10 min",
+      "lastUpdate": "4 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Chebba",
+      "name": "Cité El Ghazela",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "8 min",
+      "lastUpdate": "2 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Soukra Park",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "19 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Cité El Ons",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "24 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Sakiet Ezzit",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "24 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Sfax Ville",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "23 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }
