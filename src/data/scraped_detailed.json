@@ -1,39 +1,48 @@
 {
-  "scraped_at": "2026-10-02T08:55:19.732Z",
-  "total_detailed_zones": 4,
+  "scraped_at": "2026-10-02T15:22:56.988Z",
+  "total_detailed_zones": 5,
   "zones": [
     {
-      "name": "Sidi Hassine / Séjoumi",
+      "name": "Bhar Lazreg",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "21 min",
+      "lastUpdate": "15 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "El Mhamdia / Fouchana",
+      "name": "Ezzahrouni",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "3 min",
+      "lastUpdate": "26 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "El Mourouj 5",
+      "name": "El Alia",
+      "gridVotes": 3,
+      "lightVotes": 0,
+      "lastUpdate": "4 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Djerba Sedouikech",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "1 min",
+      "lastUpdate": "35 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Menzel Bourguiba",
+      "name": "El Amra",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "19 min",
+      "lastUpdate": "7s",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
