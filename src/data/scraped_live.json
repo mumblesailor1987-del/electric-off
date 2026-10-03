@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-03T20:10:53.700Z",
+  "scraped_at": "2026-10-03T23:04:45.063Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
   "total_zones": 2,
@@ -10,15 +10,15 @@
       "gov": "Ariana",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-10-03T20:10:53.700Z"
+      "last_report": "2026-10-03T23:04:45.063Z"
     },
     {
-      "slug": "sfax",
-      "name": "Sfax",
-      "gov": "Sfax",
+      "slug": "tunis",
+      "name": "Tunis",
+      "gov": "Tunis",
       "on_count": 0,
-      "off_count": 15,
-      "last_report": "2026-10-03T20:10:53.700Z"
+      "off_count": 1,
+      "last_report": "2026-10-03T23:04:45.063Z"
     }
   ]
 }
