@@ -1,21 +1,12 @@
 {
-  "scraped_at": "2026-10-03T23:04:45.064Z",
-  "total_detailed_zones": 2,
+  "scraped_at": "2026-10-04T02:33:13.211Z",
+  "total_detailed_zones": 1,
   "zones": [
     {
-      "name": "Cité Ibn Khaldoun",
+      "name": "Mornag",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "4 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "El Manar 1-2",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "21 min",
+      "lastUpdate": "26 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"

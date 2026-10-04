@@ -1,24 +1,16 @@
 {
-  "scraped_at": "2026-10-03T23:04:45.063Z",
+  "scraped_at": "2026-10-04T02:33:13.210Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 2,
+  "total_zones": 1,
   "zones": [
     {
-      "slug": "ariana",
-      "name": "Ariana",
-      "gov": "Ariana",
+      "slug": "ben-arous",
+      "name": "Ben arous",
+      "gov": "Ben arous",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-10-03T23:04:45.063Z"
-    },
-    {
-      "slug": "tunis",
-      "name": "Tunis",
-      "gov": "Tunis",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-10-03T23:04:45.063Z"
+      "last_report": "2026-10-04T02:33:13.210Z"
     }
   ]
 }
