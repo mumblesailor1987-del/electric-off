@@ -1,16 +1,16 @@
 {
-  "scraped_at": "2026-10-04T02:33:13.210Z",
+  "scraped_at": "2026-10-04T08:44:05.816Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
   "total_zones": 1,
   "zones": [
     {
-      "slug": "ben-arous",
-      "name": "Ben arous",
-      "gov": "Ben arous",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-10-04T02:33:13.210Z"
+      "slug": "sfax",
+      "name": "Sfax",
+      "gov": "Sfax",
+      "on_count": 6,
+      "off_count": 0,
+      "last_report": "2026-10-04T08:44:05.816Z"
     }
   ]
 }

@@ -1,15 +1,24 @@
 {
-  "scraped_at": "2026-10-04T02:33:13.211Z",
-  "total_detailed_zones": 1,
+  "scraped_at": "2026-10-04T08:44:05.816Z",
+  "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Mornag",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "26 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "name": "Route de Saltnia",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "2 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Route de Sidi Mansour",
+      "gridVotes": 5,
+      "lightVotes": 0,
+      "lastUpdate": "6 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     }
   ]
 }
