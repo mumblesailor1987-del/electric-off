@@ -1,33 +1,60 @@
 {
-  "scraped_at": "2026-10-05T05:38:09.482Z",
-  "total_detailed_zones": 3,
+  "scraped_at": "2026-10-05T12:38:52.237Z",
+  "total_detailed_zones": 6,
   "zones": [
     {
-      "name": "La Soukra",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "33 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Cité Chaker",
+      "name": "Charguia 2",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "5 min",
+      "lastUpdate": "8 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Route de Saltnia",
+      "name": "Borj Louzir",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "22 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Raoued",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "42 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Mornag",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "6 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Gafsa Ville",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "9 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Route de Saltnia",
+      "gridVotes": 2,
+      "lightVotes": 0,
+      "lastUpdate": "23 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     }
   ]
 }
