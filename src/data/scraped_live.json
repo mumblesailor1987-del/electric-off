@@ -1,48 +1,32 @@
 {
-  "scraped_at": "2026-10-05T12:38:52.236Z",
+  "scraped_at": "2026-10-05T20:57:08.515Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 5,
+  "total_zones": 3,
   "zones": [
-    {
-      "slug": "manouba",
-      "name": "Manouba",
-      "gov": "Manouba",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-10-05T12:38:52.236Z"
-    },
-    {
-      "slug": "ben-arous",
-      "name": "Ben arous",
-      "gov": "Ben arous",
-      "on_count": 1,
-      "off_count": 1,
-      "last_report": "2026-10-05T12:38:52.236Z"
-    },
     {
       "slug": "ariana",
       "name": "Ariana",
       "gov": "Ariana",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-10-05T12:38:52.236Z"
+      "on_count": 1,
+      "off_count": 3,
+      "last_report": "2026-10-05T20:57:08.515Z"
     },
     {
-      "slug": "gafsa",
-      "name": "Gafsa",
-      "gov": "Gafsa",
+      "slug": "manouba",
+      "name": "Manouba",
+      "gov": "Manouba",
       "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-10-05T12:38:52.236Z"
+      "off_count": 2,
+      "last_report": "2026-10-05T20:57:08.515Z"
     },
     {
-      "slug": "sfax",
-      "name": "Sfax",
-      "gov": "Sfax",
-      "on_count": 2,
-      "off_count": 0,
-      "last_report": "2026-10-05T12:38:52.236Z"
+      "slug": "tunis",
+      "name": "Tunis",
+      "gov": "Tunis",
+      "on_count": 0,
+      "off_count": 2,
+      "last_report": "2026-10-05T20:57:08.515Z"
     }
   ]
 }
