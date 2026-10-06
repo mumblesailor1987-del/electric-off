@@ -1,66 +1,39 @@
 {
-  "scraped_at": "2026-10-05T20:57:08.516Z",
-  "total_detailed_zones": 7,
+  "scraped_at": "2026-10-06T01:32:28.833Z",
+  "total_detailed_zones": 4,
   "zones": [
     {
-      "name": "Gammarth Village",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "15 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "L'Aouina",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "34 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Le Kram Ouest",
+      "name": "Jardins de Carthage (côté ISC / villas)",
       "gridVotes": 0,
       "lightVotes": 2,
-      "lastUpdate": "11 min",
+      "lastUpdate": "23 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Sidi Daoud (La Marsa)",
+      "name": "Jardins de Carthage (côté parc / forêt)",
       "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "37 min",
+      "lightVotes": 2,
+      "lastUpdate": "24 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Cité Essahafa",
+      "name": "La Marsa",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "36 min",
+      "lastUpdate": "28 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "El Menzah 8",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "22 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "La Soukra",
+      "name": "Mornag",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "16 min",
+      "lastUpdate": "12 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
