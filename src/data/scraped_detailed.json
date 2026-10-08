@@ -1,5 +1,24 @@
 {
-  "scraped_at": "2026-10-08T01:21:25.065Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-10-08T07:33:29.133Z",
+  "total_detailed_zones": 2,
+  "zones": [
+    {
+      "name": "Mégrine",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "31 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Mornag",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "38 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    }
+  ]
 }
