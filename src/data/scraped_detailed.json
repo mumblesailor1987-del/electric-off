@@ -1,27 +1,9 @@
 {
-  "scraped_at": "2026-10-09T13:47:21.801Z",
-  "total_detailed_zones": 6,
+  "scraped_at": "2026-10-09T19:03:50.872Z",
+  "total_detailed_zones": 4,
   "zones": [
     {
-      "name": "Jardins de Carthage (côté ISC / villas)",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "24 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "El Menzah 9",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "41 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Mornag",
+      "name": "La Soukra",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "23 min",
@@ -30,31 +12,31 @@
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Fériana",
+      "name": "Petite Ariana",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "5 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Raoued",
+      "gridVotes": 2,
+      "lightVotes": 0,
+      "lastUpdate": "5 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Route Lafrane",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "7 min",
+      "lastUpdate": "27 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Route de Mahdia",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "11 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Route de Saltnia",
-      "gridVotes": 9,
-      "lightVotes": 0,
-      "lastUpdate": "10 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
     }
   ]
 }
