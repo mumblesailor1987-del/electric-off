@@ -1,39 +1,39 @@
 {
-  "scraped_at": "2026-10-09T19:03:50.872Z",
+  "scraped_at": "2026-10-09T23:11:36.853Z",
   "total_detailed_zones": 4,
   "zones": [
     {
-      "name": "La Soukra",
-      "gridVotes": 0,
+      "name": "El Omrane Supérieur",
+      "gridVotes": 1,
       "lightVotes": 1,
-      "lastUpdate": "23 min",
+      "lastUpdate": "14 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Petite Ariana",
+      "name": "Gammarth",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "5 min",
+      "lastUpdate": "29 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Raoued",
-      "gridVotes": 2,
-      "lightVotes": 0,
-      "lastUpdate": "5 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Route Lafrane",
+      "name": "El Yasminette",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "27 min",
+      "lastUpdate": "8 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Sfax Ville",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "42 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
