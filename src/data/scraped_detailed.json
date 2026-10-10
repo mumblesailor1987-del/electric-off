@@ -1,5 +1,15 @@
 {
-  "scraped_at": "2026-10-10T02:21:18.926Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-10-10T08:41:23.406Z",
+  "total_detailed_zones": 1,
+  "zones": [
+    {
+      "name": "Mornag",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "35 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    }
+  ]
 }
