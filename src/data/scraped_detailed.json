@@ -1,12 +1,12 @@
 {
-  "scraped_at": "2026-10-10T08:41:23.406Z",
+  "scraped_at": "2026-10-10T14:46:05.239Z",
   "total_detailed_zones": 1,
   "zones": [
     {
-      "name": "Mornag",
+      "name": "Hammam Lif / Hammam Chott",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "35 min",
+      "lastUpdate": "16 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
