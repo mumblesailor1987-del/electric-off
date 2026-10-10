@@ -1,30 +1,48 @@
 {
-  "scraped_at": "2026-10-10T18:55:52.233Z",
-  "total_detailed_zones": 3,
+  "scraped_at": "2026-10-10T22:14:51.177Z",
+  "total_detailed_zones": 5,
   "zones": [
     {
-      "name": "Bhar Lazreg",
+      "name": "Cité El Wahat (L'Aouina)",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "25 min",
+      "lastUpdate": "30 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Cité Ettadhamen",
+      "name": "Jardins d'El Menzah 1",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "12 min",
+      "lastUpdate": "39 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Ennasr 2",
+      "name": "El Mhamdia / Fouchana",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "38 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Oued Ellil",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "41 min",
+      "lastUpdate": "19 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Bouzayène",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "16 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
