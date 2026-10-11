@@ -1,24 +1,5 @@
 {
-  "scraped_at": "2026-10-11T01:02:55.654Z",
-  "total_detailed_zones": 2,
-  "zones": [
-    {
-      "name": "Boumhel",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "20 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Route El Aïn",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "24 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    }
-  ]
+  "scraped_at": "2026-10-11T07:04:47.954Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
