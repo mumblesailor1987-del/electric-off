@@ -1,48 +1,21 @@
 {
-  "scraped_at": "2026-10-10T22:14:51.177Z",
-  "total_detailed_zones": 5,
+  "scraped_at": "2026-10-11T01:02:55.654Z",
+  "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Cité El Wahat (L'Aouina)",
+      "name": "Boumhel",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "30 min",
+      "lastUpdate": "20 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Jardins d'El Menzah 1",
+      "name": "Route El Aïn",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "39 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "El Mhamdia / Fouchana",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "38 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Oued Ellil",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "19 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Bouzayène",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "16 min",
+      "lastUpdate": "24 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
