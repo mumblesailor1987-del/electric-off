@@ -1,21 +1,57 @@
 {
-  "scraped_at": "2026-10-12T01:41:10.173Z",
-  "total_detailed_zones": 2,
+  "scraped_at": "2026-10-12T08:00:56.243Z",
+  "total_detailed_zones": 6,
   "zones": [
     {
-      "name": "Mégrine",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "31 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Radès",
+      "name": "Bhar Lazreg",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "24 min",
+      "lastUpdate": "31 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Chebedda",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "2 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Mhamdia / Fouchana",
+      "gridVotes": 9,
+      "lightVotes": 0,
+      "lastUpdate": "4 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Mghira",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "40 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Jedaïda",
+      "gridVotes": 4,
+      "lightVotes": 0,
+      "lastUpdate": "13 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Sanhaja",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "28 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
