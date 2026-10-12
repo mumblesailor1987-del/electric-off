@@ -1,57 +1,39 @@
 {
-  "scraped_at": "2026-10-12T08:00:56.243Z",
-  "total_detailed_zones": 6,
+  "scraped_at": "2026-10-12T17:45:47.854Z",
+  "total_detailed_zones": 4,
   "zones": [
     {
-      "name": "Bhar Lazreg",
+      "name": "Cité Ibn Sina",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "31 min",
+      "lastUpdate": "36 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Chebedda",
+      "name": "Ennasr 2",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "2 min",
+      "lastUpdate": "43 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "El Mhamdia / Fouchana",
-      "gridVotes": 9,
-      "lightVotes": 0,
-      "lastUpdate": "4 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Mghira",
+      "name": "Cité El Ons",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "40 min",
+      "lastUpdate": "7 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "El Jedaïda",
-      "gridVotes": 4,
-      "lightVotes": 0,
-      "lastUpdate": "13 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Sanhaja",
+      "name": "Sidi Bouzid Ville",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "28 min",
+      "lastUpdate": "45 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
