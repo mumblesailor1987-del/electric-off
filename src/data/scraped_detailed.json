@@ -1,15 +1,5 @@
 {
-  "scraped_at": "2026-10-12T23:48:11.835Z",
-  "total_detailed_zones": 1,
-  "zones": [
-    {
-      "name": "Cité El Wahat (L'Aouina)",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "34 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    }
-  ]
+  "scraped_at": "2026-10-13T03:58:09.734Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
