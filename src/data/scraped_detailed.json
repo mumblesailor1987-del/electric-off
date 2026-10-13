@@ -1,5 +1,24 @@
 {
-  "scraped_at": "2026-10-13T18:30:28.571Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-10-13T23:04:19.107Z",
+  "total_detailed_zones": 2,
+  "zones": [
+    {
+      "name": "Cité Ettahrir",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "31 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Route de Tunis",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "14 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    }
+  ]
 }
