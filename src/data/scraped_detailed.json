@@ -1,5 +1,24 @@
 {
-  "scraped_at": "2026-10-14T06:47:44.380Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-10-14T12:29:52.938Z",
+  "total_detailed_zones": 2,
+  "zones": [
+    {
+      "name": "La Marsa",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "15 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "La Soukra",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "8 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    }
+  ]
 }
