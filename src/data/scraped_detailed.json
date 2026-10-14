@@ -1,21 +1,66 @@
 {
-  "scraped_at": "2026-10-13T23:04:19.107Z",
-  "total_detailed_zones": 2,
+  "scraped_at": "2026-10-14T01:50:30.257Z",
+  "total_detailed_zones": 7,
   "zones": [
     {
       "name": "Cité Ettahrir",
-      "gridVotes": 1,
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "36 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Boumhel",
+      "gridVotes": 2,
       "lightVotes": 0,
-      "lastUpdate": "31 min",
+      "lastUpdate": "22 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Route de Tunis",
+      "name": "El Mourouj 3",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "14 min",
+      "lastUpdate": "18 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "El Mourouj 4",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "37 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Yasminette",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "36 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Mornag",
+      "gridVotes": 6,
+      "lightVotes": 0,
+      "lastUpdate": "9 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Nouvelle Médina",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "36 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
