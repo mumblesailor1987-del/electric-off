@@ -1,24 +1,33 @@
 {
-  "scraped_at": "2026-10-14T12:29:52.938Z",
-  "total_detailed_zones": 2,
+  "scraped_at": "2026-10-14T17:32:02.984Z",
+  "total_detailed_zones": 3,
   "zones": [
     {
-      "name": "La Marsa",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "15 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "name": "Sidi Hassine / Séjoumi",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "1 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     },
     {
-      "name": "La Soukra",
+      "name": "Ennasr 2",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "8 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Raoued",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "30 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     }
   ]
 }
