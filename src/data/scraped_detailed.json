@@ -1,19 +1,19 @@
 {
-  "scraped_at": "2026-10-15T17:01:51.022Z",
-  "total_detailed_zones": 9,
+  "scraped_at": "2026-10-15T20:17:17.451Z",
+  "total_detailed_zones": 4,
   "zones": [
     {
-      "name": "Aïn Zaghouan Nord",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "28 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "name": "Le Bardo",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "1 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     },
     {
-      "name": "Charguia 2",
-      "gridVotes": 1,
+      "name": "Mutuelleville / Belvédère",
+      "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "5 min",
       "status": "power-on",
@@ -21,67 +21,22 @@
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Cité El Wahat (El Agba)",
+      "name": "Azmour",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "26 min",
+      "lastUpdate": "27 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "El Omrane Supérieur",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "13 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Le Bardo",
-      "gridVotes": 4,
+      "name": "Regueb",
+      "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "6 min",
+      "lastUpdate": "21 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Ras Tabia",
-      "gridVotes": 5,
-      "lightVotes": 1,
-      "lastUpdate": "4 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "El Mourouj 6",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "32 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Douar Hicher",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "26 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Metline",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "30 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
     }
   ]
 }
