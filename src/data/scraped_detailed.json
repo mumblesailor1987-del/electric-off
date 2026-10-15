@@ -1,24 +1,24 @@
 {
-  "scraped_at": "2026-10-14T23:44:35.279Z",
+  "scraped_at": "2026-10-15T01:53:21.860Z",
   "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Ennasr 1",
+      "name": "El Mourouj 6",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "4 min",
+      "lastUpdate": "27 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
       "name": "Oued Ellil",
-      "gridVotes": 4,
+      "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "30s",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "lastUpdate": "40 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }
