@@ -1,60 +1,87 @@
 {
-  "scraped_at": "2026-10-15T12:11:17.958Z",
-  "total_detailed_zones": 6,
+  "scraped_at": "2026-10-15T17:01:51.022Z",
+  "total_detailed_zones": 9,
   "zones": [
     {
-      "name": "L'Aouina",
+      "name": "Aïn Zaghouan Nord",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "9 min",
+      "lastUpdate": "28 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Charguia 2",
+      "gridVotes": 1,
+      "lightVotes": 1,
+      "lastUpdate": "5 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Cité El Wahat (El Agba)",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "26 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "El Omrane Supérieur",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "13 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
       "name": "Le Bardo",
-      "gridVotes": 5,
+      "gridVotes": 4,
       "lightVotes": 0,
-      "lastUpdate": "16 min",
+      "lastUpdate": "6 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
       "name": "Ras Tabia",
-      "gridVotes": 2,
-      "lightVotes": 0,
-      "lastUpdate": "38 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Ezzahra",
-      "gridVotes": 2,
-      "lightVotes": 0,
-      "lastUpdate": "28 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Mornag",
-      "gridVotes": 1,
-      "lightVotes": 2,
+      "gridVotes": 5,
+      "lightVotes": 1,
       "lastUpdate": "4 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Mourouj 6",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "32 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Ksar Saïd",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "22 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "name": "Douar Hicher",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "26 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Metline",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "30 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }
