@@ -1,42 +1,24 @@
 {
-  "scraped_at": "2026-10-15T20:17:17.451Z",
-  "total_detailed_zones": 4,
+  "scraped_at": "2026-10-15T23:07:09.297Z",
+  "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Le Bardo",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "1 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Mutuelleville / Belvédère",
+      "name": "Aïn Zaghouan",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "5 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Azmour",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "27 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Regueb",
-      "gridVotes": 1,
-      "lightVotes": 0,
       "lastUpdate": "21 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Oued Ellil",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "21 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }
