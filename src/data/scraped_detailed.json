@@ -1,5 +1,24 @@
 {
-  "scraped_at": "2026-10-16T21:47:36.245Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-10-16T23:58:18.555Z",
+  "total_detailed_zones": 2,
+  "zones": [
+    {
+      "name": "Aïn Zaghouan",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "36 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Djerba Houmt Souk",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "4 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    }
+  ]
 }
