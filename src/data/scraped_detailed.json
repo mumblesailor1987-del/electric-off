@@ -1,15 +1,24 @@
 {
-  "scraped_at": "2026-10-16T05:56:40.886Z",
-  "total_detailed_zones": 1,
+  "scraped_at": "2026-10-16T10:55:43.110Z",
+  "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Ennasr 2",
-      "gridVotes": 0,
+      "name": "Riadh El Andalous",
+      "gridVotes": 1,
       "lightVotes": 1,
-      "lastUpdate": "17 min",
+      "lastUpdate": "8 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Mornaguia / Borj El Amri",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "12 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     }
   ]
 }
