@@ -1,21 +1,12 @@
 {
-  "scraped_at": "2026-10-15T23:07:09.297Z",
-  "total_detailed_zones": 2,
+  "scraped_at": "2026-10-16T01:17:57.810Z",
+  "total_detailed_zones": 1,
   "zones": [
     {
-      "name": "Aïn Zaghouan",
+      "name": "Mornag",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "21 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Oued Ellil",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "21 min",
+      "lastUpdate": "31 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
