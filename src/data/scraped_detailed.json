@@ -1,12 +1,12 @@
 {
-  "scraped_at": "2026-10-16T01:17:57.810Z",
+  "scraped_at": "2026-10-16T05:56:40.886Z",
   "total_detailed_zones": 1,
   "zones": [
     {
-      "name": "Mornag",
+      "name": "Ennasr 2",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "31 min",
+      "lastUpdate": "17 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
