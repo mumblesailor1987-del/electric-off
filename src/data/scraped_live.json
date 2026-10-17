@@ -1,16 +1,24 @@
 {
-  "scraped_at": "2026-10-17T12:20:46.531Z",
+  "scraped_at": "2026-10-17T15:45:20.124Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 1,
+  "total_zones": 2,
   "zones": [
     {
-      "slug": "ariana",
-      "name": "Ariana",
-      "gov": "Ariana",
+      "slug": "monastir",
+      "name": "Monastir",
+      "gov": "Monastir",
       "on_count": 0,
+      "off_count": 3,
+      "last_report": "2026-10-17T15:45:20.124Z"
+    },
+    {
+      "slug": "nabeul",
+      "name": "Nabeul",
+      "gov": "Nabeul",
+      "on_count": 5,
       "off_count": 1,
-      "last_report": "2026-10-17T12:20:46.531Z"
+      "last_report": "2026-10-17T15:45:20.124Z"
     }
   ]
 }
