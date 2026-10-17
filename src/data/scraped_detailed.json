@@ -1,51 +1,5 @@
 {
-  "scraped_at": "2026-10-17T15:45:20.125Z",
-  "total_detailed_zones": 5,
-  "zones": [
-    {
-      "name": "Khniss",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "4 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Moknine",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "4 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Monastir Ville / Skanes",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "4 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Dar Allouch",
-      "gridVotes": 2,
-      "lightVotes": 0,
-      "lastUpdate": "6 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "El Haouaria",
-      "gridVotes": 3,
-      "lightVotes": 1,
-      "lastUpdate": "4 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    }
-  ]
+  "scraped_at": "2026-10-17T17:58:33.301Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
