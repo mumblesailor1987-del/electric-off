@@ -1,39 +1,39 @@
 {
-  "scraped_at": "2026-10-17T20:26:23.116Z",
+  "scraped_at": "2026-10-17T22:32:33.632Z",
   "total_detailed_zones": 4,
   "zones": [
     {
-      "name": "Mellassine",
+      "name": "Aïn Zaghouan",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "26 min",
+      "lastUpdate": "3 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Chotrana 3",
+      "name": "Aïn Zaghouan Nord",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "27 min",
+      "lastUpdate": "3 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Cité Jaafar",
+      "name": "Carthage / Sidi Bou Saïd (autre)",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "26 min",
+      "lastUpdate": "43 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Route de Sidi Mansour",
+      "name": "Cité El Wahat (L'Aouina)",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "27 min",
+      "lastUpdate": "20 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
