@@ -1,24 +1,7 @@
 {
-  "scraped_at": "2026-10-16T23:58:18.554Z",
+  "scraped_at": "2026-10-17T03:58:45.469Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 2,
-  "zones": [
-    {
-      "slug": "tunis",
-      "name": "Tunis",
-      "gov": "Tunis",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-10-16T23:58:18.554Z"
-    },
-    {
-      "slug": "médenine",
-      "name": "Médenine",
-      "gov": "Médenine",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-10-16T23:58:18.554Z"
-    }
-  ]
+  "total_zones": 0,
+  "zones": []
 }
