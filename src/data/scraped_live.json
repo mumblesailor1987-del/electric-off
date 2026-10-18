@@ -1,24 +1,32 @@
 {
-  "scraped_at": "2026-10-18T04:41:46.749Z",
+  "scraped_at": "2026-10-18T09:07:43.417Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 2,
+  "total_zones": 3,
   "zones": [
     {
-      "slug": "nabeul",
-      "name": "Nabeul",
-      "gov": "Nabeul",
+      "slug": "ben-arous",
+      "name": "Ben arous",
+      "gov": "Ben arous",
+      "on_count": 2,
+      "off_count": 0,
+      "last_report": "2026-10-18T09:07:43.417Z"
+    },
+    {
+      "slug": "monastir",
+      "name": "Monastir",
+      "gov": "Monastir",
       "on_count": 1,
       "off_count": 0,
-      "last_report": "2026-10-18T04:41:46.749Z"
+      "last_report": "2026-10-18T09:07:43.417Z"
     },
     {
       "slug": "sfax",
       "name": "Sfax",
       "gov": "Sfax",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-10-18T04:41:46.749Z"
+      "on_count": 3,
+      "off_count": 1,
+      "last_report": "2026-10-18T09:07:43.417Z"
     }
   ]
 }

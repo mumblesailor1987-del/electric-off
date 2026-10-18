@@ -1,9 +1,18 @@
 {
-  "scraped_at": "2026-10-18T04:41:46.750Z",
-  "total_detailed_zones": 2,
+  "scraped_at": "2026-10-18T09:07:43.417Z",
+  "total_detailed_zones": 6,
   "zones": [
     {
-      "name": "Béni Khalled",
+      "name": "El Mourouj 4",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "52s",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Mourouj 5",
       "gridVotes": 1,
       "lightVotes": 0,
       "lastUpdate": "6 min",
@@ -12,13 +21,40 @@
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Route de Saltnia",
+      "name": "Sayada",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "6 min",
+      "lastUpdate": "50s",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Chihia",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "3 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Route de Gremda",
+      "gridVotes": 2,
+      "lightVotes": 0,
+      "lastUpdate": "4 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Sakiet Eddaïer",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "36 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }
