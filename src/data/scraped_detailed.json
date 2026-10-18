@@ -1,66 +1,30 @@
 {
-  "scraped_at": "2026-10-18T16:34:56.480Z",
-  "total_detailed_zones": 7,
+  "scraped_at": "2026-10-18T18:53:35.614Z",
+  "total_detailed_zones": 3,
   "zones": [
     {
-      "name": "Bab Souika",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "28 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
       "name": "Cité Ezzouhour",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "22 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Essaidia",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "15 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Le Bardo",
-      "gridVotes": 17,
-      "lightVotes": 0,
-      "lastUpdate": "2 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "La Soukra",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "19 min",
+      "lastUpdate": "3 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Boumhel",
-      "gridVotes": 6,
-      "lightVotes": 3,
-      "lastUpdate": "25 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Cité AFH Nabeul",
+      "name": "El Omrane Supérieur",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "4 min",
+      "lastUpdate": "15 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Chotrana 1",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "19 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
