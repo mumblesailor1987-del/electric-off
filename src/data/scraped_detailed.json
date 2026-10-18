@@ -1,12 +1,12 @@
 {
-  "scraped_at": "2026-10-18T21:12:32.045Z",
-  "total_detailed_zones": 3,
+  "scraped_at": "2026-10-18T23:15:31.302Z",
+  "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Le Bardo",
+      "name": "La Goulette",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "14 min",
+      "lastUpdate": "26 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
@@ -15,16 +15,7 @@
       "name": "Cité El Ghazela",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "5 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Sidi Bou Ali / Kondar",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "33 min",
+      "lastUpdate": "1 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
