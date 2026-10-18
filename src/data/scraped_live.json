@@ -1,16 +1,24 @@
 {
-  "scraped_at": "2026-10-18T00:14:55.879Z",
+  "scraped_at": "2026-10-18T04:41:46.749Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 1,
+  "total_zones": 2,
   "zones": [
     {
-      "slug": "manouba",
-      "name": "Manouba",
-      "gov": "Manouba",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-10-18T00:14:55.879Z"
+      "slug": "nabeul",
+      "name": "Nabeul",
+      "gov": "Nabeul",
+      "on_count": 1,
+      "off_count": 0,
+      "last_report": "2026-10-18T04:41:46.749Z"
+    },
+    {
+      "slug": "sfax",
+      "name": "Sfax",
+      "gov": "Sfax",
+      "on_count": 1,
+      "off_count": 0,
+      "last_report": "2026-10-18T04:41:46.749Z"
     }
   ]
 }
