@@ -1,24 +1,15 @@
 {
-  "scraped_at": "2026-10-18T23:15:31.302Z",
-  "total_detailed_zones": 2,
+  "scraped_at": "2026-10-19T01:21:29.865Z",
+  "total_detailed_zones": 1,
   "zones": [
     {
-      "name": "La Goulette",
+      "name": "Aïn Zaghouan",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "26 min",
+      "lastUpdate": "3 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Cité El Ghazela",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "1 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
     }
   ]
 }
