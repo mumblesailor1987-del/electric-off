@@ -1,15 +1,24 @@
 {
-  "scraped_at": "2026-10-20T01:43:09.794Z",
-  "total_detailed_zones": 1,
+  "scraped_at": "2026-10-20T06:40:32.102Z",
+  "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Thyna / Route Gabès",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "32 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "name": "Mornag",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "31 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Kalâa Seghira",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "43 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }
