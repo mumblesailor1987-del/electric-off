@@ -1,24 +1,16 @@
 {
-  "scraped_at": "2026-10-20T17:14:20.555Z",
+  "scraped_at": "2026-10-20T20:39:32.083Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 6,
+  "total_zones": 7,
   "zones": [
     {
       "slug": "tunis",
       "name": "Tunis",
       "gov": "Tunis",
-      "on_count": 36,
-      "off_count": 2,
-      "last_report": "2026-10-20T17:14:20.555Z"
-    },
-    {
-      "slug": "ariana",
-      "name": "Ariana",
-      "gov": "Ariana",
-      "on_count": 31,
-      "off_count": 6,
-      "last_report": "2026-10-20T17:14:20.555Z"
+      "on_count": 2,
+      "off_count": 0,
+      "last_report": "2026-10-20T20:39:32.083Z"
     },
     {
       "slug": "manouba",
@@ -26,31 +18,47 @@
       "gov": "Manouba",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-10-20T17:14:20.555Z"
+      "last_report": "2026-10-20T20:39:32.083Z"
     },
     {
-      "slug": "ben-arous",
-      "name": "Ben arous",
-      "gov": "Ben arous",
-      "on_count": 3,
-      "off_count": 3,
-      "last_report": "2026-10-20T17:14:20.555Z"
+      "slug": "ariana",
+      "name": "Ariana",
+      "gov": "Ariana",
+      "on_count": 11,
+      "off_count": 1,
+      "last_report": "2026-10-20T20:39:32.083Z"
     },
     {
       "slug": "mahdia",
       "name": "Mahdia",
       "gov": "Mahdia",
-      "on_count": 7,
-      "off_count": 1,
-      "last_report": "2026-10-20T17:14:20.555Z"
+      "on_count": 13,
+      "off_count": 0,
+      "last_report": "2026-10-20T20:39:32.083Z"
     },
     {
-      "slug": "sfax",
-      "name": "Sfax",
-      "gov": "Sfax",
+      "slug": "ben-arous",
+      "name": "Ben arous",
+      "gov": "Ben arous",
+      "on_count": 7,
+      "off_count": 3,
+      "last_report": "2026-10-20T20:39:32.083Z"
+    },
+    {
+      "slug": "bizerte",
+      "name": "Bizerte",
+      "gov": "Bizerte",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-10-20T20:39:32.083Z"
+    },
+    {
+      "slug": "unknown",
+      "name": "Unknown",
+      "gov": "Unknown",
       "on_count": 1,
       "off_count": 0,
-      "last_report": "2026-10-20T17:14:20.555Z"
+      "last_report": "2026-10-20T20:39:32.083Z"
     }
   ]
 }

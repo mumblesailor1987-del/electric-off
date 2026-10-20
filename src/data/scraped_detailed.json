@@ -1,54 +1,18 @@
 {
-  "scraped_at": "2026-10-20T17:14:20.556Z",
-  "total_detailed_zones": 22,
+  "scraped_at": "2026-10-20T20:39:32.083Z",
+  "total_detailed_zones": 17,
   "zones": [
     {
-      "name": "Aïn Zaghouan Nord",
+      "name": "Alain Savary",
       "gridVotes": 1,
-      "lightVotes": 1,
-      "lastUpdate": "12 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Cité El Wahat (L'Aouina)",
-      "gridVotes": 2,
-      "lightVotes": 1,
-      "lastUpdate": "14 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Cité Ibn Sina",
-      "gridVotes": 2,
       "lightVotes": 0,
-      "lastUpdate": "8 min",
+      "lastUpdate": "11 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "El Menzah 1",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "55s",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "L'Aouina",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "31 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Borj Touil",
+      "name": "Bab El Khadhra",
       "gridVotes": 1,
       "lightVotes": 0,
       "lastUpdate": "26 min",
@@ -57,73 +21,37 @@
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Chotrana 1",
+      "name": "Centre-ville / Lafayette",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "5 min",
+      "lastUpdate": "10 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Chotrana 2",
-      "gridVotes": 5,
-      "lightVotes": 0,
-      "lastUpdate": "4 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Cité Jaafar",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "22 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Dar Fadhal",
-      "gridVotes": 35,
-      "lightVotes": 0,
-      "lastUpdate": "2 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "El Manar 1-2",
+      "name": "Cité Ibn Sina",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "17 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "El Menzah 6",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "22 min",
+      "lastUpdate": "45s",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
       "name": "La Soukra",
-      "gridVotes": 5,
-      "lightVotes": 2,
-      "lastUpdate": "8 min",
+      "gridVotes": 3,
+      "lightVotes": 0,
+      "lastUpdate": "37 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
       "name": "Nouvelle Soukra",
-      "gridVotes": 3,
+      "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "18 min",
+      "lastUpdate": "39 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
@@ -132,23 +60,14 @@
       "name": "Raoued",
       "gridVotes": 3,
       "lightVotes": 0,
-      "lastUpdate": "17 min",
+      "lastUpdate": "11 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
       "name": "Sidi Fraj",
-      "gridVotes": 7,
-      "lightVotes": 1,
-      "lastUpdate": "6 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Soukra Park",
-      "gridVotes": 10,
+      "gridVotes": 13,
       "lightVotes": 0,
       "lastUpdate": "2 min",
       "status": "power-off",
@@ -156,46 +75,82 @@
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Ben Arous Ville",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "20 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "El Mhamdia / Fouchana",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "14 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "El Mourouj 2",
-      "gridVotes": 2,
+      "name": "Soukra Park",
+      "gridVotes": 4,
       "lightVotes": 0,
-      "lastUpdate": "16 min",
+      "lastUpdate": "20 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Mégrine",
+      "name": "Cité El Hidhab (Fouchana)",
+      "gridVotes": 2,
+      "lightVotes": 0,
+      "lastUpdate": "11 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Mhamdia / Fouchana",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "25 min",
+      "lastUpdate": "10 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Route de Sokra",
+      "name": "El Mourouj 1",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "35 min",
+      "lastUpdate": "44 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Mourouj 2",
+      "gridVotes": 4,
+      "lightVotes": 0,
+      "lastUpdate": "13 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Mourouj 3",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "44 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Mégrine Sidi Rezig",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "7 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Menzel Abderrahmen",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "39 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Menzel Bouzelfa",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "11 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
