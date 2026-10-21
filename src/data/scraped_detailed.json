@@ -1,48 +1,30 @@
 {
-  "scraped_at": "2026-10-21T17:33:07.840Z",
-  "total_detailed_zones": 6,
+  "scraped_at": "2026-10-21T20:52:02.830Z",
+  "total_detailed_zones": 5,
   "zones": [
     {
-      "name": "Mnihla",
-      "gridVotes": 1,
-      "lightVotes": 1,
-      "lastUpdate": "32 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "El Mourouj 1",
+      "name": "Soukra Park",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "10 min",
+      "lastUpdate": "44 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Douar Hicher",
-      "gridVotes": 1,
-      "lightVotes": 2,
-      "lastUpdate": "31 min",
+      "name": "Ezzahra",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "11 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Bizerte Ville",
+      "name": "Corniche Bizerte",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "32 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Jarzouna",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "39 min",
+      "lastUpdate": "3 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
@@ -51,7 +33,16 @@
       "name": "Menzel Abderrahmen",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "36 min",
+      "lastUpdate": "31 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Ras Jebel",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "14 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
