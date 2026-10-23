@@ -1,15 +1,5 @@
 {
-  "scraped_at": "2026-10-23T14:24:10.903Z",
-  "total_detailed_zones": 1,
-  "zones": [
-    {
-      "name": "Route de l'Aéroport",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "20 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    }
-  ]
+  "scraped_at": "2026-10-23T21:38:21.625Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
