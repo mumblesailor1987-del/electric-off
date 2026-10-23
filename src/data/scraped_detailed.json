@@ -1,21 +1,21 @@
 {
-  "scraped_at": "2026-10-22T21:21:56.047Z",
+  "scraped_at": "2026-10-23T00:05:22.301Z",
   "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Cité El Khadra / Olympique",
-      "gridVotes": 1,
+      "name": "Cité Ibn Sina",
+      "gridVotes": 5,
       "lightVotes": 0,
-      "lastUpdate": "14 min",
+      "lastUpdate": "23 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Ezzahra",
-      "gridVotes": 3,
+      "name": "El Mourouj 2",
+      "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "45s",
+      "lastUpdate": "30 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
