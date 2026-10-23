@@ -1,24 +1,5 @@
 {
-  "scraped_at": "2026-10-23T00:05:22.301Z",
-  "total_detailed_zones": 2,
-  "zones": [
-    {
-      "name": "Cité Ibn Sina",
-      "gridVotes": 5,
-      "lightVotes": 0,
-      "lastUpdate": "23 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "El Mourouj 2",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "30 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    }
-  ]
+  "scraped_at": "2026-10-23T04:37:16.566Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
