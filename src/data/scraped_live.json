@@ -1,24 +1,7 @@
 {
-  "scraped_at": "2026-10-24T16:40:37.742Z",
+  "scraped_at": "2026-10-24T19:01:40.360Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 2,
-  "zones": [
-    {
-      "slug": "ariana",
-      "name": "Ariana",
-      "gov": "Ariana",
-      "on_count": 2,
-      "off_count": 5,
-      "last_report": "2026-10-24T16:40:37.742Z"
-    },
-    {
-      "slug": "unknown",
-      "name": "Unknown",
-      "gov": "Unknown",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-10-24T16:40:37.742Z"
-    }
-  ]
+  "total_zones": 0,
+  "zones": []
 }
