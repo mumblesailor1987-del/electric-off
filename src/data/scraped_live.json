@@ -1,7 +1,40 @@
 {
-  "scraped_at": "2026-10-24T19:01:40.360Z",
+  "scraped_at": "2026-10-24T21:32:04.487Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 0,
-  "zones": []
+  "total_zones": 4,
+  "zones": [
+    {
+      "slug": "manouba",
+      "name": "Manouba",
+      "gov": "Manouba",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-10-24T21:32:04.487Z"
+    },
+    {
+      "slug": "médenine",
+      "name": "Médenine",
+      "gov": "Médenine",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-10-24T21:32:04.487Z"
+    },
+    {
+      "slug": "monastir",
+      "name": "Monastir",
+      "gov": "Monastir",
+      "on_count": 1,
+      "off_count": 0,
+      "last_report": "2026-10-24T21:32:04.487Z"
+    },
+    {
+      "slug": "sfax",
+      "name": "Sfax",
+      "gov": "Sfax",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-10-24T21:32:04.487Z"
+    }
+  ]
 }

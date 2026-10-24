@@ -1,5 +1,42 @@
 {
-  "scraped_at": "2026-10-24T19:01:40.361Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-10-24T21:32:04.488Z",
+  "total_detailed_zones": 4,
+  "zones": [
+    {
+      "name": "Cité El Khadra / Olympique",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "8 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Djerba Houmt Souk",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "13 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Sayada",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "16 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Sakiet Ezzit",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "26 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    }
+  ]
 }
