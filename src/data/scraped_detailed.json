@@ -1,9 +1,9 @@
 {
-  "scraped_at": "2026-10-24T21:32:04.488Z",
-  "total_detailed_zones": 4,
+  "scraped_at": "2026-10-24T23:38:29.260Z",
+  "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Cité El Khadra / Olympique",
+      "name": "Ennasr 1",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "8 min",
@@ -12,28 +12,10 @@
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Djerba Houmt Souk",
+      "name": "Route de Sokra",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "13 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Sayada",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "16 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Sakiet Ezzit",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "26 min",
+      "lastUpdate": "6 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
