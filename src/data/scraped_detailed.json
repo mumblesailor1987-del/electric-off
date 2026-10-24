@@ -1,15 +1,5 @@
 {
-  "scraped_at": "2026-10-24T00:01:20.354Z",
-  "total_detailed_zones": 1,
-  "zones": [
-    {
-      "name": "La Marsa",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "17 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    }
-  ]
+  "scraped_at": "2026-10-24T04:25:23.314Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }

@@ -1,16 +1,7 @@
 {
-  "scraped_at": "2026-10-24T00:01:20.353Z",
+  "scraped_at": "2026-10-24T04:25:23.314Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 1,
-  "zones": [
-    {
-      "slug": "manouba",
-      "name": "Manouba",
-      "gov": "Manouba",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-10-24T00:01:20.353Z"
-    }
-  ]
+  "total_zones": 0,
+  "zones": []
 }
