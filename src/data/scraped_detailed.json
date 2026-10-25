@@ -1,21 +1,48 @@
 {
-  "scraped_at": "2026-10-25T06:51:54.052Z",
-  "total_detailed_zones": 2,
+  "scraped_at": "2026-10-25T12:11:42.624Z",
+  "total_detailed_zones": 5,
   "zones": [
     {
-      "name": "Cité Intilaka",
+      "name": "Centre-ville / Lafayette",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "30 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "El Omrane Supérieur",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "30 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Cité El Hidhab (Fouchana)",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "44 min",
+      "lastUpdate": "9 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Ben Arous Ville",
+      "name": "El Mourouj 2",
+      "gridVotes": 2,
+      "lightVotes": 1,
+      "lastUpdate": "10 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Mghira",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "37 min",
+      "lastUpdate": "19 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
