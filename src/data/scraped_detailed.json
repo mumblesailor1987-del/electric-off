@@ -1,51 +1,33 @@
 {
-  "scraped_at": "2026-10-25T12:11:42.624Z",
-  "total_detailed_zones": 5,
+  "scraped_at": "2026-10-25T16:22:26.511Z",
+  "total_detailed_zones": 3,
   "zones": [
-    {
-      "name": "Centre-ville / Lafayette",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "30 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "El Omrane Supérieur",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "30 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
     {
       "name": "Cité El Hidhab (Fouchana)",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "9 min",
+      "lastUpdate": "39 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "El Mourouj 2",
-      "gridVotes": 2,
+      "name": "El Mourouj 6",
+      "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "10 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "lastUpdate": "39 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     },
     {
-      "name": "Mghira",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "19 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "name": "Route de Gremda",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "34 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }
