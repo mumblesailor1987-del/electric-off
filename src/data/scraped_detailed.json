@@ -1,24 +1,5 @@
 {
-  "scraped_at": "2026-10-24T23:38:29.260Z",
-  "total_detailed_zones": 2,
-  "zones": [
-    {
-      "name": "Ennasr 1",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "8 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Route de Sokra",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "6 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    }
-  ]
+  "scraped_at": "2026-10-25T01:38:40.887Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
