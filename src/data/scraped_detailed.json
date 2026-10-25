@@ -1,30 +1,48 @@
 {
-  "scraped_at": "2026-10-25T16:22:26.511Z",
-  "total_detailed_zones": 3,
+  "scraped_at": "2026-10-25T19:09:09.399Z",
+  "total_detailed_zones": 5,
   "zones": [
     {
-      "name": "Cité El Hidhab (Fouchana)",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "39 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "El Mourouj 6",
+      "name": "Sidi Hassine / Séjoumi",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "39 min",
+      "lastUpdate": "23 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Route de Gremda",
+      "name": "Ariana Ville",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "34 min",
+      "lastUpdate": "23 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Borj Baccouche",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "23 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "El Mourouj",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "17 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "El Mourouj 3",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "27 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
