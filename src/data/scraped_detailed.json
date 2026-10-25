@@ -1,5 +1,24 @@
 {
-  "scraped_at": "2026-10-25T01:38:40.887Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-10-25T06:51:54.052Z",
+  "total_detailed_zones": 2,
+  "zones": [
+    {
+      "name": "Cité Intilaka",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "44 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Ben Arous Ville",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "37 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    }
+  ]
 }
