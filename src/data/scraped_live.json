@@ -1,32 +1,7 @@
 {
-  "scraped_at": "2026-10-27T19:36:29.260Z",
+  "scraped_at": "2026-10-27T23:07:33.532Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 3,
-  "zones": [
-    {
-      "slug": "tunis",
-      "name": "Tunis",
-      "gov": "Tunis",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-10-27T19:36:29.260Z"
-    },
-    {
-      "slug": "manouba",
-      "name": "Manouba",
-      "gov": "Manouba",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-10-27T19:36:29.260Z"
-    },
-    {
-      "slug": "ben-arous",
-      "name": "Ben arous",
-      "gov": "Ben arous",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-10-27T19:36:29.260Z"
-    }
-  ]
+  "total_zones": 0,
+  "zones": []
 }
