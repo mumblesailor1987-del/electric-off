@@ -1,33 +1,5 @@
 {
-  "scraped_at": "2026-10-26T14:07:10.673Z",
-  "total_detailed_zones": 3,
-  "zones": [
-    {
-      "name": "Cité El Khadra / Olympique",
-      "gridVotes": 1,
-      "lightVotes": 1,
-      "lastUpdate": "13 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "El Mourouj 5",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "37 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Sakiet Ezzit",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "29 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    }
-  ]
+  "scraped_at": "2026-10-27T02:23:24.587Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
