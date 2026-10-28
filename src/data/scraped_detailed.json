@@ -1,5 +1,60 @@
 {
-  "scraped_at": "2026-10-28T08:32:35.526Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-10-28T15:24:55.323Z",
+  "total_detailed_zones": 6,
+  "zones": [
+    {
+      "name": "Aïn Zaghouan",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "42 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Cité El Wahat (El Agba)",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "29 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "L'Aouina",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "41 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Jardins d'El Menzah 2",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "15 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Riadh El Andalous",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "21 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Kalâa Kebira",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "1 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    }
+  ]
 }
