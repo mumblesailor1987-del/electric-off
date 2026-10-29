@@ -1,69 +1,33 @@
 {
-  "scraped_at": "2026-10-29T18:25:29.911Z",
-  "total_detailed_zones": 7,
+  "scraped_at": "2026-10-29T22:54:21.665Z",
+  "total_detailed_zones": 3,
   "zones": [
     {
-      "name": "Aïn Zaghouan",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "20 min",
+      "name": "El Mourouj 2",
+      "gridVotes": 4,
+      "lightVotes": 1,
+      "lastUpdate": "3 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Le Kram",
+      "name": "Radès",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "21 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "El Mourouj 4",
-      "gridVotes": 2,
-      "lightVotes": 1,
-      "lastUpdate": "5 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "El Mourouj 5",
-      "gridVotes": 13,
-      "lightVotes": 2,
       "lastUpdate": "2 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     },
     {
-      "name": "El Mourouj 6",
+      "name": "Regueb",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "6 min",
+      "lastUpdate": "25 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Hammam Lif / Hammam Chott",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "12 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Bir Bouregba",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "29 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
     }
   ]
 }
