@@ -1,15 +1,33 @@
 {
-  "scraped_at": "2026-10-29T05:53:30.660Z",
-  "total_detailed_zones": 1,
+  "scraped_at": "2026-10-29T12:05:41.580Z",
+  "total_detailed_zones": 3,
   "zones": [
     {
-      "name": "Cité Jaafar",
+      "name": "La Marsa",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "26 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Ennasr 2",
       "gridVotes": 0,
-      "lightVotes": 2,
-      "lastUpdate": "10 min",
+      "lightVotes": 1,
+      "lastUpdate": "23 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Route Menzel Chaker",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "23 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     }
   ]
 }
