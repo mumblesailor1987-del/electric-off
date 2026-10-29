@@ -1,15 +1,5 @@
 {
-  "scraped_at": "2026-10-28T20:27:10.903Z",
-  "total_detailed_zones": 1,
-  "zones": [
-    {
-      "name": "Ras Jebel",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "43 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    }
-  ]
+  "scraped_at": "2026-10-29T00:13:31.889Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }

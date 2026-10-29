@@ -1,16 +1,7 @@
 {
-  "scraped_at": "2026-10-28T20:27:10.839Z",
+  "scraped_at": "2026-10-29T00:13:31.889Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 1,
-  "zones": [
-    {
-      "slug": "bizerte",
-      "name": "Bizerte",
-      "gov": "Bizerte",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-10-28T20:27:10.839Z"
-    }
-  ]
+  "total_zones": 0,
+  "zones": []
 }
