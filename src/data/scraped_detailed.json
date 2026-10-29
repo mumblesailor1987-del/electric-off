@@ -1,5 +1,15 @@
 {
-  "scraped_at": "2026-10-29T00:13:31.889Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-10-29T05:53:30.660Z",
+  "total_detailed_zones": 1,
+  "zones": [
+    {
+      "name": "Cité Jaafar",
+      "gridVotes": 0,
+      "lightVotes": 2,
+      "lastUpdate": "10 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    }
+  ]
 }
