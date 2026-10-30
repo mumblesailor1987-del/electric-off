@@ -1,33 +1,24 @@
 {
-  "scraped_at": "2026-10-30T15:22:59.654Z",
-  "total_detailed_zones": 3,
+  "scraped_at": "2026-10-30T19:58:40.493Z",
+  "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Carthage Dermech",
+      "name": "Manouba Ville / Denden",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "6 min",
+      "lastUpdate": "30 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Maâmoura",
+      "name": "Béni Khalled",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "14 min",
+      "lastUpdate": "1 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Sidi Bouzid Ville",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "21 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
     }
   ]
 }
