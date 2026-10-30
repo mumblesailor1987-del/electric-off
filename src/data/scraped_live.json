@@ -1,24 +1,7 @@
 {
-  "scraped_at": "2026-10-29T22:54:21.664Z",
+  "scraped_at": "2026-10-30T02:23:02.425Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 2,
-  "zones": [
-    {
-      "slug": "ben-arous",
-      "name": "Ben arous",
-      "gov": "Ben arous",
-      "on_count": 4,
-      "off_count": 2,
-      "last_report": "2026-10-29T22:54:21.664Z"
-    },
-    {
-      "slug": "sidi-bouzid",
-      "name": "Sidi bouzid",
-      "gov": "Sidi bouzid",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-10-29T22:54:21.664Z"
-    }
-  ]
+  "total_zones": 0,
+  "zones": []
 }

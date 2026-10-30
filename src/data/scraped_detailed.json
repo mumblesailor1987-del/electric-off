@@ -1,33 +1,5 @@
 {
-  "scraped_at": "2026-10-29T22:54:21.665Z",
-  "total_detailed_zones": 3,
-  "zones": [
-    {
-      "name": "El Mourouj 2",
-      "gridVotes": 4,
-      "lightVotes": 1,
-      "lastUpdate": "3 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Radès",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "2 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Regueb",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "25 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    }
-  ]
+  "scraped_at": "2026-10-30T02:23:02.425Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
