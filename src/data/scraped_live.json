@@ -1,16 +1,32 @@
 {
-  "scraped_at": "2026-10-30T08:50:13.020Z",
+  "scraped_at": "2026-10-30T15:22:59.654Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 1,
+  "total_zones": 3,
   "zones": [
     {
-      "slug": "sfax",
-      "name": "Sfax",
-      "gov": "Sfax",
+      "slug": "tunis",
+      "name": "Tunis",
+      "gov": "Tunis",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-10-30T15:22:59.653Z"
+    },
+    {
+      "slug": "nabeul",
+      "name": "Nabeul",
+      "gov": "Nabeul",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-10-30T15:22:59.654Z"
+    },
+    {
+      "slug": "sidi-bouzid",
+      "name": "Sidi bouzid",
+      "gov": "Sidi bouzid",
       "on_count": 1,
       "off_count": 0,
-      "last_report": "2026-10-30T08:50:13.020Z"
+      "last_report": "2026-10-30T15:22:59.654Z"
     }
   ]
 }

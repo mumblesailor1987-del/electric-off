@@ -1,12 +1,30 @@
 {
-  "scraped_at": "2026-10-30T08:50:13.021Z",
-  "total_detailed_zones": 1,
+  "scraped_at": "2026-10-30T15:22:59.654Z",
+  "total_detailed_zones": 3,
   "zones": [
     {
-      "name": "Route Menzel Chaker",
+      "name": "Carthage Dermech",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "6 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Maâmoura",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "14 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Sidi Bouzid Ville",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "8 min",
+      "lastUpdate": "21 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
