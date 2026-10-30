@@ -1,24 +1,24 @@
 {
-  "scraped_at": "2026-10-30T19:58:40.493Z",
+  "scraped_at": "2026-10-30T23:35:22.892Z",
   "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Manouba Ville / Denden",
+      "name": "Cité El Wahat (L'Aouina)",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "30 min",
+      "lastUpdate": "44 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Béni Khalled",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "1 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "name": "El Menzah 7",
+      "gridVotes": 11,
+      "lightVotes": 0,
+      "lastUpdate": "2 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     }
   ]
 }
