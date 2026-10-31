@@ -1,5 +1,15 @@
 {
-  "scraped_at": "2026-10-31T19:14:11.958Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-10-31T22:31:44.920Z",
+  "total_detailed_zones": 1,
+  "zones": [
+    {
+      "name": "Douar Hicher",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "31 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    }
+  ]
 }
