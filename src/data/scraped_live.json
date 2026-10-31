@@ -1,16 +1,7 @@
 {
-  "scraped_at": "2026-10-30T23:35:22.892Z",
+  "scraped_at": "2026-10-31T02:42:20.320Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 1,
-  "zones": [
-    {
-      "slug": "ariana",
-      "name": "Ariana",
-      "gov": "Ariana",
-      "on_count": 11,
-      "off_count": 1,
-      "last_report": "2026-10-30T23:35:22.891Z"
-    }
-  ]
+  "total_zones": 0,
+  "zones": []
 }
