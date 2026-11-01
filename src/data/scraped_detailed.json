@@ -1,5 +1,15 @@
 {
-  "scraped_at": "2026-11-01T19:11:08.917Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-11-01T22:50:04.964Z",
+  "total_detailed_zones": 1,
+  "zones": [
+    {
+      "name": "Menzel Abderrahmen",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "22 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    }
+  ]
 }
