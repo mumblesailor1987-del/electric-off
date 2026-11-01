@@ -1,16 +1,16 @@
 {
-  "scraped_at": "2026-10-31T22:31:44.919Z",
+  "scraped_at": "2026-11-01T01:29:30.138Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
   "total_zones": 1,
   "zones": [
     {
-      "slug": "manouba",
-      "name": "Manouba",
-      "gov": "Manouba",
-      "on_count": 0,
+      "slug": "béja",
+      "name": "Béja",
+      "gov": "Béja",
+      "on_count": 1,
       "off_count": 1,
-      "last_report": "2026-10-31T22:31:44.919Z"
+      "last_report": "2026-11-01T01:29:30.138Z"
     }
   ]
 }
