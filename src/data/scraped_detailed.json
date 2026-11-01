@@ -1,5 +1,33 @@
 {
-  "scraped_at": "2026-11-01T07:51:40.104Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-11-01T14:35:51.677Z",
+  "total_detailed_zones": 3,
+  "zones": [
+    {
+      "name": "Aïn Zaghouan",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "5 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Khaznadar",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "30s",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Mornaguia / Borj El Amri",
+      "gridVotes": 9,
+      "lightVotes": 0,
+      "lastUpdate": "4 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    }
+  ]
 }
