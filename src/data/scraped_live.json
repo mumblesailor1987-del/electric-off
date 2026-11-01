@@ -1,16 +1,7 @@
 {
-  "scraped_at": "2026-11-01T01:29:30.138Z",
+  "scraped_at": "2026-11-01T07:51:40.103Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 1,
-  "zones": [
-    {
-      "slug": "béja",
-      "name": "Béja",
-      "gov": "Béja",
-      "on_count": 1,
-      "off_count": 1,
-      "last_report": "2026-11-01T01:29:30.138Z"
-    }
-  ]
+  "total_zones": 0,
+  "zones": []
 }

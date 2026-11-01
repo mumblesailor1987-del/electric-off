@@ -1,24 +1,5 @@
 {
-  "scraped_at": "2026-11-01T01:29:30.138Z",
-  "total_detailed_zones": 2,
-  "zones": [
-    {
-      "name": "Béja Ville",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "8 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Medjez el-Bab",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "7 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    }
-  ]
+  "scraped_at": "2026-11-01T07:51:40.104Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
