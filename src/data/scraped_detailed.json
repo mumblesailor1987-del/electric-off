@@ -1,24 +1,5 @@
 {
-  "scraped_at": "2026-11-02T01:55:08.686Z",
-  "total_detailed_zones": 2,
-  "zones": [
-    {
-      "name": "Cité Intilaka",
-      "gridVotes": 2,
-      "lightVotes": 0,
-      "lastUpdate": "10 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Mnihla",
-      "gridVotes": 2,
-      "lightVotes": 0,
-      "lastUpdate": "13 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    }
-  ]
+  "scraped_at": "2026-11-02T08:53:13.259Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
