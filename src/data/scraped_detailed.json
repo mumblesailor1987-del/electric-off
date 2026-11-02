@@ -1,12 +1,21 @@
 {
-  "scraped_at": "2026-11-01T22:50:04.964Z",
-  "total_detailed_zones": 1,
+  "scraped_at": "2026-11-02T01:55:08.686Z",
+  "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Menzel Abderrahmen",
-      "gridVotes": 1,
+      "name": "Cité Intilaka",
+      "gridVotes": 2,
       "lightVotes": 0,
-      "lastUpdate": "22 min",
+      "lastUpdate": "10 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Mnihla",
+      "gridVotes": 2,
+      "lightVotes": 0,
+      "lastUpdate": "13 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
