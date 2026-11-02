@@ -1,5 +1,15 @@
 {
-  "scraped_at": "2026-11-02T08:53:13.259Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-11-02T19:00:23.238Z",
+  "total_detailed_zones": 1,
+  "zones": [
+    {
+      "name": "Menzel Jemil",
+      "gridVotes": 2,
+      "lightVotes": 0,
+      "lastUpdate": "17 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    }
+  ]
 }
