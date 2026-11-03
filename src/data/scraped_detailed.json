@@ -1,27 +1,9 @@
 {
-  "scraped_at": "2026-11-03T16:28:46.663Z",
-  "total_detailed_zones": 3,
+  "scraped_at": "2026-11-03T21:54:43.307Z",
+  "total_detailed_zones": 1,
   "zones": [
     {
-      "name": "Gammarth",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "22 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Gammarth Supérieur",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "29 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Metline",
+      "name": "Route Tbolbi",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "44 min",
