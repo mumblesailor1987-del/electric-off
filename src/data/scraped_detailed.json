@@ -1,24 +1,33 @@
 {
-  "scraped_at": "2026-11-03T08:30:44.426Z",
-  "total_detailed_zones": 2,
+  "scraped_at": "2026-11-03T16:28:46.663Z",
+  "total_detailed_zones": 3,
   "zones": [
     {
-      "name": "La Marsa",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "1 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Menzel Abderrahmen",
+      "name": "Gammarth",
       "gridVotes": 1,
       "lightVotes": 0,
       "lastUpdate": "22 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Gammarth Supérieur",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "29 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Metline",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "44 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }
