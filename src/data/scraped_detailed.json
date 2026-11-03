@@ -1,15 +1,24 @@
 {
-  "scraped_at": "2026-11-02T19:00:23.238Z",
-  "total_detailed_zones": 1,
+  "scraped_at": "2026-11-03T01:30:51.496Z",
+  "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Menzel Jemil",
-      "gridVotes": 2,
-      "lightVotes": 0,
-      "lastUpdate": "17 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "name": "El Mourouj 6",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "43 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Naassen",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "43 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }
