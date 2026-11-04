@@ -1,15 +1,5 @@
 {
-  "scraped_at": "2026-11-03T21:54:43.307Z",
-  "total_detailed_zones": 1,
-  "zones": [
-    {
-      "name": "Route Tbolbi",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "44 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    }
-  ]
+  "scraped_at": "2026-11-04T01:52:43.203Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
