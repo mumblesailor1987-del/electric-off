@@ -1,5 +1,15 @@
 {
-  "scraped_at": "2026-11-04T01:52:43.203Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-11-04T08:20:41.035Z",
+  "total_detailed_zones": 1,
+  "zones": [
+    {
+      "name": "Carthage Salammbô",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "39 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    }
+  ]
 }
