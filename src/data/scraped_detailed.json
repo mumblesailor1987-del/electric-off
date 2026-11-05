@@ -1,15 +1,5 @@
 {
-  "scraped_at": "2026-11-04T22:03:43.356Z",
-  "total_detailed_zones": 1,
-  "zones": [
-    {
-      "name": "Boumhel",
-      "gridVotes": 2,
-      "lightVotes": 0,
-      "lastUpdate": "30 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    }
-  ]
+  "scraped_at": "2026-11-05T02:19:11.474Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
