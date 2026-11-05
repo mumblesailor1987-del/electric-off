@@ -1,48 +1,16 @@
 {
-  "scraped_at": "2026-11-05T09:39:13.964Z",
+  "scraped_at": "2026-11-05T17:39:04.081Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 5,
+  "total_zones": 1,
   "zones": [
-    {
-      "slug": "tunis",
-      "name": "Tunis",
-      "gov": "Tunis",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-11-05T09:39:13.964Z"
-    },
     {
       "slug": "ben-arous",
       "name": "Ben arous",
       "gov": "Ben arous",
-      "on_count": 2,
-      "off_count": 2,
-      "last_report": "2026-11-05T09:39:13.964Z"
-    },
-    {
-      "slug": "jendouba",
-      "name": "Jendouba",
-      "gov": "Jendouba",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-11-05T09:39:13.964Z"
-    },
-    {
-      "slug": "kairouan",
-      "name": "Kairouan",
-      "gov": "Kairouan",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-11-05T09:39:13.964Z"
-    },
-    {
-      "slug": "unknown",
-      "name": "Unknown",
-      "gov": "Unknown",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-11-05T09:39:13.964Z"
+      "last_report": "2026-11-05T17:39:04.081Z"
     }
   ]
 }

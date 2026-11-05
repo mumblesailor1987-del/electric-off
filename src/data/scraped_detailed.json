@@ -1,66 +1,12 @@
 {
-  "scraped_at": "2026-11-05T09:39:13.965Z",
-  "total_detailed_zones": 7,
+  "scraped_at": "2026-11-05T17:39:04.081Z",
+  "total_detailed_zones": 1,
   "zones": [
     {
-      "name": "Aïn Zaghouan Nord",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "27 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Bougarnine",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "8 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Boumhel",
-      "gridVotes": 1,
-      "lightVotes": 1,
-      "lastUpdate": "7 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "El Mourouj 3",
+      "name": "Naassen",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "23 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Bou Salem",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "7 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Bou Hajla / Nasrallah",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "7 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Djerba Tezdaine",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "21 min",
+      "lastUpdate": "16 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
