@@ -1,15 +1,5 @@
 {
-  "scraped_at": "2026-11-05T17:39:04.081Z",
-  "total_detailed_zones": 1,
-  "zones": [
-    {
-      "name": "Naassen",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "16 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    }
-  ]
+  "scraped_at": "2026-11-06T02:57:41.718Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
