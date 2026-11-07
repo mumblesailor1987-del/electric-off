@@ -1,30 +1,21 @@
 {
-  "scraped_at": "2026-11-07T08:44:54.984Z",
-  "total_detailed_zones": 3,
+  "scraped_at": "2026-11-07T15:13:17.443Z",
+  "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Aïn Zaghouan",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "43 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "name": "La Soukra",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "4 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     },
     {
-      "name": "Hammam Lif / Hammam Chott",
+      "name": "El Mourouj 4",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "8 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Route Tbolbi",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "24 min",
+      "lastUpdate": "2 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
