@@ -1,5 +1,33 @@
 {
-  "scraped_at": "2026-11-07T02:08:55.238Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-11-07T08:44:54.984Z",
+  "total_detailed_zones": 3,
+  "zones": [
+    {
+      "name": "Aïn Zaghouan",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "43 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Hammam Lif / Hammam Chott",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "8 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Route Tbolbi",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "24 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    }
+  ]
 }
