@@ -1,32 +1,7 @@
 {
-  "scraped_at": "2026-11-06T22:24:20.873Z",
+  "scraped_at": "2026-11-07T02:08:55.238Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 3,
-  "zones": [
-    {
-      "slug": "unknown",
-      "name": "Unknown",
-      "gov": "Unknown",
-      "on_count": 0,
-      "off_count": 2,
-      "last_report": "2026-11-06T22:24:20.873Z"
-    },
-    {
-      "slug": "gabès",
-      "name": "Gabès",
-      "gov": "Gabès",
-      "on_count": 0,
-      "off_count": 9,
-      "last_report": "2026-11-06T22:24:20.873Z"
-    },
-    {
-      "slug": "sfax",
-      "name": "Sfax",
-      "gov": "Sfax",
-      "on_count": 0,
-      "off_count": 1,
-      "last_report": "2026-11-06T22:24:20.873Z"
-    }
-  ]
+  "total_zones": 0,
+  "zones": []
 }
