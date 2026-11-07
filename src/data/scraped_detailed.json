@@ -1,9 +1,9 @@
 {
-  "scraped_at": "2026-11-07T19:27:37.643Z",
-  "total_detailed_zones": 3,
+  "scraped_at": "2026-11-07T22:55:29.106Z",
+  "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Mornag",
+      "name": "Jardins de Carthage (côté ISC / villas)",
       "gridVotes": 0,
       "lightVotes": 1,
       "lastUpdate": "33 min",
@@ -12,22 +12,13 @@
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Sakiet Ezzit",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "34 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Msaken",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "26 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "name": "Borj Cédria",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "35 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     }
   ]
 }
