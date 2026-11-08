@@ -1,16 +1,16 @@
 {
-  "scraped_at": "2026-11-08T15:45:03.448Z",
+  "scraped_at": "2026-11-08T19:59:46.036Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
   "total_zones": 1,
   "zones": [
     {
-      "slug": "sfax",
-      "name": "Sfax",
-      "gov": "Sfax",
+      "slug": "ariana",
+      "name": "Ariana",
+      "gov": "Ariana",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-11-08T15:45:03.448Z"
+      "last_report": "2026-11-08T19:59:46.036Z"
     }
   ]
 }

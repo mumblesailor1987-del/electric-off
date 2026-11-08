@@ -1,12 +1,12 @@
 {
-  "scraped_at": "2026-11-08T15:45:03.448Z",
+  "scraped_at": "2026-11-08T19:59:46.037Z",
   "total_detailed_zones": 1,
   "zones": [
     {
-      "name": "Route de Gremda",
+      "name": "Cité El Ghazela",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "25 min",
+      "lastUpdate": "43 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
