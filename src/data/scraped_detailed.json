@@ -1,24 +1,15 @@
 {
-  "scraped_at": "2026-11-08T08:54:29.789Z",
-  "total_detailed_zones": 2,
+  "scraped_at": "2026-11-08T15:45:03.448Z",
+  "total_detailed_zones": 1,
   "zones": [
     {
-      "name": "Bouzayène",
-      "gridVotes": 3,
-      "lightVotes": 0,
-      "lastUpdate": "6 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
       "name": "Route de Gremda",
-      "gridVotes": 2,
+      "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "7 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "lastUpdate": "25 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }

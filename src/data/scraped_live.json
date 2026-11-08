@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-08T08:54:29.789Z",
+  "scraped_at": "2026-11-08T15:45:03.448Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
   "total_zones": 1,
@@ -8,9 +8,9 @@
       "slug": "sfax",
       "name": "Sfax",
       "gov": "Sfax",
-      "on_count": 5,
+      "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-11-08T08:54:29.789Z"
+      "last_report": "2026-11-08T15:45:03.448Z"
     }
   ]
 }
