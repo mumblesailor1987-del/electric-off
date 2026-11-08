@@ -1,24 +1,5 @@
 {
-  "scraped_at": "2026-11-07T22:55:29.106Z",
-  "total_detailed_zones": 2,
-  "zones": [
-    {
-      "name": "Jardins de Carthage (côté ISC / villas)",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "33 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Borj Cédria",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "35 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    }
-  ]
+  "scraped_at": "2026-11-08T02:04:04.918Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
