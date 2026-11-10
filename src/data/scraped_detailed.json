@@ -1,5 +1,24 @@
 {
-  "scraped_at": "2026-11-10T03:44:36.058Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-11-10T11:52:39.280Z",
+  "total_detailed_zones": 2,
+  "zones": [
+    {
+      "name": "Aïn Zaghouan",
+      "gridVotes": 2,
+      "lightVotes": 1,
+      "lastUpdate": "1 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Mégrine",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "5 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    }
+  ]
 }
