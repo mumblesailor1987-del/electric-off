@@ -1,21 +1,12 @@
 {
-  "scraped_at": "2026-11-10T18:55:52.301Z",
-  "total_detailed_zones": 2,
+  "scraped_at": "2026-11-10T23:54:52.209Z",
+  "total_detailed_zones": 1,
   "zones": [
     {
-      "name": "Cité Ettahrir",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "35 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "El Omrane Supérieur",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "35 min",
+      "name": "Mégrine",
+      "gridVotes": 16,
+      "lightVotes": 1,
+      "lastUpdate": "3 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
