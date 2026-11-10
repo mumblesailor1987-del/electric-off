@@ -1,21 +1,21 @@
 {
-  "scraped_at": "2026-11-10T11:52:39.280Z",
+  "scraped_at": "2026-11-10T18:55:52.301Z",
   "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Aïn Zaghouan",
-      "gridVotes": 2,
-      "lightVotes": 1,
-      "lastUpdate": "1 min",
+      "name": "Cité Ettahrir",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "35 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
     },
     {
-      "name": "Mégrine",
+      "name": "El Omrane Supérieur",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "5 min",
+      "lastUpdate": "35 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
