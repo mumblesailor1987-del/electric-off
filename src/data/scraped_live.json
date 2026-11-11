@@ -1,24 +1,24 @@
 {
-  "scraped_at": "2026-11-11T12:11:32.314Z",
+  "scraped_at": "2026-11-11T19:37:07.269Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
   "total_zones": 2,
   "zones": [
     {
-      "slug": "manouba",
-      "name": "Manouba",
-      "gov": "Manouba",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-11-11T12:11:32.314Z"
-    },
-    {
-      "slug": "ben-arous",
-      "name": "Ben arous",
-      "gov": "Ben arous",
+      "slug": "ariana",
+      "name": "Ariana",
+      "gov": "Ariana",
       "on_count": 0,
       "off_count": 1,
-      "last_report": "2026-11-11T12:11:32.314Z"
+      "last_report": "2026-11-11T19:37:07.269Z"
+    },
+    {
+      "slug": "sfax",
+      "name": "Sfax",
+      "gov": "Sfax",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-11-11T19:37:07.269Z"
     }
   ]
 }
