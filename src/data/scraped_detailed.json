@@ -1,5 +1,15 @@
 {
-  "scraped_at": "2026-11-12T01:40:17.219Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-11-12T08:51:25.493Z",
+  "total_detailed_zones": 1,
+  "zones": [
+    {
+      "name": "Route de Sidi Mansour",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "33 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    }
+  ]
 }
