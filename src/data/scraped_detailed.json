@@ -1,15 +1,5 @@
 {
-  "scraped_at": "2026-11-12T17:11:20.563Z",
-  "total_detailed_zones": 1,
-  "zones": [
-    {
-      "name": "Souassi / Bou Merdes",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "28 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    }
-  ]
+  "scraped_at": "2026-11-12T22:44:01.950Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }

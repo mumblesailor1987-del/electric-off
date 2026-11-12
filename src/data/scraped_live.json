@@ -1,16 +1,7 @@
 {
-  "scraped_at": "2026-11-12T17:11:20.562Z",
+  "scraped_at": "2026-11-12T22:44:01.950Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 1,
-  "zones": [
-    {
-      "slug": "mahdia",
-      "name": "Mahdia",
-      "gov": "Mahdia",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-11-12T17:11:20.562Z"
-    }
-  ]
+  "total_zones": 0,
+  "zones": []
 }
