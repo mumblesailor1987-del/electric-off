@@ -1,15 +1,15 @@
 {
-  "scraped_at": "2026-11-13T10:43:17.206Z",
+  "scraped_at": "2026-11-13T18:07:29.636Z",
   "total_detailed_zones": 1,
   "zones": [
     {
-      "name": "Ben Arous Ville",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "9 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "name": "La Soukra",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "6 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }
