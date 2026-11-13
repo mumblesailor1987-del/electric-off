@@ -1,5 +1,15 @@
 {
-  "scraped_at": "2026-11-13T02:57:24.734Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-11-13T10:43:17.206Z",
+  "total_detailed_zones": 1,
+  "zones": [
+    {
+      "name": "Ben Arous Ville",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "9 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    }
+  ]
 }
