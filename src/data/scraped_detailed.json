@@ -1,15 +1,5 @@
 {
-  "scraped_at": "2026-11-15T14:58:15.291Z",
-  "total_detailed_zones": 1,
-  "zones": [
-    {
-      "name": "Sbiba / Foussana",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "32 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    }
-  ]
+  "scraped_at": "2026-11-15T20:15:40.547Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }

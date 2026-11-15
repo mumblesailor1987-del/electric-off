@@ -1,16 +1,7 @@
 {
-  "scraped_at": "2026-11-15T14:58:15.290Z",
+  "scraped_at": "2026-11-15T20:15:40.547Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 1,
-  "zones": [
-    {
-      "slug": "kasserine",
-      "name": "Kasserine",
-      "gov": "Kasserine",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-11-15T14:58:15.290Z"
-    }
-  ]
+  "total_zones": 0,
+  "zones": []
 }
