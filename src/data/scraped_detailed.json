@@ -1,21 +1,12 @@
 {
-  "scraped_at": "2026-11-15T07:38:49.400Z",
-  "total_detailed_zones": 2,
+  "scraped_at": "2026-11-15T14:58:15.291Z",
+  "total_detailed_zones": 1,
   "zones": [
-    {
-      "name": "Ezzahrouni",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "3 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
     {
       "name": "Sbiba / Foussana",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "17 min",
+      "lastUpdate": "32 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
