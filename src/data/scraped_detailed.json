@@ -1,12 +1,30 @@
 {
-  "scraped_at": "2026-11-14T20:58:36.581Z",
-  "total_detailed_zones": 1,
+  "scraped_at": "2026-11-15T00:56:47.289Z",
+  "total_detailed_zones": 3,
   "zones": [
     {
-      "name": "Ennkhilette",
+      "name": "El Mourouj 3",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "7 min",
+      "lastUpdate": "12 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Soliman Erriadh",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "27 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Thyna / Route Gabès",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "17 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
