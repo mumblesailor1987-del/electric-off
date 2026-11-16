@@ -1,5 +1,15 @@
 {
-  "scraped_at": "2026-11-16T06:09:02.815Z",
-  "total_detailed_zones": 0,
-  "zones": []
+  "scraped_at": "2026-11-16T15:40:59.885Z",
+  "total_detailed_zones": 1,
+  "zones": [
+    {
+      "name": "Sidi Hassine / Séjoumi",
+      "gridVotes": 3,
+      "lightVotes": 0,
+      "lastUpdate": "11 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    }
+  ]
 }
