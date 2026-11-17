@@ -1,15 +1,24 @@
 {
-  "scraped_at": "2026-11-17T05:24:01.875Z",
-  "total_detailed_zones": 1,
+  "scraped_at": "2026-11-17T14:45:37.934Z",
+  "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "La Soukra",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "38s",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
+      "name": "Borj Cédria",
+      "gridVotes": 2,
+      "lightVotes": 0,
+      "lastUpdate": "14 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Djerba Houmt Souk",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "24 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     }
   ]
 }
