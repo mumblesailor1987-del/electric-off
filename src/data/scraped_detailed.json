@@ -1,57 +1,39 @@
 {
-  "scraped_at": "2026-11-20T17:13:59.055Z",
-  "total_detailed_zones": 6,
+  "scraped_at": "2026-11-20T23:08:14.319Z",
+  "total_detailed_zones": 4,
   "zones": [
     {
-      "name": "Cité des Juges (La Marsa)",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "22 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "El Menzah 7",
+      "name": "Cité El Ghazela",
       "gridVotes": 0,
-      "lightVotes": 2,
-      "lastUpdate": "11 min",
+      "lightVotes": 1,
+      "lastUpdate": "10 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
       "name": "Ennasr 1",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "29 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "La Soukra",
       "gridVotes": 0,
-      "lightVotes": 2,
-      "lastUpdate": "14 min",
+      "lightVotes": 1,
+      "lastUpdate": "6 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
     },
     {
-      "name": "Ennasr 2",
+      "name": "Kélibia",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "21 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Mornag",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "19 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Zrig",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "2 min",
+      "lastUpdate": "15 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
