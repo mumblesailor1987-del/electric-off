@@ -1,12 +1,12 @@
 {
-  "scraped_at": "2026-11-21T19:23:20.757Z",
+  "scraped_at": "2026-11-21T23:51:46.198Z",
   "total_detailed_zones": 1,
   "zones": [
     {
-      "name": "Zaghouan Ville",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "18s",
+      "name": "Ezzahra",
+      "gridVotes": 2,
+      "lightVotes": 1,
+      "lastUpdate": "14 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"

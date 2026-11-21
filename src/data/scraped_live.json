@@ -1,16 +1,16 @@
 {
-  "scraped_at": "2026-11-21T19:23:20.756Z",
+  "scraped_at": "2026-11-21T23:51:46.198Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
   "total_zones": 1,
   "zones": [
     {
-      "slug": "zaghouan",
-      "name": "Zaghouan",
-      "gov": "Zaghouan",
-      "on_count": 1,
-      "off_count": 0,
-      "last_report": "2026-11-21T19:23:20.756Z"
+      "slug": "ben-arous",
+      "name": "Ben arous",
+      "gov": "Ben arous",
+      "on_count": 2,
+      "off_count": 1,
+      "last_report": "2026-11-21T23:51:46.197Z"
     }
   ]
 }
