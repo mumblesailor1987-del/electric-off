@@ -1,15 +1,33 @@
 {
-  "scraped_at": "2026-11-21T03:56:27.364Z",
-  "total_detailed_zones": 1,
+  "scraped_at": "2026-11-21T12:14:18.994Z",
+  "total_detailed_zones": 3,
   "zones": [
     {
       "name": "Jardins de Carthage (côté ISC / villas)",
       "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "33 min",
+      "lastUpdate": "41 min",
       "status": "power-on",
       "statusLabel": "Ça marche",
       "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Chotrana 3",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "37 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Dar Fadhal",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "21 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
     }
   ]
 }
