@@ -1,15 +1,15 @@
 {
-  "scraped_at": "2026-11-21T23:51:46.198Z",
+  "scraped_at": "2026-11-22T03:52:03.912Z",
   "total_detailed_zones": 1,
   "zones": [
     {
-      "name": "Ezzahra",
-      "gridVotes": 2,
+      "name": "Boumhel",
+      "gridVotes": 0,
       "lightVotes": 1,
-      "lastUpdate": "14 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
+      "lastUpdate": "17 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }
