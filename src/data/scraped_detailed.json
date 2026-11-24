@@ -1,12 +1,12 @@
 {
-  "scraped_at": "2026-11-24T04:47:10.751Z",
+  "scraped_at": "2026-11-24T15:20:01.878Z",
   "total_detailed_zones": 1,
   "zones": [
     {
-      "name": "Route de l'Aéroport",
+      "name": "Aïn Zaghouan",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "7 min",
+      "lastUpdate": "44 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
