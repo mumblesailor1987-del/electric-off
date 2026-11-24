@@ -1,12 +1,21 @@
 {
-  "scraped_at": "2026-11-24T15:20:01.878Z",
-  "total_detailed_zones": 1,
+  "scraped_at": "2026-11-24T23:57:57.589Z",
+  "total_detailed_zones": 2,
   "zones": [
     {
-      "name": "Aïn Zaghouan",
+      "name": "Mégrine Riadh",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "44 min",
+      "lastUpdate": "39 min",
+      "status": "power-off",
+      "statusLabel": "Coupé",
+      "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Chaffar",
+      "gridVotes": 1,
+      "lightVotes": 0,
+      "lastUpdate": "5 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
