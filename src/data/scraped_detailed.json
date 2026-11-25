@@ -1,15 +1,33 @@
 {
-  "scraped_at": "2026-11-25T07:56:13.270Z",
-  "total_detailed_zones": 1,
+  "scraped_at": "2026-11-25T18:30:26.318Z",
+  "total_detailed_zones": 3,
   "zones": [
     {
-      "name": "Alain Savary",
+      "name": "Gammarth",
       "gridVotes": 1,
       "lightVotes": 0,
-      "lastUpdate": "19 min",
+      "lastUpdate": "35 min",
       "status": "power-off",
       "statusLabel": "Coupé",
       "rawClasses": "zone s-off"
+    },
+    {
+      "name": "Ennasr 1",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "39 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
+    },
+    {
+      "name": "Cité AFH Nabeul",
+      "gridVotes": 0,
+      "lightVotes": 1,
+      "lastUpdate": "2 min",
+      "status": "power-on",
+      "statusLabel": "Ça marche",
+      "rawClasses": "zone s-on"
     }
   ]
 }
