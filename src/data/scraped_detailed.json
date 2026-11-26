@@ -1,33 +1,5 @@
 {
-  "scraped_at": "2026-11-25T18:30:26.318Z",
-  "total_detailed_zones": 3,
-  "zones": [
-    {
-      "name": "Gammarth",
-      "gridVotes": 1,
-      "lightVotes": 0,
-      "lastUpdate": "35 min",
-      "status": "power-off",
-      "statusLabel": "Coupé",
-      "rawClasses": "zone s-off"
-    },
-    {
-      "name": "Ennasr 1",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "39 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    },
-    {
-      "name": "Cité AFH Nabeul",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "2 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    }
-  ]
+  "scraped_at": "2026-11-26T01:55:26.966Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
