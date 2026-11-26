@@ -1,7 +1,16 @@
 {
-  "scraped_at": "2026-11-26T01:55:26.965Z",
+  "scraped_at": "2026-11-26T10:29:02.722Z",
   "engine": "Playwright Chromium (famma-dhaw.com)",
   "status": "success",
-  "total_zones": 0,
-  "zones": []
+  "total_zones": 1,
+  "zones": [
+    {
+      "slug": "tunis",
+      "name": "Tunis",
+      "gov": "Tunis",
+      "on_count": 0,
+      "off_count": 1,
+      "last_report": "2026-11-26T10:29:02.722Z"
+    }
+  ]
 }
