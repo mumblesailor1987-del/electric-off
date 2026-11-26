@@ -1,15 +1,5 @@
 {
-  "scraped_at": "2026-11-26T10:29:02.722Z",
-  "total_detailed_zones": 1,
-  "zones": [
-    {
-      "name": "El Manar 1-2",
-      "gridVotes": 0,
-      "lightVotes": 1,
-      "lastUpdate": "44 min",
-      "status": "power-on",
-      "statusLabel": "Ça marche",
-      "rawClasses": "zone s-on"
-    }
-  ]
+  "scraped_at": "2026-11-26T19:46:26.964Z",
+  "total_detailed_zones": 0,
+  "zones": []
 }
